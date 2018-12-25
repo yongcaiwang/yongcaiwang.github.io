@@ -2,37 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/12/25/My-new-Post/</loc>
+    <loc>https://yongcaiwang.github.io/about/S0973082617303630.html</loc>
     
-    <lastmod>2018-12-25T00:56:50.005Z</lastmod>
+    <lastmod>2018-12-25T08:44:55.147Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>https://yongcaiwang.github.io/about/index.html</loc>
+    
+    <lastmod>2018-12-25T08:18:47.607Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yongcaiwang.github.io/2018/12/25/testimage/</loc>
+    
+    <lastmod>2018-12-25T05:45:35.379Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yongcaiwang.github.io/2018/12/25/latexdiffsection/</loc>
+    
+    <lastmod>2018-12-25T05:45:20.441Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yongcaiwang.github.io/2018/12/25/latexdiff/</loc>
+    
+    <lastmod>2018-12-25T05:45:02.736Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yongcaiwang.github.io/2018/12/25/My-new-Post/</loc>
+    
+    <lastmod>2018-12-25T04:20:31.302Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yongcaiwang.github.io/2018/12/25/hello-world/</loc>
+    
+    <lastmod>2018-12-25T03:36:48.258Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yongcaiwang.github.io/tags/index.html</loc>
     
     <lastmod>2018-12-25T00:25:01.715Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>https://yongcaiwang.github.io/categories/index.html</loc>
     
     <lastmod>2018-12-25T00:25:01.712Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2018-12-25T00:25:01.710Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/12/25/hello-world/</loc>
-    
-    <lastmod>2018-12-24T23:57:55.482Z</lastmod>
     
   </url>
   

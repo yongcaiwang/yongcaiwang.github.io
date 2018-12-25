@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sequence_locate_paper.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: sequence_locate_paper.bib
+You're missing a field name---line 21 of file sequence_locate_paper.bib
+ :  
+ :  %url       = {http://dx.doi.org/10.1007/978-3-319-19662-6_10},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "fingerprint_survey"
+refers to entry "conf/wpnc/2009", which doesn't exist
+A bad cross reference---entry "yin_adaptive_2005"
+refers to entry "DBLP:conf/percom/2005", which doesn't exist
+A bad cross reference---entry "yang_adamap:_2015"
+refers to entry "DBLP:conf/adhoc-now/2015", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:conf/adhoc-now/2015"
+Warning--I didn't find a database entry for "DBLP:conf/percom/2005"
+Warning--I didn't find a database entry for "conf/wpnc/2009"
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in aguilar_herrera_pedestrian_2014
+
+Done.
+You've used 19 entries,
+            4039 wiz_defined-function locations,
+            939 strings with 12410 characters,
+and the built_in function-call counts, 16220 in all, are:
+= -- 1275
+> -- 387
+< -- 143
++ -- 208
+- -- 63
+* -- 820
+:= -- 2363
+add.period$ -- 41
+call.type$ -- 19
+change.case$ -- 18
+chr.to.int$ -- 354
+cite$ -- 20
+duplicate$ -- 1122
+empty$ -- 1363
+format.name$ -- 80
+if$ -- 3761
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 197
+newline$ -- 94
+num.names$ -- 19
+pop$ -- 476
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1236
+stack$ -- 0
+substring$ -- 837
+swap$ -- 928
+text.length$ -- 25
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 19
+warning$ -- 1
+while$ -- 82
+width$ -- 21
+write$ -- 221
+(There were 4 error messages)
