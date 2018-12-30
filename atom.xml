@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yongcaiwang.github.io/"/>
-  <updated>2018-12-25T05:45:20.441Z</updated>
+  <updated>2018-12-28T01:27:35.769Z</updated>
   <id>https://yongcaiwang.github.io/</id>
   
   <author>
@@ -17,11 +17,73 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>推荐方便的ppt工具编辑工具IguanaTex</title>
+    <link href="https://yongcaiwang.github.io/2018/12/28/pptlatex/"/>
+    <id>https://yongcaiwang.github.io/2018/12/28/pptlatex/</id>
+    <published>2018-12-28T01:08:38.000Z</published>
+    <updated>2018-12-28T01:27:35.769Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="IguanaTex"><a href="#IguanaTex" class="headerlink" title="IguanaTex"></a>IguanaTex</h2><p>IguanaTex是一款方便的powerpoint公式编辑插件。<br><a href="http://www.jonathanleroux.org/software/iguanatex/" rel="external nofollow noopener noreferrer" target="_blank">下载地址</a><br>下载安装后，会出现在powerpoint的菜单栏上<br><img src="/2018/12/28/pptlatex/iguanatex.jpg" alt="iguanatex"></p><p>IguanaTex可以非常方便的与mathtype配合，在ppt中输入公式：<br>首先在mathtype的preference选项中，选择cut and copy preferences为mathml or Tex:<br><img src="/2018/12/28/pptlatex/mathtype.jpg" alt="mathtype preference"></p><p>之后在mathtype中编辑任何一个公式，例如：<br><img src="/2018/12/28/pptlatex/equations.jpg" alt="equations"></p><p>将这些公式全选复制，然后在ppt的Iguanatex菜单栏选择new Latex display,出现如下对话框:<br><img src="/2018/12/28/pptlatex/newequation.jpg" alt="newequations"></p><p>将复制的latex公式填入到对话框<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\[\begin&#123;array&#125;&#123;l&#125;</span><br><span class="line">x = \sqrt &#123;&#123;b^2&#125; - 4ac&#125; \\</span><br><span class="line">y = \frac&#123;&#123; - b \pm \sqrt &#123;&#123;b^2&#125; - 4ac&#125; &#125;&#125;&#123;&#123;2a&#125;&#125;\\</span><br><span class="line">z = \frac&#123;&#123;n!&#125;&#125;&#123;&#123;r!\left( &#123;n - r&#125; \right)!&#125;&#125;</span><br><span class="line">\end&#123;array&#125;\]</span><br></pre></td></tr></table></figure></p><p>之后界面如图:<br><img src="/2018/12/28/pptlatex/afterpaste.jpg" alt="afterpaste"><br>点击generate之后，在ppt中生成公式：</p><p><img src="/2018/12/28/pptlatex/generate.jpg" alt="generate"></p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href="http://www.jonathanleroux.org/software/iguanatex/" rel="external nofollow noopener noreferrer" target="_blank">Iguanatex主页：http://www.jonathanleroux.org/software/iguanatex/</a></li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;IguanaTex&quot;&gt;&lt;a href=&quot;#IguanaTex&quot; class=&quot;headerlink&quot; title=&quot;IguanaTex&quot;&gt;&lt;/a&gt;IguanaTex&lt;/h2&gt;&lt;p&gt;IguanaTex是一款方便的powerpoint公式编辑插件。&lt;br&gt;&lt;a hre
+      
+    
+    </summary>
+    
+      <category term="工具软件" scheme="https://yongcaiwang.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="ppt公式编辑" scheme="https://yongcaiwang.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/ppt%E5%85%AC%E5%BC%8F%E7%BC%96%E8%BE%91/"/>
+    
+    
+      <category term="latex" scheme="https://yongcaiwang.github.io/tags/latex/"/>
+    
+      <category term="ppt" scheme="https://yongcaiwang.github.io/tags/ppt/"/>
+    
+      <category term="lguanaTex" scheme="https://yongcaiwang.github.io/tags/lguanaTex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在hexo主页中添加百度分享</title>
+    <link href="https://yongcaiwang.github.io/2018/12/26/hexoshare/"/>
+    <id>https://yongcaiwang.github.io/2018/12/26/hexoshare/</id>
+    <published>2018-12-26T01:10:50.000Z</published>
+    <updated>2018-12-26T01:31:48.323Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="在hexo中使用wikitten模板时添加百度分享的方法。"><a href="#在hexo中使用wikitten模板时添加百度分享的方法。" class="headerlink" title="在hexo中使用wikitten模板时添加百度分享的方法。"></a>在hexo中使用wikitten模板时添加百度分享的方法。</h2><p>网上查找在hexo中添加链接分享的方法是，查到的都是用next主题的，<br>用wikitten主题时，如何添加分享并没有介绍。</p><p>自己翻了一下代码，发现wikitten主题的结构非常清楚。</p><ul><li>首先，在_config.xml中的share选项中的几个分享的选项</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Share</span></span><br><span class="line">share: bdshare <span class="comment"># options: jiathis, bdshare, addtoany, default</span></span><br></pre></td></tr></table></figure><p>在\themes\Wikitten\layout\share文件夹中都有对应的文件。<br><img src="/2018/12/26/hexoshare/sharelist.jpg" alt="share文件夹中的文件"></p><p>打开bdshare.ejs 可以把现在已经不存在的开心网，腾讯微博的链接去掉，只保留qq空间，新浪微博和微信<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"bdsharebuttonbox"</span>&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> class=<span class="string">"bds_more"</span> data-cmd=<span class="string">"more"</span>&gt;  分享到：&lt;/a&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> class=<span class="string">"bds_qzone"</span> data-cmd=<span class="string">"qzone"</span> title=<span class="string">"分享到QQ空间"</span>&gt;QQ空间&lt;/a&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> class=<span class="string">"bds_tsina"</span> data-cmd=<span class="string">"tsina"</span> title=<span class="string">"分享到新浪微博"</span>&gt;新浪微博&lt;/a&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> class=<span class="string">"bds_weixin"</span> data-cmd=<span class="string">"weixin"</span> title=<span class="string">"分享到微信"</span>&gt;微信&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p><p>之后把保存的bdshare.ejs放到\themes\Wikitten\layout\common目录下</p><p>修改common目录下的article.ejs。article.ejs就是决定着hexo生成的静态文件的布局。<br>我们可以把分享链接放到文章的标题栏的日期的位置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"article-meta"</span>&gt;</span><br><span class="line">    &lt;%- partial(<span class="string">'post/category'</span>) %&gt;</span><br><span class="line">    &lt;%- partial(<span class="string">'post/tag'</span>) %&gt;</span><br><span class="line">    &lt;%- partial(<span class="string">'post/date'</span>, &#123; class_name: <span class="string">'article-date'</span>, date_format: null &#125;) %&gt;</span><br><span class="line">    &lt;%- partial(<span class="string">'share/bdshare'</span>) %&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (theme.plugins.busuanzi_count) &#123; %&gt;</span><br><span class="line">        &lt;i class=<span class="string">"fa fa-bar-chart"</span>&gt;&lt;/i&gt;</span><br><span class="line">        &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;&lt;span id=<span class="string">"busuanzi_value_page_pv"</span>&gt;&lt;/span&gt;&lt;/span&gt;    </span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (theme.history_control.enable) &#123; </span><br><span class="line">        <span class="built_in">let</span> repertory_address = `<span class="variable">$&#123;theme.history_control.server_link&#125;</span>/<span class="variable">$&#123;theme.history_control.user&#125;</span>/<span class="variable">$&#123;theme.history_control.repertory&#125;</span>`;</span><br><span class="line">        <span class="built_in">let</span> file_path = `<span class="variable">$&#123;theme.history_control.branch&#125;</span>/<span class="built_in">source</span>/<span class="variable">$&#123;post.source&#125;</span>`;%&gt;</span><br><span class="line">        &lt;div class=<span class="string">"article-meta-button"</span>&gt;</span><br><span class="line">            &lt;a href=<span class="string">'&lt;%= `$&#123;repertory_address&#125;/raw/$&#123;file_path&#125;` %&gt;'</span>&gt; Source &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;div class=<span class="string">"article-meta-button"</span>&gt;</span><br><span class="line">            &lt;a href=<span class="string">'&lt;%= `$&#123;repertory_address&#125;/edit/$&#123;file_path&#125;` %&gt;'</span>&gt; Edit &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;div class=<span class="string">"article-meta-button"</span>&gt;</span><br><span class="line">            &lt;a href=<span class="string">'&lt;%= `$&#123;repertory_address&#125;/commits/$&#123;file_path&#125;` %&gt;'</span>&gt; History &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p><p>如上述的代码，把<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(<span class="string">'share/bdshare'</span>) %&gt;</span><br></pre></td></tr></table></figure></p><p>放到了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(<span class="string">'post/date'</span>, &#123; class_name: <span class="string">'article-date'</span>, date_format: null &#125;) %&gt;</span><br></pre></td></tr></table></figure></p><p>的后面。</p><p>这样，在每个页面中就可以看到百度分享的链接:<br><img src="/2018/12/26/hexoshare/baidusharefig.jpg" alt="share文件夹中的文件"></p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href="https://blog.csdn.net/wizardforcel/article/details/40707993" rel="external nofollow noopener noreferrer" target="_blank">ApacheCN_飞龙的CSDN博客，但是不完全一样</a></li><li><a href="https://www.jianshu.com/p/a1169877388c" rel="external nofollow noopener noreferrer" target="_blank">PigPeek的简书博客，也不太一样</a></li></ul></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;在hexo中使用wikitten模板时添加百度分享的方法。&quot;&gt;&lt;a href=&quot;#在hexo中使用wikitten模板时添加百度分享的方法。&quot; class=&quot;headerlink&quot; title=&quot;在hexo中使用wikitten模板时添加百度分享的方法。&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="工具软件" scheme="https://yongcaiwang.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="hexo" scheme="https://yongcaiwang.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://yongcaiwang.github.io/tags/hexo/"/>
+    
+      <category term="baidushare" scheme="https://yongcaiwang.github.io/tags/baidushare/"/>
+    
+      <category term="分享" scheme="https://yongcaiwang.github.io/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决latexdiff处理section改动出错的问题</title>
     <link href="https://yongcaiwang.github.io/2018/12/25/latexdiffsection/"/>
     <id>https://yongcaiwang.github.io/2018/12/25/latexdiffsection/</id>
     <published>2018-12-25T05:24:53.000Z</published>
-    <updated>2018-12-25T05:45:20.441Z</updated>
+    <updated>2018-12-26T00:58:01.701Z</updated>
     
     <content type="html"><![CDATA[<p>$$latexdiff 处理section, subsection时的问题</p><p>用latexdiff对两个tex文件进行了比较，得到记录变化的tex文档。<br>但是在修改标题section和子标题subsection的时候会到一些问题。<br>这是latexdiff自动生成的代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\subsection&#123;\DIFdel&#123;Experimental design of model domain sensitivity&#125;&#125;</span><br></pre></td></tr></table></figure></p><p>编译时会出现如下错误</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Argument of \UL@word has an extra &#125;. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Paragraph ended before \UL@word was complete. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Illegal unit of measure (pt inserted). \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br><span class="line">Missing number, treated as zero. \subsection&#123;\DIFdel&#123;Path Planning&#125;&#125;</span><br></pre></td></tr></table></figure><p>为解决这一问题，在latexdiff的命令中加入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">latexdiff --exclude-textcmd=<span class="string">"section,subsection,subsubsection"</span> temp.tex revise.tex &gt; diff.tex</span><br></pre></td></tr></table></figure><p>即可解决这个问题。</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href="http://mirror.lzu.edu.cn/CTAN/support/latexdiff/doc/latexdiff-man.pdf" rel="external nofollow noopener noreferrer" target="_blank">latexdiff手册</a></li></ul></blockquote>]]></content>
     
@@ -47,7 +109,7 @@
     <link href="https://yongcaiwang.github.io/2018/12/25/latexdiff/"/>
     <id>https://yongcaiwang.github.io/2018/12/25/latexdiff/</id>
     <published>2018-12-25T05:13:21.000Z</published>
-    <updated>2018-12-25T05:45:02.736Z</updated>
+    <updated>2018-12-26T01:32:19.827Z</updated>
     
     <content type="html"><![CDATA[<p>##在texstudio中用latexdiff实现修改的跟踪。</p><ol><li>首先要打开MikTex console，选择packages，查看latexdiff是否已经安装。</li></ol><p>如果没有安装，则安装latexdiff，装好后，查看latexdiff结果如下：</p><p><img src="/2018/12/25/latexdiff/miktex.jpg" alt="测试图片"></p><ol start="2"><li>安装好latexdiff之后，即可在windows命令行中，找到需要对比的两个文件：</li></ol><pre><code class="bash">$ latexdiff template.tex template1.tex &gt; diff.tex</code></pre><p>对得到的diff.tex进行编译，既可以看到template.tex和template1.tex两个文件的差异。<br><img src="/2018/12/25/latexdiff/diff1.jpg" alt="测试图片"><br><img src="/2018/12/25/latexdiff/diff2.jpg" alt="测试图片"></p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
     
@@ -69,6 +131,10 @@
       <category term="latex" scheme="https://yongcaiwang.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/latex/"/>
     
     
+      <category term="latex" scheme="https://yongcaiwang.github.io/tags/latex/"/>
+    
+      <category term="修订" scheme="https://yongcaiwang.github.io/tags/%E4%BF%AE%E8%AE%A2/"/>
+    
   </entry>
   
   <entry>
@@ -76,7 +142,7 @@
     <link href="https://yongcaiwang.github.io/2018/12/25/testimage/"/>
     <id>https://yongcaiwang.github.io/2018/12/25/testimage/</id>
     <published>2018-12-25T03:49:53.000Z</published>
-    <updated>2018-12-25T05:45:35.379Z</updated>
+    <updated>2018-12-26T00:58:01.705Z</updated>
     
     <content type="html"><![CDATA[<h3 id="使用Hexo的wikitten-模板，建立起多级分类目录，简洁清晰。多级分类的建立也非常的简单。"><a href="#使用Hexo的wikitten-模板，建立起多级分类目录，简洁清晰。多级分类的建立也非常的简单。" class="headerlink" title="使用Hexo的wikitten 模板，建立起多级分类目录，简洁清晰。多级分类的建立也非常的简单。"></a>使用Hexo的wikitten 模板，建立起多级分类目录，简洁清晰。多级分类的建立也非常的简单。</h3><p>在模板之中都已经设计好多级分类的使用方法，最多支持四级。在写博客的时候只需要在文件头设置即可。</p><p>例如想要发布test.md，想让它属于 /技术/hexo/分类 这个三级目录下,<br>只需要，在test.md的文件头位置：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">categories: </span><br><span class="line"> - 技术</span><br><span class="line"> - hexo</span><br><span class="line"> - 分类</span><br></pre></td></tr></table></figure><p>注意 - 后面要有空格。</p>]]></content>
     
@@ -97,52 +163,31 @@
   </entry>
   
   <entry>
-    <title>My new Post</title>
+    <title>在hexo中使用latex公式，解决{}错误</title>
     <link href="https://yongcaiwang.github.io/2018/12/25/My-new-Post/"/>
     <id>https://yongcaiwang.github.io/2018/12/25/My-new-Post/</id>
     <published>2018-12-25T00:44:31.000Z</published>
-    <updated>2018-12-25T04:20:31.302Z</updated>
+    <updated>2018-12-26T01:39:31.187Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="创建一个新的页面"><a href="#创建一个新的页面" class="headerlink" title="创建一个新的页面"></a>创建一个新的页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><h2 id="lim-1-to-infty-P-frac-1-n-sum-i-nX-i-mu-lt-epsilon-1-i-1-…-n"><a href="#lim-1-to-infty-P-frac-1-n-sum-i-nX-i-mu-lt-epsilon-1-i-1-…-n" class="headerlink" title="$$lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|&lt;\epsilon)=1, i=1,…,n$$"></a>$$lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|&lt;\epsilon)=1, i=1,…,n$$</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><h2 id="frac-a-2-b-2-3"><a href="#frac-a-2-b-2-3" class="headerlink" title="$${ \frac{ {a^2} + {b^2} } {3} } $$"></a>$${ \frac{ {a^2} + {b^2} } {3} } $$</h2><p>$\frac{ { - b \pm \sqrt { {b^2} - 4ac} } }{ {2a} }$</p><p><img src="/2018/12/25/My-new-Post/testimage/test.gif" alt="测试图片"></p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;创建一个新的页面&quot;&gt;&lt;a href=&quot;#创建一个新的页面&quot;
-      
-    
-    </summary>
-    
-      <category term="test" scheme="https://yongcaiwang.github.io/categories/test/"/>
-    
-    
-      <category term="test1" scheme="https://yongcaiwang.github.io/tags/test1/"/>
-    
-      <category term="test2" scheme="https://yongcaiwang.github.io/tags/test2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://yongcaiwang.github.io/2018/12/25/hello-world/"/>
-    <id>https://yongcaiwang.github.io/2018/12/25/hello-world/</id>
-    <published>2018-12-24T23:57:55.481Z</published>
-    <updated>2018-12-25T03:36:48.258Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" rel="external nofollow noopener noreferrer" target="_blank">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" rel="external nofollow noopener noreferrer" target="_blank">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" rel="external nofollow noopener noreferrer" target="_blank">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" rel="external nofollow noopener noreferrer" target="_blank">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" rel="external nofollow noopener noreferrer" target="_blank">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" rel="external nofollow noopener noreferrer" target="_blank">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" rel="external nofollow noopener noreferrer" target="_blank">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" rel="external nofollow noopener noreferrer" target="_blank">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="在hexo的wikitten模板中可以直接加入latex公式。"><a href="#在hexo的wikitten模板中可以直接加入latex公式。" class="headerlink" title="在hexo的wikitten模板中可以直接加入latex公式。"></a>在hexo的wikitten模板中可以直接加入latex公式。</h3><p>需要在文件头的设置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mathjax: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p><p>之后可以直接键入latex代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$<span class="variable">$lim_</span>&#123;1\to+\infty&#125;P(|\frac&#123;1&#125;&#123;n&#125;\sum_i^nX_i-\mu|&lt;\epsilon)=1, i=1,...,n$$</span><br></pre></td></tr></table></figure></p><p>显示如下：</p><h2 id="lim-1-to-infty-P-frac-1-n-sum-i-nX-i-mu-lt-epsilon-1-i-1-…-n"><a href="#lim-1-to-infty-P-frac-1-n-sum-i-nX-i-mu-lt-epsilon-1-i-1-…-n" class="headerlink" title="$$lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|&lt;\epsilon)=1, i=1,…,n$$"></a>$$lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|&lt;\epsilon)=1, i=1,…,n$$</h2><p>但是当有比较多的大括号的时候，会显示出错</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$<span class="variable">$&#123;\frac&#123;&#123;a^2&#125;</span> + &#123;b^2&#125;&#125; &#123;3&#125;&#125; $$</span><br></pre></td></tr></table></figure><p>这种情况会生成出错，原因是大括号挨在一起了。改成下面这样就好了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$<span class="variable">$&#123; \frac&#123; &#123;a^2&#125;</span> + &#123;b^2&#125; &#125; &#123;3&#125; &#125; $$</span><br></pre></td></tr></table></figure></p><p>再比如<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\frac&#123; &#123; - b \pm \sqrt &#123; &#123;b^2&#125; - 4ac&#125; &#125; &#125;&#123; &#123;2a&#125; &#125;$</span><br></pre></td></tr></table></figure></p><p>生成如下公式</p><h2 id="frac-b-pm-sqrt-b-2-4ac-2a"><a href="#frac-b-pm-sqrt-b-2-4ac-2a" class="headerlink" title="$\frac{ { - b \pm \sqrt { {b^2} - 4ac} } }{ {2a} }$"></a>$\frac{ { - b \pm \sqrt { {b^2} - 4ac} } }{ {2a} }$</h2>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Hexo&lt;/a&gt;! This is your very first post.
+        &lt;h3 id=&quot;在hexo的wikitten模板中可以直接加入latex公式。&quot;&gt;&lt;a href=&quot;#在hexo的wikitten模板中可以直接加入latex公式。&quot; class=&quot;headerlink&quot; title=&quot;在hexo的wikitten模板中可以直接加入latex公式
       
     
     </summary>
     
-      <category term="test" scheme="https://yongcaiwang.github.io/categories/test/"/>
+      <category term="工具软件" scheme="https://yongcaiwang.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
     
+      <category term="hexo" scheme="https://yongcaiwang.github.io/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://yongcaiwang.github.io/tags/hexo/"/>
+    
+      <category term="latex" scheme="https://yongcaiwang.github.io/tags/latex/"/>
     
   </entry>
   
