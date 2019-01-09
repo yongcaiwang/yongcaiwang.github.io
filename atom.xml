@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Yongcai Wang&#39; Blog （王永才的博客）</title>
+  <title>Yongcai Wang&#39; Blog</title>
   
-  <subtitle>图实现</subtitle>
+  <subtitle>welcome</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yongcaiwang.github.io/"/>

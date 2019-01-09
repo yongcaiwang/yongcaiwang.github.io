@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
-    <title>用latexdiff实现修改的跟踪 | Yongcai Wang&#39; Blog （王永才的博客）</title>
+    <title>用latexdiff实现修改的跟踪 | Yongcai Wang&#39; Blog</title>
     
     
         <meta name="keywords" content="latex,修订">
@@ -14,9 +14,9 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="用latexdiff实现修改的跟踪">
 <meta property="og:url" content="https://yongcaiwang.github.io/2018/12/25/latexdiff/index.html">
-<meta property="og:site_name" content="Yongcai Wang&#39; Blog （王永才的博客）">
+<meta property="og:site_name" content="Yongcai Wang&#39; Blog">
 <meta property="og:description" content="##在texstudio中用latexdiff实现修改的跟踪。  首先要打开MikTex console，选择packages，查看latexdiff是否已经安装。  如果没有安装，则安装latexdiff，装好后，查看latexdiff结果如下：   安装好latexdiff之后，即可在windows命令行中，找到需要对比的两个文件：  $ latexdiff template.tex temp">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="https://yongcaiwang.github.io/2018/12/25/latexdiff/miktex.jpg">
 <meta property="og:image" content="https://yongcaiwang.github.io/2018/12/25/latexdiff/diff1.jpg">
 <meta property="og:image" content="https://yongcaiwang.github.io/2018/12/25/latexdiff/diff2.jpg">
@@ -28,7 +28,7 @@
     
 
     
-        <link rel="alternate" href="/atom.xml" title="Yongcai Wang&#39; Blog （王永才的博客）" type="application/atom+xml">
+        <link rel="alternate" href="/atom.xml" title="Yongcai Wang&#39; Blog" type="application/atom+xml">
     
 
     
@@ -66,7 +66,7 @@
         <div class="outer">
             <a href="/" id="logo">
                 <i class="logo"></i>
-                <span class="site-title">Yongcai Wang&#39; Blog （王永才的博客）</span>
+                <span class="site-title">Yongcai Wang&#39; Blog</span>
             </a>
             <nav id="main-nav">
                 
@@ -79,14 +79,14 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -98,11 +98,11 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
@@ -126,7 +126,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
     </div>
 
                 </td>
@@ -143,7 +143,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>分类</span>
+            <span>categories</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -166,7 +166,7 @@
                             &nbsp;
                             hexo
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/12/26/hexoshare/">在hexo主页中添加百度分享</a></li>  <li class="file"><a href="/2018/12/25/My-new-Post/">在hexo中使用latex公式，解决{}错误</a></li>  <li class="file"><a href="/2018/12/25/testimage/">简单使用hexo的wikitten模板建立多级分类的方法</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/12/25/My-new-Post/">在hexo中使用latex公式，解决{}错误</a></li>  <li class="file"><a href="/2018/12/26/hexoshare/">在hexo主页中添加百度分享</a></li>  <li class="file"><a href="/2018/12/25/testimage/">简单使用hexo的wikitten模板建立多级分类的方法</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory open">
@@ -175,7 +175,7 @@
                             &nbsp;
                             latex
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/12/25/latexdiffsection/">解决latexdiff处理section改动出错的问题</a></li>  <li class="file active"><a href="/2018/12/25/latexdiff/">用latexdiff实现修改的跟踪</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file active"><a href="/2018/12/25/latexdiff/">用latexdiff实现修改的跟踪</a></li>  <li class="file"><a href="/2018/12/25/latexdiffsection/">解决latexdiff处理section改动出错的问题</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -341,7 +341,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">文章目录</strong>
+                <strong class="toc-title">Catalogue</strong>
                     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">1.</span> <span class="toc-text">参考资料</span></a></li></ol>
                 </div>
             
@@ -378,7 +378,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 <nav id="article-nav">
     
         <a href="/2018/12/25/latexdiffsection/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">上一篇</strong>
+            <strong class="article-nav-caption">Newer</strong>
             <div class="article-nav-title">
                 
                     解决latexdiff处理section改动出错的问题
@@ -388,7 +388,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
     
     
         <a href="/2018/12/25/testimage/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">下一篇</strong>
+            <strong class="article-nav-caption">Older</strong>
             <div class="article-nav-title">简单使用hexo的wikitten模板建立多级分类的方法</div>
         </a>
     
