@@ -13,17 +13,17 @@
 <meta name="keywords" content="hexo,baidushare,分享">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在hexo主页中添加百度分享">
-<meta property="og:url" content="https://github.com/yongcaiwang/yongcaiwang.github.io/2018/12/26/hexoshare/index.html">
+<meta property="og:url" content="https://yongcaiwang.github.io/2018/12/26/hexoshare/index.html">
 <meta property="og:site_name" content="Yongcai Wang&#39; Blog （王永才的博客）">
 <meta property="og:description" content="在hexo中使用wikitten模板时添加百度分享的方法。网上查找在hexo中添加链接分享的方法是，查到的都是用next主题的，用wikitten主题时，如何添加分享并没有介绍。 自己翻了一下代码，发现wikitten主题的结构非常清楚。  首先，在_config.xml中的share选项中的几个分享的选项  12# Shareshare: bdshare # options: jiathis,">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://github.com/yongcaiwang/yongcaiwang.github.io/2018/12/26/hexoshare/sharelist.jpg">
-<meta property="og:image" content="https://github.com/yongcaiwang/yongcaiwang.github.io/2018/12/26/hexoshare/baidusharefig.jpg">
+<meta property="og:image" content="https://yongcaiwang.github.io/2018/12/26/hexoshare/sharelist.jpg">
+<meta property="og:image" content="https://yongcaiwang.github.io/2018/12/26/hexoshare/baidusharefig.jpg">
 <meta property="og:updated_time" content="2018-12-26T01:31:48.323Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在hexo主页中添加百度分享">
 <meta name="twitter:description" content="在hexo中使用wikitten模板时添加百度分享的方法。网上查找在hexo中添加链接分享的方法是，查到的都是用next主题的，用wikitten主题时，如何添加分享并没有介绍。 自己翻了一下代码，发现wikitten主题的结构非常清楚。  首先，在_config.xml中的share选项中的几个分享的选项  12# Shareshare: bdshare # options: jiathis,">
-<meta name="twitter:image" content="https://github.com/yongcaiwang/yongcaiwang.github.io/2018/12/26/hexoshare/sharelist.jpg">
+<meta name="twitter:image" content="https://yongcaiwang.github.io/2018/12/26/hexoshare/sharelist.jpg">
     
 
     
@@ -165,7 +165,7 @@
                             &nbsp;
                             hexo
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file active"><a href="/2018/12/26/hexoshare/">在hexo主页中添加百度分享</a></li>  <li class="file"><a href="/2018/12/25/My-new-Post/">在hexo中使用latex公式，解决{}错误</a></li>  <li class="file"><a href="/2018/12/25/testimage/">简单使用hexo的wikitten模板建立多级分类的方法</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/12/25/My-new-Post/">在hexo中使用latex公式，解决{}错误</a></li>  <li class="file active"><a href="/2018/12/26/hexoshare/">在hexo主页中添加百度分享</a></li>  <li class="file"><a href="/2018/12/25/testimage/">简单使用hexo的wikitten模板建立多级分类的方法</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -352,14 +352,14 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 <li>首先，在_config.xml中的share选项中的几个分享的选项</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Share</span></span><br><span class="line">share: bdshare <span class="comment"># options: jiathis, bdshare, addtoany, default</span></span><br></pre></td></tr></table></figure>
-<p>在\themes\Wikitten\layout\share文件夹中都有对应的文件。<br><img src="/yongcaiwang/yongcaiwang.github.io/2018/12/26/hexoshare/sharelist.jpg" alt="share文件夹中的文件"></p>
+<p>在\themes\Wikitten\layout\share文件夹中都有对应的文件。<br><img src="/2018/12/26/hexoshare/sharelist.jpg" alt="share文件夹中的文件"></p>
 <p>打开bdshare.ejs 可以把现在已经不存在的开心网，腾讯微博的链接去掉，只保留qq空间，新浪微博和微信<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"bdsharebuttonbox"</span>&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> class=<span class="string">"bds_more"</span> data-cmd=<span class="string">"more"</span>&gt;  分享到：&lt;/a&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> class=<span class="string">"bds_qzone"</span> data-cmd=<span class="string">"qzone"</span> title=<span class="string">"分享到QQ空间"</span>&gt;QQ空间&lt;/a&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> class=<span class="string">"bds_tsina"</span> data-cmd=<span class="string">"tsina"</span> title=<span class="string">"分享到新浪微博"</span>&gt;新浪微博&lt;/a&gt;</span><br><span class="line">    &lt;a href=<span class="string">"#"</span> class=<span class="string">"bds_weixin"</span> data-cmd=<span class="string">"weixin"</span> title=<span class="string">"分享到微信"</span>&gt;微信&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
 <p>之后把保存的bdshare.ejs放到\themes\Wikitten\layout\common目录下</p>
 <p>修改common目录下的article.ejs。article.ejs就是决定着hexo生成的静态文件的布局。<br>我们可以把分享链接放到文章的标题栏的日期的位置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"article-meta"</span>&gt;</span><br><span class="line">    &lt;%- partial(<span class="string">'post/category'</span>) %&gt;</span><br><span class="line">    &lt;%- partial(<span class="string">'post/tag'</span>) %&gt;</span><br><span class="line">    &lt;%- partial(<span class="string">'post/date'</span>, &#123; class_name: <span class="string">'article-date'</span>, date_format: null &#125;) %&gt;</span><br><span class="line">    &lt;%- partial(<span class="string">'share/bdshare'</span>) %&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (theme.plugins.busuanzi_count) &#123; %&gt;</span><br><span class="line">        &lt;i class=<span class="string">"fa fa-bar-chart"</span>&gt;&lt;/i&gt;</span><br><span class="line">        &lt;span id=<span class="string">"busuanzi_container_site_pv"</span>&gt;&lt;span id=<span class="string">"busuanzi_value_page_pv"</span>&gt;&lt;/span&gt;&lt;/span&gt;    </span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">    &lt;% <span class="keyword">if</span> (theme.history_control.enable) &#123; </span><br><span class="line">        <span class="built_in">let</span> repertory_address = `<span class="variable">$&#123;theme.history_control.server_link&#125;</span>/<span class="variable">$&#123;theme.history_control.user&#125;</span>/<span class="variable">$&#123;theme.history_control.repertory&#125;</span>`;</span><br><span class="line">        <span class="built_in">let</span> file_path = `<span class="variable">$&#123;theme.history_control.branch&#125;</span>/<span class="built_in">source</span>/<span class="variable">$&#123;post.source&#125;</span>`;%&gt;</span><br><span class="line">        &lt;div class=<span class="string">"article-meta-button"</span>&gt;</span><br><span class="line">            &lt;a href=<span class="string">'&lt;%= `$&#123;repertory_address&#125;/raw/$&#123;file_path&#125;` %&gt;'</span>&gt; Source &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;div class=<span class="string">"article-meta-button"</span>&gt;</span><br><span class="line">            &lt;a href=<span class="string">'&lt;%= `$&#123;repertory_address&#125;/edit/$&#123;file_path&#125;` %&gt;'</span>&gt; Edit &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;div class=<span class="string">"article-meta-button"</span>&gt;</span><br><span class="line">            &lt;a href=<span class="string">'&lt;%= `$&#123;repertory_address&#125;/commits/$&#123;file_path&#125;` %&gt;'</span>&gt; History &lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
 <p>如上述的代码，把<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(<span class="string">'share/bdshare'</span>) %&gt;</span><br></pre></td></tr></table></figure></p>
 <p>放到了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(<span class="string">'post/date'</span>, &#123; class_name: <span class="string">'article-date'</span>, date_format: null &#125;) %&gt;</span><br></pre></td></tr></table></figure></p>
 <p>的后面。</p>
-<p>这样，在每个页面中就可以看到百度分享的链接:<br><img src="/yongcaiwang/yongcaiwang.github.io/2018/12/26/hexoshare/baidusharefig.jpg" alt="share文件夹中的文件"></p>
+<p>这样，在每个页面中就可以看到百度分享的链接:<br><img src="/2018/12/26/hexoshare/baidusharefig.jpg" alt="share文件夹中的文件"></p>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><blockquote>
 <ul>
 <li><a href="https://blog.csdn.net/wizardforcel/article/details/40707993" rel="external nofollow noopener noreferrer" target="_blank">ApacheCN_飞龙的CSDN博客，但是不完全一样</a></li>
@@ -416,7 +416,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
         <div id="footer-info" class="inner">
             Yongcai Wang &copy; 2019 
             <a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a>
-            <br> Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten" rel="external nofollow noopener noreferrer" target="_blank">wikitten</a>
             
                 <br>
                 <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
