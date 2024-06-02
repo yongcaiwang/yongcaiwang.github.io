@@ -1,0 +1,823 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) { 
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) { 
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+
+@include-when-export url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+/* =========== */
+
+/* pt-serif-regular - latin */
+/* pt-serif-italic - latin */
+/* pt-serif-700 - latin */
+/* pt-serif-700italic - latin */
+:root {
+	--active-file-bg-color: #dadada;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #f3f2ee;
+	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
+
+	--select-text-bg-color: rgba(32, 43, 51, 0.63);
+  --select-text-font-color: white;
+}
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+html {
+	font-size: 20px;
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	background-color: #f3f2ee;
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+}
+
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+
+#write {
+	max-width: 40em;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+			max-width: 914px;
+	}
+}
+
+ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* styles */
+
+/* ====== */
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.875em;
+	/*30 / 16*/
+	line-height: 1.6em;
+	/* 48 / 30*/
+	margin-top: 2em;
+}
+h2,
+h3 {
+	font-size: 1.3125em;
+	/*21 / 16*/
+	line-height: 1.15;
+	/*24 / 21*/
+	margin-top: 2.285714em;
+	/*48 / 21*/
+	margin-bottom: 1.15em;
+	/*24 / 21*/
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.125em;
+	/*18 / 16*/
+	margin-top: 2.67em;
+	/*48 / 18*/
+}
+h5,
+h6 {
+	font-size: 1em;
+	/*16*/
+}
+h1 {
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 0.8125em;
+}
+/* links */
+
+a {
+	text-decoration: none;
+	color: #065588;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+/* block spacing */
+
+p,
+blockquote,
+.md-fences {
+	margin-bottom: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.5em;
+}
+/* blockquote */
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+/* lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+/* tables */
+.md-meta,.md-before, .md-after {
+	color:#999;
+}
+
+table {
+	margin-bottom: 1.5em;
+	/*24 / 16*/
+	font-size: 1em;
+	/* width: 100%; */
+}
+thead th,
+tfoot th {
+	padding: .25em .25em .25em .4em;
+	text-transform: uppercase;
+}
+th {
+	text-align: left;
+}
+td {
+	vertical-align: top;
+	padding: .25em .25em .25em .4em;
+}
+
+code,
+.md-fences {
+	background-color: #dadada;
+}
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+/* some fixes */
+
+h1 {
+	line-height: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+p + ul,
+p + ol{
+	margin-top: .5em;
+}
+
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul,
+h3 + ol,
+h4 + ol,
+h5 + ol,
+h6 + ol {
+	margin-top: .5em;
+}
+
+li > ul,
+li > ol {
+	margin-top: inherit;
+	margin-bottom: 0;
+}
+
+li ol>li {
+	list-style-type: lower-alpha;
+}
+
+li li ol>li{
+	list-style-type: lower-roman;
+}
+
+h2,
+h3 {
+	margin-bottom: .75em;
+}
+hr {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+}
+h1 {
+	border-color: #c5c5c5;
+}
+blockquote {
+	border-color: #bababa;
+	color: #656565;
+}
+
+blockquote ul,
+blockquote ol {
+	margin-left:0;
+}
+
+.ty-table-edit {
+	background-color: transparent;
+}
+thead {
+	background-color: #dadada;
+}
+tr:nth-child(even) {
+	background: #e8e7e7;
+}
+hr {
+	border-color: #c5c5c5;
+}
+.task-list{
+	padding-left: 1rem;
+}
+
+.md-task-list-item {
+	padding-left: 1.5rem;
+	list-style-type: none;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.25rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #F3F2EE;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+
+#write pre.md-meta-block {
+	min-height: 1.875rem;
+	color: #555;
+	border: 0px;
+	background: transparent;
+	margin-top: -4px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.md-image>.md-meta {
+	color: #9B5146;
+}
+
+.md-image>.md-meta{
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+
+
+#write>h3.md-focus:before{
+	left: -1.5rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h4.md-focus:before{
+	left: -1.5rem;
+	top: .25rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h5.md-focus:before{
+	left: -1.5rem;
+	top: .0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h6.md-focus:before{
+	left: -1.5rem;
+	top: 0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+.md-toc-content:empty:before{
+	color: #065588;
+}
+.md-toc-item {
+	color: #065588;
+}
+#write div.md-toc-tooltip {
+	background-color: #f3f2ee;
+}
+
+#typora-sidebar {
+	background-color: #f3f2ee;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+
+.pin-outline #typora-sidebar {
+	background: inherit;
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+.pin-outline #typora-sidebar:hover .outline-title-wrapper {
+	border-left:1px dashed;
+}
+
+.outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+
+.typora-node .outline-item:hover {
+  	border-right: 28px solid #dadada;
+}
+
+.outline-expander:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  font-size:14px;
+  top: 1px;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  content: "\f0d7";
+}
+
+.modal-content {
+	background-color: #f3f2ee;
+}
+
+.auto-suggest-container ul li {
+	list-style-type: none;
+}
+
+/** UI for electron */
+
+.megamenu-menu,
+#top-titlebar, #top-titlebar *,
+.megamenu-content {
+	background: #f3f2ee;
+	color: #1f0909;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px dashed #202B33;
+}
+
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+header, .context-menu, .megamenu-content, footer {
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+    color: #1f0909;
+}
+
+#megamenu-back-btn {
+	color: #1f0909;
+	border-color: #1f0909;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #1f0909;
+}
+
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
+	color: inherit;
+	background-color: #e8e7df;
+}
+
+.long-btn:hover {
+	background-color: #e8e7df;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+	background-color: #D2D1D1;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+.ty-show-word-count #footer-word-count {
+	background: #c7c5c5;
+}
+
+#typora-quick-open {
+    background-color: inherit;
+}
+
+.md-diagram-panel {
+	margin-top: 8px;
+}
+
+.file-list-item-file-name {
+	font-weight: initial;
+}
+
+.file-list-item-summary {
+	opacity: 1;
+}
+
+.file-list-item {
+	color: #777;
+}
+
+.file-list-item.active {
+	background-color: inherit;
+	color: black;
+}
+
+.ty-side-sort-btn.active {
+	background-color: inherit;
+}
+
+.file-list-item.active .file-list-item-file-name  {
+	font-weight: bold;
+}
+
+.file-list-item{
+    opacity:1 !important;
+}
+
+.file-library-node.active>.file-node-background{
+	background-color: rgba(32, 43, 51, 0.63);
+	background-color: var(--active-file-bg-color);
+}
+
+.file-tree-node.active>.file-node-content{
+	color: white;
+	color: var(--active-file-text-color);
+}
+
+.md-task-list-item>input {
+	margin-left: -1.7em;
+	margin-top: calc(1rem - 12px);
+	-webkit-appearance: button;
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover, 
+.megamenu-menu-header:focus {
+	color: inherit;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+	opacity: 1;
+}
+
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong  {
+	font-weight: 760;
+}
+
+.ty-preferences .btn-default {
+	background: transparent;
+}
+
+.ty-preferences .window-header {
+	border-bottom: 1px dashed #202B33;
+	box-shadow: none;
+}
+
+#sidebar-loading-template, #sidebar-loading-template.file-list-item {
+	color: #777;
+}
+
+.searchpanel-search-option-btn.active {
+	background: #777;
+	color: white;
+}
+
+.export-detail, .light .export-detail, 
+.light .export-item.active, 
+.light .export-items-list-control {
+	background: #e0e0e0;
+	border-radius: 2px;
+	font-weight: 700;
+	color: inherit
+}
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>王永才</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><p><span> </span></p><h1 id='王永才---------------------------------------------------english-version'><span>王永才                                                   </span><a href='index.html'><span>English Version</span></a><span> </span></h1><p><img src="https://p.ipic.vip/k6g5nr.png" referrerpolicy="no-referrer" alt="教师头像"></p><p><span>王永才，中国人民大学信息学院副教授，博士生导师， 2001年和2006年分别在清华大学自动化系获得本科和博士学位，2007-2009在NEC研究院任副研究员，2009-2015在清华大学交叉信息研究院任助理研究员，2014年在康奈尔大学做访问学者，是CCF智能机器人专委会执行委员，物联网专委会执行委员，CAAI认知与信息处理等专委会委员，DEDS专委会执行委员，主要研究领域为智能体系统、Spatial AI、协同感知、SLAM、多目标定位追踪、物联网、网络优化方法、大图结构计算与挖掘等，在国内外知名期刊和会议发表论文120余篇，已授权专利10余项。工作主要解决网络定位、SLAM问题后端图优化中抗稀疏抗噪声的高效鲁棒图优化方法，多机协同定位建图感知优化等问题。研究成果被应用于智能车、智能船、视觉目标检测与定位等领域。主持国家自然科学基金项目多项，国家科技支撑计划子课题，企业项目多项，2021年由于海上目标定位工作获得交通运输部航海学会技术发明奖一等奖，2022年获得交通运输部航海学会科技进步二等奖。</span></p><p><a href='https://dblp.org/pid/04/2124.html'><span>DBLP</span></a><span> </span><img src="logo.ua.320x120.png" alt="logo.ua.320x120" height="30" width="auto" /></p><p><a href='https://scholar.google.com/citations?user=ZOHWbl8AAAAJ&amp;hl=zh-CN'><span>Google Scholar</span></a><img src="WeChat608142369d80f60a80964612ee26e999.jpg" alt="WeChat608142369d80f60a80964612ee26e999" height="30" width="auto" /></p><p><span>实验室主页：</span><a href='http://in.ruc.edu.cn'><img src="inlab.png" referrerpolicy="no-referrer" alt="inlab"></a></p><p><span>Email: </span><a href='ycw@ruc.edu.cn'><span>ycw@ruc.edu.cn</span></a></p><p><span>电话：010-82500901</span></p><p>&nbsp;</p><h2 id='主要研究方向'><span>主要研究方向</span></h2><p><span>•     </span><strong><span>智能体系统、Spatial AI、协同感知、SLAM、多目标定位追踪，实现对空间信息的智能感知、理解、定位、建图、决策优化的相关问题。</span></strong></p><p><span>•     </span><strong><span>物联网、网络优化算法、大图结构计算与挖掘</span></strong><span> 。</span></p><p><span>•     欢迎对上述相关方向感兴趣，对科学研究感兴趣，自驱力强的同学联系。</span></p><p>&nbsp;</p><h2 id='代表性成果'><span>代表性成果</span></h2><h3 id='1-智能体系统spatial-ai方向'><span>1. 智能体系统、Spatial AI方向</span></h3><p><span>•    Hualong Cao, </span><strong><span>Yongcai Wang*</span></strong><span>, Deying Li, </span><a href='DMS/DMS.pdf'><span>DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph</span></a><span>, </span><strong><span>IEEE Transactions on Visualization and Computer Graphics</span></strong><span>, 2024. </span><strong><span>(CCF A)</span></strong><span> </span><a href='DMS/DMS.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•    Hongyu Sun, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Peng Wang, Haoran Deng, Xudong Cai and Deying Li: </span><a href='vsformer/VSFormer.pdf'><span>VSFormer: Mining Correlations in Flexible View Set for Multi-view 3D Shape Understanding</span></a><span>, </span><strong><span>IEEE Transactions on Visualization and Computer Graphics</span></strong><span>, 2024. </span><strong><span>(CCF A)</span></strong><span> </span><a href='vsformer/VSFormer.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Wanting Li, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Yongyu Guo, Shuo Wang, Yu Shao, Xuewei Bai, Xudong Cai, Qiang Ye, Deying Li: </span><a href='colslam/ColSLAM.pdf'><span>ColSLAM: A Versatile Collaborative SLAM System for Mobile Phones Using Point-Line Features and Map Caching</span></a><span>. </span><strong><span>ACM Multimedia</span></strong><span>, 2023, 9032-9041 </span><strong><span>(CCF A)</span></strong><span> </span><a href='colslam/ColSLAM.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Shuo Wang, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Xuewei Bai, Deying Li: Communication Efficient, Distributed Relative State Estimation in UAV Networks , in </span><strong><span>IEEE Journal on Selected Area of Communications</span></strong><span>, 2023. </span><strong><span>(CCF A)</span></strong></p><p><span>•     Haodi Ping, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Deying Li and Wenping Chen: </span><a href='localizability/Understanding.pdf'><span>Understanding Node Localizability in Barycentric Linear Localization</span></a><span>, in </span><strong><span>IEEE/ACM Transactions on Networking</span></strong><span>, 2022, doi: 10.1109/TNET.2022.3216204. </span><strong><span>(CCF A)</span></strong><span> </span><a href='localizability/localizability.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Haodi Wang, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Deying Li, Tianyuan Sun: </span><a href='flippingfree/flippingfree.pdf'><span>Flipping Free Conditions and Their Application in Sparse Network Localization</span></a><span>, </span><strong><span>IEEE Trans. on Mobile Computing</span></strong><span>, 2022, Vol.21, No.3, 986-1003, </span><strong><span>(CCF A)</span></strong><span> </span><a href='flippingfree/flippingfree.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Chuanwen Luo, Deying Li, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span> , Wenping Chen, Weili Wu: </span><a href='finegrained/Fine-Grained.pdf'><span>Fine-grained Trajectory Optimization of Multiple UAVs for Efficient Data Gathering from WSNs</span></a><span>, </span><strong><span>IEEE/ACM Transactions on Networking</span></strong><span>.2021, Vol.29, No.1, 162-175, </span><strong><span>(CCF A)</span></strong></p><p><span>•     Xuehan Ye, Shuo Huang, Yongcai Wang, Wenping Chen, Deying Li: </span><a href='papers/unsupervised_localization.pdf'><span>Unsupervised Localization by Learning Transition Model</span></a><span>. </span><strong><span>IMWUT</span></strong><span> 3(2): 65:1-65:23 (2019) </span><strong><span>(CCF A)</span></strong></p><p><span>•     </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Tianyuan Sun, Guoyao Rao, Deying Li., </span><a href='papers/jsac.pdf'><span>Formation Tracking in Sparse Airborne Networks</span></a><span>, </span><strong><span>IEEE Journal on Selected Areas in Communications</span></strong><span> </span><strong><span>(JSAC)</span></strong><span> 2018, Vol. 36, No.9, 2000-2014, </span><strong><span>(CCF A)</span></strong></p><p><span>•     Tianyuan Sun, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Deying Li, Zhaoquan Gu, Jia Xu., </span><a href='papers/wcs.pdf'><span>WCS: Weighted Component Stitching for Sparse Network Localization</span></a><span>, </span><strong><span>ACM/IEEE Transactions on Networking (TON)</span></strong><span>, 2018, Volume: 26 , Issue: 5 , Oct. 2018. IF 3.11 </span><strong><span>（CCF A</span></strong><span>）</span></p><p><span>•     Xuehan Ye, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Yuhe Guo, Wei Hu, Deying Li, </span><a href='papers/Ye-Ubicomp18.pdf'><span>Accurate and Efficient Indoor Location by Dynamic Warping in Sequence Type Radio-map</span></a><span>, </span><strong><span>Ubicomp</span></strong><span>, Oct. 2018, Singapore. </span><strong><span>（CCF A</span></strong><span>）</span></p><p><span>•     </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Lei Song, S.S. Iyengar, </span><a href='papers/chorus.pdf'><span>An Efficient Technique for Locating Multiple Narrow-band Ultrasound Targets in Chorus Mode</span></a><span>, </span><strong><span>IEEE Journal on Selected Areas in Communications</span></strong><span> </span><strong><span>(JSAC)</span></strong><span> , Vol. 33, No. 11, 2343 - 2356, 2015, </span><strong><span>(CCF A)</span></strong></p><p><span>•     Xiaohong Hao, Bangsheng Tang, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, </span><a href='papers/ijcai.pdf'><span>On the Balance of Meter Deployment Cost and NILM Accuracy</span></a><span>. </span><strong><span>IJCAI</span></strong><span>, 2015, Buenos Aires, Argentina, 2603–2609, </span><strong><span>(CCF A)</span></strong></p><p><span>•     Xiao Qi, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Yuexuan Wang, Liwen Xu, </span><a href='papers/Compressive_sensing.pdf'><span>Compressive Sensing over Strongly Connected Digraph and Its Application in Traffic Monitoring</span></a><span>, </span><strong><span>INFOCOM</span></strong><span>, Toronto, ON, Canada, 2014 </span><strong><span>(CCF A)</span></strong></p><p><span>•     蔡旭东，</span><strong><span>王永才*</span></strong><span>，白雪薇，李德英: </span><a href='papers/relocalization_survey.pdf'><span>基于先验地图的视觉重定位方法综述</span></a><span>. 《软件学报》, 2024, 35(2): 975-1009，(</span><strong><span>CCF</span></strong><span> </span><strong><span>中文A</span></strong><span>类) </span></p><p><span>•     殷晓航，</span><strong><span>王永才*</span></strong><span>，李德英，</span><a href='papers/Unet_survey.pdf'><span>基于U-Net结构改进的医学影像分割技术综述</span></a><span>，《软件学报》，2020，(</span><strong><span>CCF</span></strong><span> </span><strong><span>中文A</span></strong><span>类)</span></p><p><span>•     Hongyu Sun, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Wang Chen, Haoran Deng, Deying Li, </span><a href='ppt/ppt.pdf'><span>Parameter-efficient Prompt Learning for 3D Point Cloud Understanding</span></a><span>, </span><strong><span>ICRA 2024</span></strong><span>, （</span><strong><span>CCF B</span></strong><span>) </span><a href='ppt/ppt.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Peng Wang, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Deying Li, </span><a href='DroneMOT/DroneMOT.html'><span>DroneMOT: Drone-based Multi-Object Tracking Considering Detection Difficulties and Simultaneous Moving of Drones and Objects</span></a><span>, </span><strong><span>ICRA 2024</span></strong><span>, （</span><strong><span>CCF B</span></strong><span>)</span><a href='DroneMOT/DroneMOT.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Xudong Cai, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Zhe Huang, Yu Shao, Deying Li, </span><a href='VOLoc/VOLoc.pdf'><span>VOLoc: Visual Place Recognition by Querying Compressed Lidar Map</span></a><span>, </span><strong><span>ICRA 2024</span></strong><span>, （</span><strong><span>CCF B</span></strong><span>)</span><a href='VOLoc/VOLoc.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Xuewei Bai, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Haodi Pin, Xiaojia Xu, Deying Li, Shuo Wang: </span><a href='papers/InferLoc.pdf'><span>InferLoc: Hypothesis-Based Joint Edge Inference and Localization in Sparse Sensor Networks</span></a><span>. </span><strong><span>ACM Trans. Sens. Networks</span></strong><span> 20(1): 8:1-8:28 (2024)（</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Hongyu Sun, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Xudong Cai, Xuewei Bai, Deying Li: </span><a href='vipformer/vipformer.pdf'><span>ViPFormer: Efficient Vision-and-Pointcloud Transformer for Unsupervised Pointcloud Understanding</span></a><span>. </span><strong><span>ICRA 2023</span></strong><span>: 7234-7242 （CCF B)</span><a href='vipformer/vipformer.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Zhe Huang, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Jie Wen, Peng Wang, Xudong Cai: </span><a href='papers/object_detection.pdf'><span>An object detection algorithm combining semantic and geometric information of the 3D point cloud</span></a><span>. </span><strong><span>Adv. Eng. Informatics</span></strong><span> 56: 101971 (2023)（</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Wanting Li, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Deying Li, Xiaojia Xu: </span><a href='papers/mapmatching.pdf'><span>A robust map matching method by considering memorized multiple matching candidates</span></a><span>. </span><strong><span>Theor. Comput.</span></strong><span> Sci. 941: 104-120 (2023)（</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Haodi Ping, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Xingfa Shen, Deying Li, Wenping Chen:</span>
+<span> </span><a href='papers/Node_Localizability.pdf'><span>On Node Localizability Identification in Barycentric Linear Localization</span></a><span>. </span><strong><span>ACM Trans. Sens. Networks</span></strong><span> 19(1): 19:1-19:26 (2023)（</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Lei Song, Yongcai Wang: </span><a href='mobihoc14.pdf'><span>Multiple Target Counting and Tracking using Binary Proximity Sensors: Bounds, Coloring, and Filter</span></a><span>, （</span><strong><span>MOBIHOC 2014</span></strong><span>） (</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Lei Song, Yongcai Wang: </span><a href='papers/Secon14.pdf'><span>Locating Multiple Ultrasound Targets in Chorus</span></a><span>, （</span><strong><span>SECON 2014</span></strong><span>） (</span><strong><span>CCF B</span></strong><span>) </span></p><p>&nbsp;</p><h3 id='2-智能网络与图算法方向'><span>2. 智能网络与图算法方向</span></h3><p><span>•     Haoyu Liu, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Xiaojia Xu, Deying Li: </span><a href='RIPPLE/RIPPLE.pdf'><span>Bottom-up k-Vertex Connected Component Enumeration by Multiple Extension</span></a><span>, </span><strong><span>ICDE</span></strong><span> 2024, (</span><strong><span>CCF A</span></strong><span>) </span><a href='RIPPLE/RIPPLE.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Qinhan Wei, </span><strong><span>Yongcai Wang</span></strong><span>, Deying Li: </span><a href='EMI/EMI.pdf'><span>EMI: An Efficient Algorithm for Identifying Maximal Rigid Clusters in 3D Generic Graphs</span></a><span>. </span><strong><span>IEEE/ACM Transactions on Networking</span></strong><span> 32(1), 460-474, 2024, </span><strong><span>(CCF A)</span></strong><span> </span><a href='EMI/EMI.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Zhixian Lei, Xuehan Ye, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Deying Li, Jia Xu, </span><a href='papers/aaai-yc.pdf'><span>Efficient Online Model Adaptation by Incremental Simplex Tableau</span></a><span>, </span><strong><span>AAAI</span></strong><span>, 2017,2161-2167 </span><strong><span>(CCF A)</span></strong></p><p><span>•     孙天元，</span><strong><span>王永才*</span></strong><span>，李德英，</span><a href='papers/graph_realization_survey.pdf'><span>图实现算法综述与评测分析</span></a><span>，《自动化学报》， 46(4)，613-630，2020，(</span><strong><span>CCF</span></strong><span> </span><strong><span>中文A</span></strong><span>类)</span></p><p><span>•     Guoyao Rao, Deying Li, </span><strong><span>Yongcai Wang</span></strong><span>, Wenping Chen, Chunlai Zhou, Yuqing Zhu: </span><a href='papers/IM-k-grouping.pdf'><span>Maximizing the influence with </span><em><span>κ</span></em><span>-grouping constraint</span></a><span>. </span><strong><span>Inf. Sci.</span></strong><span> 629: 204-221 (2023)（</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Guoyao Rao, Deying Li, </span><strong><span>Yongcai Wang</span></strong><span>, Wenping Chen, Chunlai Zhou, Yuqing Zhu: </span><a href='papers/online-conflict.pdf'><span>Online conflict resolution: Algorithm design and analysis</span></a><span>. </span><strong><span>Inf. Sci.</span></strong><span> 651: 119718 (2023)（</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Xiaojia Xu, </span><strong><span>Yongcai Wang</span></strong><span>, Yu Zhang, Deying Li: </span><a href='Defend/Defend.pdf'><span>A fault diagnosis method to defend scapegoating attack in network tomography</span></a><span>. </span><strong><span>Theor. Comput. Sci.</span></strong><span> 939: 237-249 (2023)（</span><strong><span>CCF B</span></strong><span>)</span><a href='Defend/Defend.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Yu Zhang, Qinhan Wei, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Haodi Ping, Deying Li: </span><a href='papers/TOSN_2023_GPART.pdf'><span>GPART: Partitioning Maximal Redundant Rigid and Maximal Global Rigid Components in Generic Distance Graphs.</span></a><span> </span><strong><span>ACM Trans. Sens. Networks</span></strong><span> 19(4): 86:1-86:26 (2023) （</span><strong><span>CCF B</span></strong><span>) </span><a href='Gpart/Gpart.html'><img src="project1.jpg" referrerpolicy="no-referrer" alt="project"></a></p><p><span>•     Guoyao Rao, </span><strong><span>YongcaiWang</span><span>*</span></strong><span>, Wenping Chen, Deying Li, Weili Wu: </span><a href='papers/Rao_TCS.pdf'><span>Union acceptable profit maximization in social networks</span></a><span>. </span><strong><span>Theor. Comput. Sci.</span></strong><span> 917: 107-121 (2022)（CCF B）</span></p><p><span>•     Xiujuan Zhang, </span><strong><span>YongcaiWang</span><span>*</span></strong><span>, Deying Li, Wenping Chen, Xingjian Ding: </span><a href='papers/ZhangTCS22.pdf'><span>Self-stabilizing spanner topology control solutions in wireless ad hoc networks</span></a><span>. </span><strong><span>Theor. Comput. Sci.</span></strong><span> 922: 395-409 (2022)（</span><strong><span>CCF B</span></strong><span>）</span></p><p><span>•     Wenshuang Song, Yanhe Gong, </span><strong><span>Yongcai Wang*</span></strong><span>: </span><a href='VTONShoes.pdf'><span>VTONShoes: Virtual Try-on of Shoes in Augmented Reality on a Mobile Device</span></a><span>. </span><strong><span>ISMAR 2022</span></strong><span>: 234-242 （</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Xingfa Shen, Chuang Li, Weijie Chen, </span><strong><span>YongcaiWang</span></strong><span>, Quanbo Ge: </span><a href='papers/TOSN_2022_Shen.pdf'><span>Transition Model-driven Unsupervised Localization Framework Based on Crowd-sensed Trajectory Data</span></a><span>. </span><strong><span>ACM Trans. Sens. Networks</span></strong><span> 18(2): 26:1-26:21 (2022)（</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Ruidong Yan, Yi Li, Deying Li, </span><strong><span>Yongcai Wang</span></strong><span>, Yuqing Zhu, Weili Wu: </span><a href='TKDD_2021_Yan.pdf'><span>A Stochastic Algorithm Based on Reverse Sampling Technique to Fight Against the Cyberbullying</span></a><span>. </span><strong><span>ACM Trans. Knowl. Discov. Data</span></strong><span> 15(4): 71:1-71:22 (2021)（</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Guoyao Rao, </span><strong><span>Yongcai Wang</span></strong><span>, Wenping Chen, Deying Li, Weili Wu: </span><a href='papers/Matching_influence_maximization.pdf'><span>Matching influence maximization in social networks</span></a><span>. </span><strong><span>Theor. Comput. Sci.</span></strong><span> 857: 71-86 (2021)（</span><strong><span>CCF B</span></strong><span>）</span></p><p><span>•     Xingjian Ding, </span><strong><span>Yongcai Wang</span></strong><span>, Guodong Sun, Chuanwen Luo, Deying Li, Wenping Chen, Qian Hu: </span><a href='papers/CN-Ding-2020.pdf'><span>Optimal charger placement for wireless power transfer</span></a><span>. </span><strong><span>Comput. Networks</span></strong><span> 170: 107123 (2020) (</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Xingjian Ding, Wenping Chen, </span><strong><span>Yongcai Wang</span></strong><span>, Deying Li, Yi Hong: </span><a href='papers/tcs-DING-2020.pdf'><span>Efficient scheduling of a mobile charger in large-scale sensor networks</span></a><span>. </span><strong><span>Theor. Comput. Sci.</span></strong><span> 840: 219-233 (2020) （</span><strong><span>CCF B</span></strong><span>）</span></p><p><span>•     Ruidong Yan, Yi Li, Weili Wu, Deying Li, </span><strong><span>Yongcai Wang</span></strong><span>: </span><a href='papers/1-TKDD-yan-2019.pdf'><span>Rumor Blocking through Online Link Deletion on Social Networks</span></a><span>. </span><strong><span>TKDD</span></strong><span> 13(2): 16:1-16:26 (2019) (</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     </span><strong><span>Yongcai Wang</span></strong><span>, Haisheng Tan, </span><a href=''><span>Distributed probabilistic routing for sensor network lifetime optimization</span></a><span>. </span><strong><span>Wireless Networks</span></strong><span> 22(3): 975-989 (2016) (</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Jiang Wang, Yuqing Zhu, Deying Li, Wenping Chen, </span><strong><span>Yongcai Wang</span></strong><span>, </span><a href='papers/dasfaa.pdf'><span>Joint User Attributes and Item Category in Factor Models for Rating Prediction</span></a><span>. </span><strong><span>DASFAA</span></strong><span> (2016): 277-296 (</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Xuehan Ye, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Wei Hu, Lei Song, Zhaoquan Gu, Deying Li, </span><a href=''><span>WarpMap: Accurate and Efficient Indoor Locating by Dynamic Warping in Sequence-type Radio-map</span></a><span>, (</span><strong><span>SECON2016</span></strong><span>), 2016. (</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Lei Song,Zhaoquan Gu, Deying Li, </span><a href='papers/intenct.pdf'><span>IntenCT: Efficient Multi-Target Counting and Tracking By Binary Proximity Sensors</span></a><span>, (</span><strong><span>SECON2016</span></strong><span>), 2016 (</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Xiaohong Hao, Lei Song, et al. </span><a href='papers/TECS-wang.pdf'><span>Monitoring Massive Appliances by a Minimal Number of Smart Meters</span></a><span>, </span><strong><span>ACM TRANS. ON EMBEDED COMPUTING SYSTEMS,</span></strong><span>（TECS</span><strong><span>）Vol. 13 Issue 2s, January 2014 (</span></strong><span>CCF B)</span></p><p><span>•     Tongyang Li, </span><strong><span>Yongcai Wang</span><span>*</span></strong><span>, Lei Song, Haisheng Tan, </span><a href='papers/Li-EWSN-2015.pdf'><span>On Target Counting by Sequential Snapshots of Binary Proximity Sensors</span></a><span>. （</span><strong><span>EWSN 2015</span></strong><span>）: 19-34 (</span><strong><span>CCF B</span></strong><span>)</span></p><p><span>•     Yupeng Li, Haisheng Tan, </span><strong><span>Yongcai Wang</span></strong><span>, Zhenhua Han, Francis C. M. Lau: </span><a href='papers/selfishrouting15.pdf'><span>Selfish task-driven routing in hybrid networks</span></a><span>. （</span><strong><span>WiOpt 2015</span></strong><span>）: 387-394 (</span><strong><span>CCF B</span></strong><span>)</span></p><h2 id='教学'><span>教学</span></h2><p><a href='http://123.56.110.195:8320/c/algorithm/6'><span>《算法设计与分析II荣誉课程》</span><img src="course.png" referrerpolicy="no-referrer" alt="course"></a><span>, 2021-至今 </span></p><p><span>《机器感知：无人车和机器人是如何感知世界的？》新生研讨课，2023-至今</span></p><p><a href='http://123.56.110.195:8320/c/robot-perception/5'><span>《机器感知》</span><img src="course.png" referrerpolicy="no-referrer" alt="course"></a><span>，研究生专业课，2019-至今</span></p><p><span>《机器感知技术基础》，本科生选修课，2022-至今</span></p><p><a href='http://123.56.110.195:8320/c/optimization/7'><span>《运筹学建模与算法》</span><img src="course.png" referrerpolicy="no-referrer" alt="course"></a><span>，2016-至今</span></p><p><span>《图优化与Graph SLAM》，短期课程</span></p><p><span>《普适计算》, 2016, 2017, 2018</span></p><p>&nbsp;</p><h2 id='项目'><span>项目</span></h2><p><span>《动态复杂场景下移动机器人环境定位感知研究》，企业横向项目，项目负责人， 11/2022-11/2023</span></p><p><span>《高精点云地图构建与视觉定位导航方法研究》，公安部重点实验室开放课题，项目负责人，01/2023-12/2023</span></p><p><span>《基于视觉的机场飞鸟检测系统》，企业横向课题，项目负责人，01/2022-12/2023</span></p><p><span>《基于模块拼接的群智SLAM关键问题研究》，国家自然科学基金面上项目，项目负责人，(No. 61972404), 1/2020-12/2023</span></p><p><span>《无人智能船的辅助驾驶决策系统》，交通部国家科技支撑计划子课题，项目负责人，09/2019-12/2022</span></p><p><span>《紧耦合多源同步定位与地图构建的融合优化关键问题研究》，国家自然科学基金，项目负责人，（No.62672524），01/2017-12/2020</span></p><p><span>《国家科技支撑计划课题-人员活动检测传感装置加工合同》，子课题项目负责人，(No. 2014BAK12B06)，01/2016-12/2016</span></p><p><span>《基于随身传感大数据的用户瞬时状态分析与特征分类》，人民大学新教师启动项目，项目负责人，（No.2015030273）,01/2016-12/2018</span></p><p><span>《稀疏多元传感器网络跟踪用电设备状态的序列解码与部署优化关键问题研究》, 国家自然科学青年基金，项目负责人，(No. 61202360), 01/2013-12/2015</span></p><p><span>《基于序优化的大规模无线定位与自标定方法研究》,教育部博士点基金，项目负责人，(No. 20120002120003), 01/2013-12/2014 .</span></p><p><span>《基于智能感知的智能生活》,与NEC研究院国际合作项目，项目负责人，(No. 041902003), 01/2013-12/2014.</span></p><p><span>《结合压缩采样与网络编码的无线传感器网络负载均衡与节能关键技术研究》,国家自然科学基金，项目骨干，(No.61073174), 01/2011- 12/2013</span></p><p>&nbsp;</p><h2 id='学术服务'><span>学术服务</span></h2><p><a href='https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCIR/'><span>中国计算机学会智能机器人专委会</span></a><span>委员</span></p><p><a href='http://tcct.amss.ac.cn/'><span>中国控制学会会员DEDS专委会</span></a><span>委员</span></p><p><a href='https://www.caai.cn/'><span>中国人工智能学会青年工作委员会</span></a><span>委员</span></p><p><a href='https://www.ccf.org.cn/'><span>中国计算机学会会员</span></a></p><p><span>ValueTools 2021，Publicity Chair（宣传主席）</span></p><p><span>Sensors （CCF C类期刊）, Guest editor</span></p><p><span>ICNT2022 程序委员会委员</span></p><p><span>ICNCC2019（International Conference on Networks, Communication and Computing2019）,程序委员会委员</span></p><p><span>BDML2019(Intl Conf. on Bigdata and Machine Learning 2019)，程序委员会委员</span></p><p><span>CASE 2016，Session Chair</span></p><p><span>CASE 2017, Session Chair</span></p><p><span>CWSN 2011，Demo session Chair</span></p><p><span>CWSN 2013，程序委员会委员</span></p><p><span>IThings 2013，程序委员会委员</span></p><p><span>Reviewer for IEEE Trans. on Distributed Systems, ACM Transactions on sensor networks, Ad-hoc Sensor Wireless Networks, China Science F, IEEE Trans. on Signal Processing, CWSN, ICNSC, ITings etc.</span></p><p>&nbsp;</p><h2 id='获奖'><span>获奖</span></h2><p><span>2022年，中国航海学会科学技术进步二等奖</span></p><p><span>2021年，中国航海学会技术发明一等奖</span></p><p><span>2020年，交通部中国交通运输重大科技创新成果，成果编号2020LW043</span></p><p><span>2020年，全国人工智能教学实践案例大赛二等奖</span></p><p><span>2020年，中国人民大学十佳班主任</span></p><p><span>2019年，ICNCC2019 最佳会议报告奖</span></p><p><span>2019年，中国人民大学优秀研究生毕业生指导教师</span></p><p><span>2018年，中国人民大学信息学院科研先进个人</span></p><p><span>2011年，CWSN（中国传感器网络大会）最佳论文奖</span></p><p><span>2009年，Ubicomm (国际普适计算与通信大会) 最佳论文奖</span></p><p><span>2005年，清华大学优秀研究生，一等奖学金</span></p><p><span>2004年，清华大学研究生创新基金</span></p><p>&nbsp;</p><h2 id='教育和工作背景'><span>教育和工作背景</span></h2><p><span>2015.08-至今，</span><a href='http://info.ruc.edu.cn/'><span>中国人民大学信息学院</span></a><span>，副教授</span></p><p><span>2014.02-2014.08，</span><a href='http://www.cornell.edu'><span>美国康奈尔大学</span></a><span>，访问学者</span></p><p><span>2011.08-2015.08，</span><a href='http://iiis.tsinghua.edu.cn'><span>清华大学交叉信息研究院</span></a><span>，助理研究员</span></p><p><span>2009-2011，</span><a href='http://iiis.tsinghua.edu.cn'><span>清华大学交叉信息研究院</span></a><span>，博士后</span></p><p><span>2006.12-2009.08，</span><a href='https://cn.nec.com/zh_CN/research/research_areas/index.html'><span>NEC中国研究院</span></a><span>，副研究员</span></p><p><span>2001-2006，</span><a href='http://cfins.au.tsinghua.edu.cn/'><span>清华大学自动化系</span></a><span>，博士</span></p><p><span>1997-2001，</span><a href='https://www.au.tsinghua.edu.cn/'><span>清华大学自动化系</span></a><span>，学士</span></p><p>&nbsp;</p><h2 id='闲暇爱好'><span>闲暇爱好</span></h2><p><span>爬山，羽毛球，跑步，打牌，做美食等</span></p></div></div>
+</body>
+</html>

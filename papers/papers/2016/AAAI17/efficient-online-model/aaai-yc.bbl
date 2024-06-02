@@ -1,0 +1,176 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Ao \bgroup et al\mbox.\egroup
+  }{2016}]{Ao:2016}
+Ao, B.; Wang, Y.; Yu, L.; Brooks, R.~R.; and Iyengar, S.~S.
+\newblock 2016.
+\newblock On precision bound of distributed fault-tolerant sensor fusion
+  algorithms.
+\newblock {\em ACM Comput. Surv.} 49(1):5:1--5:23.
+
+\bibitem[\protect\citeauthoryear{Baram}{2005}]{6788385}
+Baram, Y.
+\newblock 2005.
+\newblock Learning by kernel polarization.
+\newblock {\em Neural Computation} 17(6):1264--1275.
+
+\bibitem[\protect\citeauthoryear{Bottou}{1998}]{bottou1998online}
+Bottou, L.
+\newblock 1998.
+\newblock Online learning and stochastic approximations.
+\newblock {\em On-line learning in neural networks} 17(9):142.
+
+\bibitem[\protect\citeauthoryear{Chaudhuri, Freund, and
+  Hsu}{2009}]{chaudhuri2009parameter}
+Chaudhuri, K.; Freund, Y.; and Hsu, D.~J.
+\newblock 2009.
+\newblock A parameter-free hedging algorithm.
+\newblock In {\em Advances in neural information processing systems},
+  297--305.
+
+\bibitem[\protect\citeauthoryear{Freund and Schapire}{1997}]{Freund1997119}
+Freund, Y., and Schapire, R.~E.
+\newblock 1997.
+\newblock A decision-theoretic generalization of on-line learning and an
+  application to boosting.
+\newblock {\em Journal of Computer and System Sciences} 55(1):119 -- 139.
+
+\bibitem[\protect\citeauthoryear{Freund and
+  Schapire}{1999}]{Freund:1999:LMC:337859.337869}
+Freund, Y., and Schapire, R.~E.
+\newblock 1999.
+\newblock Large margin classification using the perceptron algorithm.
+\newblock {\em Mach. Learn.} 37(3):277--296.
+
+\bibitem[\protect\citeauthoryear{G\"{o}nen and Alpaydin}{2011}]{Gonen:2011}
+G\"{o}nen, M., and Alpaydin, E.
+\newblock 2011.
+\newblock Multiple kernel learning algorithms.
+\newblock {\em J. Mach. Learn. Res.} 12:2211--2268.
+
+\bibitem[\protect\citeauthoryear{Gu, Pung, and Zhang}{2005}]{Gu20051}
+Gu, T.; Pung, H.~K.; and Zhang, D.~Q.
+\newblock 2005.
+\newblock A service‐oriented middleware for building context‐aware
+  services.
+\newblock {\em Journal of Network and Computer Applications} 28(1):1 -- 18.
+
+\bibitem[\protect\citeauthoryear{Hoi \bgroup et al\mbox.\egroup
+  }{2012}]{Hoi2012}
+Hoi, S. C.~H.; Jin, R.; Zhao, P.; and Yang, T.
+\newblock 2012.
+\newblock Online multiple kernel classification.
+\newblock {\em Machine Learning} 90(2):289--316.
+
+\bibitem[\protect\citeauthoryear{Hong, Suh, and Kim}{2009}]{hong2009context}
+Hong, J.-y.; Suh, E.-h.; and Kim, S.-J.
+\newblock 2009.
+\newblock Context-aware systems: A literature review and classification.
+\newblock {\em Expert Systems with Applications} 36(4):8509--8522.
+
+\bibitem[\protect\citeauthoryear{Huang and Chow}{2005}]{Huang2005325}
+Huang, D., and Chow, T.~W.
+\newblock 2005.
+\newblock Effective feature selection scheme using mutual information.
+\newblock {\em Neurocomputing} 63:325 -- 343.
+\newblock New Aspects in Neurocomputing: 11th European Symposium on Artificial
+  Neural Networks.
+
+\bibitem[\protect\citeauthoryear{Jin, Hoi, and Yang}{2010}]{jin2010}
+Jin, R.; Hoi, S.; and Yang, T.
+\newblock 2010.
+\newblock Online multiple kernel learning: Algorithms and mistake bounds.
+\newblock In Hutter, M.; Stephan, F.; Vovk, V.; and Zeugmann, T., eds., {\em
+  Algorithmic Learning Theory}, volume 6331 of {\em Lecture Notes in Computer
+  Science}. Springer Berlin Heidelberg.
+\newblock  390--404.
+
+\bibitem[\protect\citeauthoryear{Kembhavi \bgroup et al\mbox.\egroup
+  }{2009}]{Incremental}
+Kembhavi, A.; Siddiquie, B.; Miezianko, R.; McCloskey, S.; and Davis, L.
+\newblock 2009.
+\newblock Incremental multiple kernel learning for object recognition.
+\newblock In {\em Computer Vision, 2009 IEEE 12th International Conference on},
+   638--645.
+
+\bibitem[\protect\citeauthoryear{Lam and Suen}{1997}]{lam1997application}
+Lam, L., and Suen, S.
+\newblock 1997.
+\newblock Application of majority voting to pattern recognition: an analysis of
+  its behavior and performance.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics-Part A:
+  Systems and Humans} 27(5):553--568.
+
+\bibitem[\protect\citeauthoryear{Lanckriet \bgroup et al\mbox.\egroup
+  }{2004}]{Lanckriet01112004}
+Lanckriet, G. R.~G.; De~Bie, T.; Cristianini, N.; Jordan, M.~I.; and Noble,
+  W.~S.
+\newblock 2004.
+\newblock A statistical framework for genomic data fusion.
+\newblock {\em Bioinformatics} 20(16):2626--2635.
+
+\bibitem[\protect\citeauthoryear{Lichman}{2013}]{Lichman:2013}
+Lichman, M.
+\newblock 2013.
+\newblock {UCI} machine learning repository.
+
+\bibitem[\protect\citeauthoryear{Martins \bgroup et al\mbox.\egroup
+  }{2011}]{martins2011online}
+Martins, A. F.~T.; Smith, N.~A.; Xing, E.~P.; Aguiar, P.~M.; and Figueiredo,
+  M.~A.
+\newblock 2011.
+\newblock Online learning of structured predictors with multiple kernels.
+\newblock In {\em AISTATS},  507--515.
+
+\bibitem[\protect\citeauthoryear{Orabona \bgroup et al\mbox.\egroup
+  }{2010}]{Luo}
+Orabona, F.; Fornoni, M.; Caputo, B.; and Cesa-Bianchi, N.
+\newblock 2010.
+\newblock Om-2: An online multi-class multi-kernel learning algorithm luo jie.
+\newblock In {\em Computer Vision and Pattern Recognition Workshops (CVPRW),
+  2010 IEEE Computer Society Conference on},  43--50.
+
+\bibitem[\protect\citeauthoryear{Penrose}{1946}]{penrose1946elementary}
+Penrose, L.~S.
+\newblock 1946.
+\newblock The elementary statistics of majority voting.
+\newblock {\em Journal of the Royal Statistical Society} 109(1):53--57.
+
+\bibitem[\protect\citeauthoryear{Rakotomamonjy \bgroup et al\mbox.\egroup
+  }{2007}]{Rakotomamonjy:2007}
+Rakotomamonjy, A.; Bach, F.; Canu, S.; and Grandvalet, Y.
+\newblock 2007.
+\newblock More efficiency in multiple kernel learning.
+\newblock In {\em Proceedings of the 24th International Conference on Machine
+  Learning}, ICML '07,  775--782.
+\newblock New York, NY, USA: ACM.
+
+\bibitem[\protect\citeauthoryear{Schrijver}{1986}]{Schrijver:1986:TLI:17634}
+Schrijver, A.
+\newblock 1986.
+\newblock {\em Theory of Linear and Integer Programming}.
+\newblock New York, NY, USA: John Wiley \& Sons, Inc.
+
+\bibitem[\protect\citeauthoryear{Song \bgroup et al\mbox.\egroup
+  }{2014}]{SongSurvey}
+Song, L.; Wang, Y.; Yang, J.~J.; and Li, J.
+\newblock 2014.
+\newblock Health sensing by wearable sensors and mobile phones: A survey.
+\newblock In {\em e-Health Networking, Applications and Services (Healthcom),
+  2014 IEEE 16th International Conference on},  453--459.
+
+\bibitem[\protect\citeauthoryear{Sonnenburg \bgroup et al\mbox.\egroup
+  }{2006}]{Sonnenburg:2006}
+Sonnenburg, S.; R\"{a}tsch, G.; Sch\"{a}fer, C.; and Sch\"{o}lkopf, B.
+\newblock 2006.
+\newblock Large scale multiple kernel learning.
+\newblock {\em J. Mach. Learn. Res.} 7:1531--1565.
+
+\bibitem[\protect\citeauthoryear{Wang \bgroup et al\mbox.\egroup
+  }{2015}]{Wang2015124}
+Wang, Z.; Fan, Q.; Ke, S.; and Gao, D.
+\newblock 2015.
+\newblock Structural multiple empirical kernel learning.
+\newblock {\em Information Sciences} 301:124 -- 140.
+
+\end{thebibliography}
