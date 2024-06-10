@@ -1,6 +1,6 @@
  
 
-# Yongcai Wang                                           [中文版](index.html)
+## Yongcai Wang    [中文版](index.html)
 
 ![教师头像](https://p.ipic.vip/k6g5nr.png)
 
@@ -10,23 +10,15 @@ Wang Yongcai (1978-), male, Ph.D., Associate Professor in the Department of Comp
 
 [Google Scholar](https://scholar.google.com/citations?user=ZOHWbl8AAAAJ&hl=zh-CN)<img src="WeChat608142369d80f60a80964612ee26e999.jpg" alt="WeChat608142369d80f60a80964612ee26e999" height="30" width="auto" />
 
-Lab Page：[![inlab](inlab.png)](http://in.ruc.edu.cn)
-
 Email: [ycw@ruc.edu.cn](ycw@ruc.edu.cn)
 
 Phone：010-82500901
 
 ## Main Research Directions
 
--   Intelligent agent systems, Spatial AI, collaborative perception, SLAM, multi-target localization and tracking, addressing issues related to intelligent perception, understanding, localization, mapping, and decision optimization of spatial information.
-
--   Internet of Things, network optimization algorithms, large-scale graph computation and mining.
-
--   Students interested in the above-mentioned research directions, passionate about scientific research, and with strong self-motivation are welcome to contact.
+-   Intelligent agent systems, Spatial AI, collaborative perception, SLAM, multi-target localization and tracking,Internet of Things, network optimization algorithms, large-scale graph computation and mining.
 
 ## Representative Publications
-
-### **1. Intelligent Agent Systems, Spatial AI Direction**
 
 •    Hualong Cao, **Yongcai Wang***, Deying Li, [DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph](DMS/DMS.pdf), **IEEE Transactions on Visualization and Computer Graphics**, 2024. **(CCF A)** [![project](project1.jpg)](DMS/DMS.html)
 
@@ -41,6 +33,12 @@ Phone：010-82500901
 •     Haodi Wang, **Yongcai Wang\***, Deying Li, Tianyuan Sun: [Flipping Free Conditions and Their Application in Sparse Network Localization](flippingfree/flippingfree.pdf), **IEEE Trans. on Mobile Computing**, 2022, Vol.21, No.3, 986-1003, **(CCF A)** [![project](project1.jpg)](flippingfree/flippingfree.html)
 
 •     Chuanwen Luo, Deying Li, **Yongcai Wang\*** , Wenping Chen, Weili Wu: [Fine-grained Trajectory Optimization of Multiple UAVs for Efficient Data Gathering from WSNs](finegrained/Fine-Grained.pdf), **IEEE/ACM Transactions on Networking**.2021, Vol.29, No.1, 162-175, **(CCF A)**
+
+•     Haoyu Liu, **Yongcai Wang\***, Xiaojia Xu, Deying Li: [Bottom-up k-Vertex Connected Component Enumeration by Multiple Extension](RIPPLE/RIPPLE.pdf), **ICDE** 2024, (**CCF A**) [![project](project1.jpg)](RIPPLE/RIPPLE.html)
+
+•     Qinhan Wei, **Yongcai Wang**, Deying Li: [EMI: An Efficient Algorithm for Identifying Maximal Rigid Clusters in 3D Generic Graphs](EMI/EMI.pdf). **IEEE/ACM Transactions on Networking** 32(1), 460-474, 2024, **(CCF A)** [![project](project1.jpg)](EMI/EMI.html)
+
+•     Zhixian Lei, Xuehan Ye, **Yongcai Wang\***, Deying Li, Jia Xu, [Efficient Online Model Adaptation by Incremental Simplex Tableau](papers/aaai-yc.pdf), **AAAI**, 2017,2161-2167 **(CCF A)**
 
 •     Xuehan Ye, Shuo Huang, Yongcai Wang, Wenping Chen, Deying Li: [Unsupervised Localization by Learning Transition Model](papers/unsupervised_localization.pdf). **IMWUT** 3(2): 65:1-65:23 (2019) **(CCF A)**
 
@@ -80,14 +78,6 @@ Phone：010-82500901
 •     Lei Song, Yongcai Wang: [Multiple Target Counting and Tracking using Binary Proximity Sensors: Bounds, Coloring, and Filter](mobihoc14.pdf), （**MOBIHOC 2014**） (**CCF B**)
 
 •     Lei Song, Yongcai Wang: [Locating Multiple Ultrasound Targets in Chorus](papers/Secon14.pdf), （**SECON 2014**） (**CCF B**) 
-
-### **2. Intelligent Networking and Graph Algorithms Direction**
-
-•     Haoyu Liu, **Yongcai Wang\***, Xiaojia Xu, Deying Li: [Bottom-up k-Vertex Connected Component Enumeration by Multiple Extension](RIPPLE/RIPPLE.pdf), **ICDE** 2024, (**CCF A**) [![project](project1.jpg)](RIPPLE/RIPPLE.html)
-
-•     Qinhan Wei, **Yongcai Wang**, Deying Li: [EMI: An Efficient Algorithm for Identifying Maximal Rigid Clusters in 3D Generic Graphs](EMI/EMI.pdf). **IEEE/ACM Transactions on Networking** 32(1), 460-474, 2024, **(CCF A)** [![project](project1.jpg)](EMI/EMI.html)
-
-•     Zhixian Lei, Xuehan Ye, **Yongcai Wang\***, Deying Li, Jia Xu, [Efficient Online Model Adaptation by Incremental Simplex Tableau](papers/aaai-yc.pdf), **AAAI**, 2017,2161-2167 **(CCF A)**
 
 •     SUN Tian-Yuan, WANG Yong-Cai, LI De-Ying. [A Survey and Evaluation of Graph Realization Algorithms](papers/graph_realization_survey.pdf). *ACTA AUTOMATICA SINICA*, 2020, **46**(4): 613-630. 
 
@@ -133,21 +123,19 @@ Phone：010-82500901
 
 ## Teaching
 
--   ["Algorithm Design and Analysis II Honors Course,"![course](course.png)](http://123.56.110.195:8320/c/algorithm/6) 2021-present
+-   ["Algorithm Design and Analysis II Honors Course,"![course](course.png)](http://202.112.113.162/c/algorithm/6) 2021-present
 
 -   "Machine Perception: How do Autonomous Vehicles and Robots Perceive the World?" Freshman Seminar, 2023-present
 
--   ["Machine Perception,"![course](course.png)](http://123.56.110.195:8320/c/robot-perception/5) Graduate Professional Course, 2019-present
+-   ["Machine Perception,"![course](course.png)](http://202.112.113.162/c/robot-perception/5) Graduate Professional Course, 2019-present
 
 -   "Foundations of Machine Perception Technology," Undergraduate Elective Course, 2022-present
 
--   ["Operations Research Modeling and Algorithms," ![course](course.png)](http://123.56.110.195:8320/c/optimization/7) 2016-present
+-   ["Operations Research Modeling and Algorithms," ![course](course.png)](http://202.112.113.162/c/optimization/7) 2016-present
 
 -   "Graph Optimization and Graph SLAM," Short-Term Course
 
 -   "Ubiquitous Computing," 2016, 2017, 2018
-
-
 
 ## Projects
 
