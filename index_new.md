@@ -1,12 +1,10 @@
-## 王永才 [English Version](index_en.html)
+## [English Version](index_en.html)
 
-![0f9a54ed97c84e33adc9e78bfcc30304](0f9a54ed97c84e33adc9e78bfcc30304.png)
+<img src="https://p.ipic.vip/k6g5nr.png" align="left" />
 
-**王永才**，中国人民大学信息学院副教授，博士生导师， 2001年和2006年分别在清华大学自动化系获得本科和博士学位，2007-2009在NEC研究院任副研究员，2009-2015在清华大学交叉信息研究院任助理研究员，2014年在康奈尔大学做访问学者，是CCF智能机器人专委会执行委员，物联网专委会执行委员，CAAI认知与信息处理等专委会委员，DEDS专委会执行委员，**主要研究领域为智能体系统、Spatial AI、协同感知、SLAM、多目标定位追踪、物联网、网络优化方法、大图结构计算与挖掘等**，在国内外知名期刊和会议发表论文120余篇，已授权专利10余项。工作主要解决网络定位、SLAM问题后端图优化中抗稀疏抗噪声的高效鲁棒图优化方法，多机协同定位建图感知优化等问题。研究成果被应用于智能车、智能船、视觉目标检测与定位等领域。主持国家自然科学基金项目多项，国家科技支撑计划子课题，企业项目多项，**2021年由于海上目标定位工作获得交通运输部航海学会技术发明奖一等奖，2022年获得交通运输部航海学会科技进步二等奖。**
+**王永才**，中国人民大学信息学院副教授，博士生导师， 2001年和2006年分别在清华大学自动化系获得本科和博士学位，2007-2009在NEC研究院任副研究员，2009-2015在清华大学交叉信息研究院任助理研究员，2014年在康奈尔大学做访问学者，是CCF智能机器人专委会执行委员，物联网专委会执行委员，CAAI认知与信息处理等专委会委员，DEDS专委会执行委员，**主要研究领域为智能体系统、Spatial AI、协同感知、SLAM、物联网定位算法、大图结构计算与挖掘等**，在国内外知名期刊和会议发表论文120余篇，已授权专利10余项。工作主要解决网络定位、SLAM问题后端图优化中抗稀疏抗噪声的高效鲁棒图优化方法，多机协同定位建图感知优化等问题。研究成果被应用于智能车、智能船、视觉目标检测与定位等领域。主持国家自然科学基金项目多项，国家科技支撑计划子课题，企业项目多项，**2021年由于海上目标定位工作获得交通运输部航海学会技术发明奖一等奖，2022年获得交通运输部航海学会科技进步二等奖。**
 
 **DBLP**论文目录：https://dblp.org/pid/04/2124.html
-
-**Google Scholar**：https://scholar.google.com/citations?user=ZOHWbl8AAAAJ&hl=zh-CN
 
 Email: ycw@ruc.edu.cn
 
@@ -14,7 +12,7 @@ Phone: 010-82500901
 
 ## 主要研究方向
 
-• 智能体系统、**Spatial AI**、协同感知、**SLAM**、多目标定位追踪，物联网、网络优化算法。
+• 智能体系统、**Spatial AI**、协同感知、**SLAM**、物联网定位算法、大图结构计算与挖掘。
 
 ## 代表性论文
 
@@ -28,9 +26,9 @@ Phone: 010-82500901
 
 • Haoyu Liu, **Yongcai Wang\***, Xiaojia Xu, Deying Li: [Bottom-up k-Vertex Connected Component Enumeration by Multiple Extension](RIPPLE/RIPPLE.pdf), **ICDE** 2024, Utrecht Netherlands , May 13-17, 2024 (**CCF A**) [![project](project1.jpg)](RIPPLE/RIPPLE.html)
 
-•    Haodi Ping, **Yongcai Wang\***, Yu Zhang, Deying Li, Lihua Xie: Understanding Hidden Knowledge in Generic Graphs , in  **IEEE/ACM Transactions on Networking**, 2024. doi: [10.1109/TNET.2024.3364177](https://doi.org/10.1109/TNET.2024.3364177) **(CCF A)**
+•    Haodi Ping, **Yongcai Wang\***, Yu Zhang, Deying Li, Lihua Xie: [Understanding Hidden Knowledge in Generic Graphs](papers/Understanding.pdf) , in  **IEEE/ACM Transactions on Networking**, 2024. doi: [10.1109/TNET.2024.3364177](https://doi.org/10.1109/TNET.2024.3364177) **(CCF A)**
 
-• Shuo Wang, **Yongcai Wang\***, Xuewei Bai, Deying Li: Communication Efficient, Distributed Relative State Estimation in UAV Networks , in **IEEE Journal on Selected Area of Communications**, 2023. **doi:** [10.1109/JSAC.2023.3242708](https://doi.org/10.1109/JSAC.2023.3242708) **(CCF A)**
+• Shuo Wang, **Yongcai Wang\***, Xuewei Bai, Deying Li: [Communication Efficient, Distributed Relative State Estimation in UAV Networks](JSAC2023/JSAC2023Wang.pdf) , in **IEEE Journal on Selected Area of Communications**, 2023. **doi:** [10.1109/JSAC.2023.3242708](https://doi.org/10.1109/JSAC.2023.3242708) **(CCF A)**[![project](project1.jpg)](JSAC2023/JSAC2023Wang.html)
 
 • Haodi Ping, **Yongcai Wang\***, Deying Li and Wenping Chen: [Understanding Node Localizability in Barycentric Linear Localization](localizability/Understanding.pdf), in **IEEE/ACM Transactions on Networking**, 2022, doi: 10.1109/TNET.2022.3216204. **(CCF A)** [![project](project1.jpg)](localizability/localizability.html)
 
@@ -56,9 +54,9 @@ Phone: 010-82500901
 
 • 蔡旭东，**王永才***，白雪薇，李德英: [基于先验地图的视觉重定位方法综述](papers/relocalization_survey.pdf). 《软件学报》, 2024, 35(2): 975-1009，DOI: [10.13328/j.cnki.jos.006946](http://dx.doi.org/10.13328/j.cnki.jos.006946) (**CCF** **中文**A类) 
 
-• 殷晓航，**王永才***，李德英，[基于U-Net结构改进的医学影像分割技术综述](file:////Users/wangyongcai/Documents/[18]博客/论文介绍模板/papers/Unet_survey.pdf)，《软件学报》，2020，http://www.jos.org.cn/1000-9825/6104.htm (**CCF** **中文**A类)
+• 殷晓航，**王永才***，李德英，[基于U-Net结构改进的医学影像分割技术综述](papers/Unet_survey.pdf)，《软件学报》，2020，http://www.jos.org.cn/1000-9825/6104.htm (**CCF** **中文**A类)
 
-• 孙天元，**王永才***，李德英，[图实现算法综述与评测分析](file:////Users/wangyongcai/Documents/[18]博客/论文介绍模板/papers/graph_realization_survey.pdf)，《自动化学报》， 46(4)，613-630，2020，**doi:**  [10.16383/j.aas.2018.c170561](https://dx.doi.org/10.16383/j.aas.2018.c170561) (**CCF** **中文**A类)
+• 孙天元，**王永才***，李德英，[图实现算法综述与评测分析](papers/graph_realization_survey.pdf)，《自动化学报》， 46(4)，613-630，2020，**doi:**  [10.16383/j.aas.2018.c170561](https://dx.doi.org/10.16383/j.aas.2018.c170561) (**CCF** **中文**A类)
 
 • Hongyu Sun, **Yongcai Wang\***, Wang Chen, Haoran Deng, Deying Li, [Parameter-efficient Prompt Learning for 3D Point Cloud Understanding](ppt/ppt.pdf), **ICRA 2024**, Yokohama May 13th to 17th（**CCF B**) [![project](project1.jpg)](ppt/ppt.html)
 
