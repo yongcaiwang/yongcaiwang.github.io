@@ -1,8 +1,6 @@
+###### [English Version](index_en.html)<a  href="http://in.ruc.edu.cn"><img src="image-20240618081037241.png" alt="image-20240618072025070" align="right" height="60"/></a><a  href="http://info.ruc.edu.cn"><img src="f35ea009087b38036b60fbe5.jpeg" alt="image-20240618072025070" align="right" height="60" /></a><a  href="http://www.ruc.edu.cn"><img src="image-20240618072025070.png" alt="image-20240618072025070" align="right" height="60"></a>  
 
-
-​                                                                                     [English Version](index_en.html)       <a  href="http://www.ruc.edu.cn"><img src="image-20240618072025070.png" alt="image-20240618072025070" align="center" height="60"></a><a  href="http://info.ruc.edu.cn"><img src="f35ea009087b38036b60fbe5.jpeg" alt="image-20240618072025070" align="center" height="60" /> </a><a  href="http://in.ruc.edu.cn"><img src="image-20240618081037241.png" alt="image-20240618072025070" align="center" height="60"/></a>            
-
-<img src="k6g5nr-20240618072749426.png" align="left" />
+<img src="k6g5nr-20240618072749426.png" align="center" />
 
 **王永才**，中国人民大学信息学院副教授，博士生导师， 2001年和2006年分别在清华大学自动化系获得本科和博士学位，2007-2009在NEC研究院任副研究员，2009-2015在清华大学交叉信息研究院任助理研究员，2014年在康奈尔大学做访问学者，是CCF智能机器人专委会执行委员，物联网专委会执行委员，CAAI认知与信息处理等专委会委员，DEDS专委会执行委员，**主要研究领域为智能体系统、Spatial AI、协同感知、SLAM、物联网定位算法、大图结构计算与挖掘等**，在国内外知名期刊和会议发表论文120余篇，已授权专利10余项。工作主要解决网络定位、SLAM问题后端图优化中抗稀疏抗噪声的高效鲁棒图优化方法，多机协同定位建图感知优化等问题。研究成果被应用于智能车、智能船、视觉目标检测与定位等领域。主持国家自然科学基金项目多项，国家科技支撑计划子课题，企业项目多项，**2021年由于海上目标定位工作获得交通运输部航海学会技术发明奖一等奖，2022年获得交通运输部航海学会科技进步二等奖。**
 
