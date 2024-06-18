@@ -1,8 +1,6 @@
  
 
-##  [中文版](index.html)
-
-
+​                                                                                               [中文版](index.html)       <a  href="http://www.ruc.edu.cn"><img src="image-20240618072025070.png" alt="image-20240618072025070" align="center" height="60"></a><a  href="http://info.ruc.edu.cn"><img src="f35ea009087b38036b60fbe5.jpeg" alt="image-20240618072025070" align="center" height="60" /> </a><a  href="http://in.ruc.edu.cn"><img src="image-20240618081037241.png" alt="image-20240618072025070" align="center" height="60"/></a>  
 
 <img src="https://p.ipic.vip/k6g5nr.png" align="left" />
 
