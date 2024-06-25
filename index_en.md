@@ -5,8 +5,11 @@
 |  <img src="k6g5nr-20240618072749426.png" align="left" />    |  [中文版](index.html)    |
 | ---- | :--- |
 
+Yongcai Wang is an Associate Professor and doctoral supervisor in the Department of Computer Science at Renmin University of China. He obtained his bachelor's and doctoral degrees from the Department of Automation at Tsinghua University. Previously, he served as Deputy Researcher at NEC Research Institute and Assistant Researcher at the Institute of Interdisciplinary Information at Tsinghua University. He was also a visiting scholar at Cornell University.
 
-Wang Yongcai, Ph.D., Associate Professor in the Department of Computer Science at Renmin University of China, doctoral supervisor. He obtained his bachelor's and doctoral degrees from the Department of Automation at Tsinghua University in 2001 and 2006 respectively. From 2007 to 2009, he served as an associate researcher at the NEC Research Institute, and from 2009 to 2015, he worked as an assistant researcher at the Institute for Interdisciplinary Information Sciences at Tsinghua University. In 2014, he was a visiting scholar at Cornell University. He is an executive member of the CCF Intelligent Robotics Committee, the Internet of Things Committee, the CAAI Cognitive and Information Processing Committee, and the DEDS Committee. His main research areas include intelligent agent systems, Spatial AI, collaborative perception, SLAM, multi-target localization and tracking, Internet of Things, network optimization methods, large-scale graph computation and mining, etc. **He has published more than 100 papers in well-known journals and conferences at home and abroad, and has been granted more than 10 patents. His work mainly focuses on Intelligent agent systems, Spatial AI, collaborative perception, SLAM, multi-target localization and tracking, localization algorithms in Internet of Things,  large-scale graph structure computation and mining, etc.** His research results have been applied in fields such as intelligent vehicles, intelligent ships, visual target detection and localization. He has presided over multiple projects funded by the National Natural Science Foundation, sub-projects of the National Science and Technology Support Program, and enterprise projects. In 2021, he won the first prize of the Technical Invention Award of the Navigation Society of the Ministry of Transport for his work on maritime target localization, and in 2022, he won the second prize of the Scientific and Technological Progress Award of the Navigation Society of the Ministry of Transport.
+He holds positions as Executive Committee Member of the CCF Intelligent Robotics Committee, IoT Committee, and China Control Society DEDS Committee, as well as Committee Member of SIGBED China and CAAI Cognitive and Information Processing Committee. His primary research interests include intelligent systems, visual spatial computing, Spatial AI, collaborative perception, SLAM, and large-scale graph computation and mining. He has published over 120 papers in renowned domestic and international journals and conferences, including more than 50 CCF A and B class papers. His research findings have been applied in areas such as intelligent vehicles, smart ships, and visual target detection and localization.
+
+Wang Yongcai has led multiple projects funded by the National Natural Science Foundation of China, National Key Technology Support Program sub-projects, and various enterprise projects. In 2021, he received the First Prize of the Technology Invention Award from the Navigation Society of the Ministry of Transport for his work on maritime target localization, and in 2022, he was awarded the Second Prize of the Science and Technology Progress Award from the Navigation Society of the Ministry of Transport. His significant innovative achievements have been included in the results inventory of the Ministry of Transport. Additionally, he serves as a reviewer for prestigious journals and conferences such as NeurIPS, WWW, ACM MM, TON, and TMC.
 
 DBLP:   https://dblp.org/pid/04/2124.html
 
@@ -16,7 +19,22 @@ Phone：010-82500901
 
 ## Main Research Directions
 
--   Intelligent agent systems, Spatial AI, collaborative perception, SLAM, multi-target localization and tracking, Localization Algorithms in Internet of Things,  Large-scale graph structure computation and mining.
+• Intelligent agent systems
+• Visual spatial computing
+• Spatial AI
+• Collaborative perception
+• SLAM (Simultaneous Localization and Mapping)
+• Large-scale graph computation and mining
+
+## Student Admission Information 
+
+• **Student Types**: Research-oriented undergraduate early talent, Master's (both academic and professional), Direct Ph.D., Ph.D., and Engineering Ph.D.
+
+• **Requirement and Expectation**: Strong learning ability, proficient in English (listening, speaking, reading, writing), strong programming skills, self-driven, keen interest in the above-mentioned research directions, adept at independent thinking.
+
+• **Bonus Points**: Priority given to candidates with research paper publications, submissions, or significant competition awards.
+
+• **Contact**: Please feel free to send your resume or self-introduction to [ycw@ruc.edu.cn](mailto:ycw@ruc.edu.cn). I look forward to hear from you.
 
 ## Representative Publications
 
@@ -167,46 +185,50 @@ Phone：010-82500901
 
 ## Academic Service
 
-- Member of the Intelligent Robotics Committee, Chinese Association for Artificial Intelligence
-- Member of the DEDS Committee, Chinese Control and Decision Society
-- Member of the Youth Work Committee, Chinese Association for Artificial Intelligence
-- Member of the Chinese Computer Society
-- Program Committee Member for BDIOT 2020, 2021, 2022
-- Publicity Chair for ValueTools 2021
-- Guest Editor for Sensors (CCF C-class Journal)
-- Program Committee Member for ICNT2022
-- Program Committee Member for ICNCC2019 (International Conference on Networks, Communication and Computing 2019)
-- Program Committee Member for BDML2019 (International Conference on Big Data and Machine Learning 2019)
-- Session Chair for CASE 2016 and CASE 2017
-- Demo Session Chair for CWSN 2011
-- Program Committee Member for CWSN 2013
-- Program Committee Member for IThings 2013
+- Member, Intelligent Robotics Committee of the China Computer Federation (CCF) - [Link](https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCIR/)
+- Member, DEDS Committee of the China Control and Decision Society (CCDCS) - [Link](http://tcct.amss.ac.cn/)
+- Member, Youth Committee of the Chinese Association for Artificial Intelligence (CAAI) - [Link](https://www.caai.cn/)
+- Member, China Computer Federation (CCF) - [Link](https://www.ccf.org.cn/)
+- Publicity Chair, ValueTools 2021
+- Guest Editor, Sensors (CCF C class journal)
+- Program Committee Member, ICNT2022
+- Program Committee Member, International Conference on Networks, Communication and Computing 2019 (ICNCC2019)
+- Program Committee Member, International Conference on Big Data and Machine Learning 2019 (BDML2019)
+- Session Chair, IEEE Conference on Automation Science and Engineering (CASE) 2016
+- Session Chair, IEEE Conference on Automation Science and Engineering (CASE) 2017
+- Demo Session Chair, International Conference on Wireless Sensor Networks (CWSN) 2011
+- Program Committee Member, International Conference on Wireless Sensor Networks (CWSN) 2013
+- Program Committee Member, International Conference on Internet of Things (IThings) 2013
 - Reviewer for IEEE Transactions on Distributed Systems, ACM Transactions on Sensor Networks, Ad-hoc Sensor Wireless Networks, China Science F, IEEE Transactions on Signal Processing, CWSN, ICNSC, IThings, etc.
 
 ## Awards
 
+- 2024: Outstanding Master's Graduate Supervisor, Renmin University of China
+- 2023: Outstanding Party Member of the Faculty of Information, Renmin University of China
+- 2022: Advanced Individual in Scientific Research, Faculty of Information, Renmin University of China
 - 2022: Second Prize for Scientific and Technological Progress, China Navigation Society
-- 2021: First Prize for Technical Invention, China Navigation Society
-- 2020: Major Technological Innovation Achievement in Transportation by the Ministry of Transport, Achievement Number 2020LW043
+- 2021: First Prize for Technological Invention, China Navigation Society
+- 2020: Major Technological Innovation Achievement in Transportation by the Ministry of Transport, Achievement No. 2020LW043
 - 2020: Second Prize in the National Artificial Intelligence Teaching Practice Case Competition
-- 2020: Top 10 Class Advisers at Renmin University of China
+- 2020: Top 10 Class Advisors, Renmin University of China
+- 2019: Outstanding Master's Graduate Supervisor, Renmin University of China
+- 2019: Outstanding Class Advisor, Renmin University of China
+- 2019: Excellence in Undergraduate Teaching Award, Renmin University of China
 - 2019: Best Conference Presentation Award at ICNCC2019
-- 2019: Outstanding Graduate Student Supervisor at Renmin University of China
-- 2018: Advanced Individual in Scientific Research at the School of Information at Renmin University of China
-- 2011: Best Paper Award at CWSN (China Sensor Network Conference)
+- 2019: Outstanding Graduate Supervisor, Renmin University of China
+- 2018: Advanced Individual in Scientific Research, Faculty of Information, Renmin University of China
+- 2011: Best Paper Award at CWSN (China Wireless Sensor Networks Conference)
 - 2009: Best Paper Award at Ubicomm (International Conference on Ubiquitous Computing and Communications)
-- 2005: Outstanding Graduate at Tsinghua University, First-class Scholarship
-- 2004: Research Innovation Fund for Graduate Students at Tsinghua University
 
 ## Education and Work Background
 
-- 2015.08-present: Associate Professor, Department of Computer Science, Renmin University of China
-- 2014.02-2014.08: Visiting Scholar, Cornell University, USA
-- 2011.08-2015.08: Assistant Researcher, Institute for Interdisciplinary Information Sciences, Tsinghua University
-- 2009-2011: Postdoctoral Researcher, Institute for Interdisciplinary Information Sciences, Tsinghua University
-- 2006.12-2009.08: Associate Researcher, NEC Research Institute, China
-- 2001-2006: Ph.D., Tsinghua University
-- 1997-2001: Bachelor's Degree, Tsinghua University
+- [Department of Automation, Tsinghua University](https://www.au.tsinghua.edu.cn/) - Undergraduate
+- [Department of Automation, Tsinghua University](http://cfins.au.tsinghua.edu.cn/) - Direct Ph.D.
+- [NEC China Research Institute](https://cn.nec.com/zh_CN/research/research_areas/index.html) - Deputy Researcher
+- [Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University](http://iiis.tsinghua.edu.cn) - Postdoctoral Researcher
+- [Institute for Interdisciplinary Information Sciences (IIIS), Tsinghua University](http://iiis.tsinghua.edu.cn) - Assistant Researcher
+- [Cornell University, USA](http://www.cornell.edu) - Visiting Scholar
+- [School of Information, Renmin University of China](http://info.ruc.edu.cn/) - Associate Professor
 
 ## Hobbies
 
