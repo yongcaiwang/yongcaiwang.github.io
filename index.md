@@ -29,6 +29,14 @@ Phone: 010-82500901
 
 ## 代表性论文
 
+• Xiaojia Xu, Haoyu Liu, Xiaowei Lv, Yongcai Wang, Deying Li, [An Efficient and Exact Algorithm for Locally h-Clique Densest Subgraph Discovery](papers/SIGMOD2025.pdf), SIGMOD International Conference on Management of Data (2025)  ( **CCF A**) 
+
+• Zhe Huang, Shuo Wang, **Yongcai Wang***, Wanting Li, Deying Li, Lei Wang, [RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment](https://arxiv.org/html/2408.00257v1), ACM Multimedia 2024. (**Oral 3.97%， CCF A**) 
+
+• Shuo Wang, **Yongcai Wang***, Zhimin Xu, Yongyu Guo, Wanting Li, Zhe Huang, Xuewei Bai, Deying Li, [GSLAMOT: A Tracklet and Query Graph-based Simultaneous Locating, Mapping, and Multiple Object Tracking System]() ACM Multimedia 2024. (**CCF A**) 
+
+• Xuedong Cai, Yongcai Wang, Lun Luo, Minhang Wang, Deying Li, Jintao Xu, Weihao Gu, Rui Ai, [PRISM: PRogressive dependency maxImization for Scale-invariant image Matching](https://www.arxiv.org/abs/2408.03598), ACM Multimedia 2024. ( **CCF A**) 
+
 • Hualong Cao, **Yongcai Wang\***, Deying Li, [DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph](DMS/DMS.pdf), **IEEE Transactions on Visualization and Computer Graphics**, 2024. doi: [10.1109/TVCG.2024.3400822](https://doi.org/10.1109/TVCG.2024.3400822) **(CCF A)** [![project](project1.jpg)](DMS/DMS.html)
 
 • Hongyu Sun, **Yongcai Wang\***, Peng Wang, Haoran Deng, Xudong Cai and Deying Li: [VSFormer: Mining Correlations in Flexible View Set for Multi-view 3D Shape Understanding](vsformer/VSFormer.pdf), **IEEE Transactions on Visualization and Computer Graphics**, 2024. **doi:** [10.1109/TVCG.2024.3381152](https://doi.org/10.1109/TVCG.2024.3381152) **(CCF A)** [![project](project1.jpg)](vsformer/VSFormer.html)
