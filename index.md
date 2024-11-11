@@ -37,19 +37,35 @@ Phone: 010-82500901
 
 ## 代表性论文
 
-• Hongyu Sun, Qiuhong Ke, Yongcai Wang, Wang Chen, Kang Yang, Deying Li, Jianfei Cai, [A Prompt Learning Based Regulation Framework for Generalizable Point Cloud Analysis](papers/neurips2024/Point_PRC.pdf), NeurIPS 2024, Vancouver Convention Center, Canada Dec. 10 - Dec. 15  ( **CCF A**) , **codes**: https://github.com/auniquesun/Point-PRC, [**poster**](papers/neurips2024/Point_PRC_poster.pdf)
+#### **2024**
 
-• Xiaojia Xu, Haoyu Liu, Xiaowei Lv, Yongcai Wang, Deying Li, [An Efficient and Exact Algorithm for Locally h-Clique Densest Subgraph Discovery](papers/SIGMOD2025.pdf), SIGMOD International Conference on Management of Data (2025)  ( **CCF A**), **codes**:  https://github.com/Elssky/IPPV
+• Hongyu Sun, Qiuhong Ke, **Yongcai Wang***, Wang Chen, Kang Yang, Deying Li, Jianfei Cai, [A Prompt Learning Based Regulation Framework for Generalizable Point Cloud Analysis](papers/neurips2024/Point_PRC.pdf), NeurIPS 2024, Vancouver Convention Center, Canada Dec. 10 - Dec. 15  ( **CCF A**) , **codes**: https://github.com/auniquesun/Point-PRC, [**poster**](papers/neurips2024/Point_PRC_poster.pdf)
+
+• Xiaojia Xu, Haoyu Liu, Xiaowei Lv, **Yongcai Wang***, Deying Li, [An Efficient and Exact Algorithm for Locally h-Clique Densest Subgraph Discovery](papers/SIGMOD2025.pdf), SIGMOD International Conference on Management of Data (2025)  ( **CCF A**), **codes**:  https://github.com/Elssky/IPPV
 
 • Zhe Huang, Shuo Wang, **Yongcai Wang***, Wanting Li, Deying Li, Lei Wang, [RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment](https://arxiv.org/html/2408.00257v1), ACM Multimedia 2024. (**Oral 3.97%， CCF A**), **codes**: https://github.com/HuangZhe885/RoCo
 
 • Shuo Wang, **Yongcai Wang***, Zhimin Xu, Yongyu Guo, Wanting Li, Zhe Huang, Xuewei Bai, Deying Li, [GSLAMOT: A Tracklet and Query Graph-based Simultaneous Locating, Mapping, and Multiple Object Tracking System]() ACM Multimedia 2024. (**CCF A**) , **codes**: https://github.com/markinruc/GSLAMOT
 
-• Xuedong Cai, Yongcai Wang, Lun Luo, Minhang Wang, Deying Li, Jintao Xu, Weihao Gu, Rui Ai, [PRISM: PRogressive dependency maxImization for Scale-invariant image Matching](https://www.arxiv.org/abs/2408.03598), ACM Multimedia 2024. ( **CCF A**), **codes**: https://github.com/Master-cai/PRISM
+• Xuedong Cai, **Yongcai Wang***, Lun Luo, Minhang Wang, Deying Li, Jintao Xu, Weihao Gu, Rui Ai, [PRISM: PRogressive dependency maxImization for Scale-invariant image Matching](https://www.arxiv.org/abs/2408.03598), ACM Multimedia 2024. ( **CCF A**), **codes**: https://github.com/Master-cai/PRISM
+
+• Xudong Cai，**Yongcai Wang***，Xuewei Bai，Deying Li: [Survey on Visual Relocalization in Prior Map](papers/relocalization_survey.pdf).  **Journal of Software**, 2024, 35(2): 975-1009，DOI: [10.13328/j.cnki.jos.006946](http://dx.doi.org/10.13328/j.cnki.jos.006946)   (**CCF A**, in Chinese)
 
 • Hualong Cao, **Yongcai Wang\***, Deying Li, [DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph](DMS/DMS.pdf), **IEEE Transactions on Visualization and Computer Graphics**, 2024. doi: [10.1109/TVCG.2024.3400822](https://doi.org/10.1109/TVCG.2024.3400822) **(CCF A)** [![project](project1.jpg)](DMS/DMS.html)
 
 • Hongyu Sun, **Yongcai Wang\***, Peng Wang, Haoran Deng, Xudong Cai and Deying Li: [VSFormer: Mining Correlations in Flexible View Set for Multi-view 3D Shape Understanding](vsformer/VSFormer.pdf), **IEEE Transactions on Visualization and Computer Graphics**, 2024. **doi:** [10.1109/TVCG.2024.3381152](https://doi.org/10.1109/TVCG.2024.3381152) **(CCF A)** [![project](project1.jpg)](vsformer/VSFormer.html)
+
+• Hongyu Sun, **Yongcai Wang\***, Wang Chen, Haoran Deng, Deying Li, [Parameter-efficient Prompt Learning for 3D Point Cloud Understanding](ppt/ppt.pdf), **ICRA 2024**, Yokohama May 13th to 17th（**CCF B**) [![project](project1.jpg)](ppt/ppt.html)
+
+• Peng Wang, **Yongcai Wang\***, Deying Li, [DroneMOT: Drone-based Multi-Object Tracking Considering Detection Difficulties and Simultaneous Moving of Drones and Objects](DroneMOT/DroneMOT.html), **ICRA 2024**, Yokohama, Japan, May 13-17, 2024（**CCF B**) 
+
+• Xudong Cai, **Yongcai Wang\***, Zhe Huang, Yu Shao, Deying Li, [VOLoc: Visual Place Recognition by Querying Compressed Lidar Map](VOLoc/VOLoc.pdf), **ICRA 2024**, Yokohama May 13th to 17th（**CCF B**) [![project](project1.jpg)](VOLoc/VOLoc.html)
+
+• Xuewei Bai, **Yongcai Wang\***, Haodi Pin, Xiaojia Xu, Deying Li, Shuo Wang: [InferLoc: Hypothesis-Based Joint Edge Inference and Localization in Sparse Sensor Networks](papers/InferLoc.pdf). **ACM Trans. Sens. Networks** 20(1): 8:1-8:28 (2024)（**CCF B**)
+
+
+
+#### 2023 
 
 • Wanting Li, **Yongcai Wang\***, Yongyu Guo, Shuo Wang, Yu Shao, Xuewei Bai, Xudong Cai, Qiang Ye, Deying Li: [ColSLAM: A Versatile Collaborative SLAM System for Mobile Phones Using Point-Line Features and Map Caching](colslam/ColSLAM.pdf). **ACM Multimedia**, 2023, 9032-9041 https://doi.org/10.1145/3581783.3611995 **(CCF A)**  [![project](project1.jpg)](colslam/ColSLAM.html)
 
@@ -62,40 +78,6 @@ Phone: 010-82500901
 • Shuo Wang, **Yongcai Wang\***, Xuewei Bai, Deying Li: [Communication Efficient, Distributed Relative State Estimation in UAV Networks](JSAC2023/JSAC2023Wang.pdf) , in **IEEE Journal on Selected Area of Communications**, 2023. **doi:** [10.1109/JSAC.2023.3242708](https://doi.org/10.1109/JSAC.2023.3242708) **(CCF A)**[![project](project1.jpg)](JSAC2023/JSAC2023Wang.html)
 
 • Haodi Ping, **Yongcai Wang\***, Deying Li and Wenping Chen: [Understanding Node Localizability in Barycentric Linear Localization](localizability/Understanding.pdf), in **IEEE/ACM Transactions on Networking**, 2022, doi: 10.1109/TNET.2022.3216204. **(CCF A)** [![project](project1.jpg)](localizability/localizability.html)
-
-• Haodi Wang, **Yongcai Wang\***, Deying Li, Tianyuan Sun: [Flipping Free Conditions and Their Application in Sparse Network Localization](flippingfree/flippingfree.pdf), **IEEE Trans. on Mobile Computing**, 2022, Vol.21, No.3, 986-1003, **doi:** [10.1109/TMC.2020.3015480](https://doi.org/10.1109/TMC.2020.3015480) **(CCF A)** [![project](project1.jpg)](flippingfree/flippingfree.html)
-
-• Chuanwen Luo, Deying Li, **Yongcai Wang** , Wenping Chen, Weili Wu: [Fine-grained Trajectory Optimization of Multiple UAVs for Efficient Data Gathering from WSNs](finegrained/Fine-Grained.pdf), **IEEE/ACM Transactions on Networking**.2021, Vol.29, No.1, 162-175, **doi:** [10.1109/TNET.2020.3027555](https://doi.org/10.1109/TNET.2020.3027555) **(CCF A)**
-
-• Zhixian Lei, Xuehan Ye, **Yongcai Wang\***, Deying Li, Jia Xu, [Efficient Online Model Adaptation by Incremental Simplex Tableau](papers/aaai-yc.pdf), **AAAI**, 2017,2161-2167, San Francisco, California, USA **(CCF A)**
-
-• Xuehan Ye, Shuo Huang, **Yongcai Wang\***, Wenping Chen, Deying Li: [Unsupervised Localization by Learning Transition Model](papers/unsupervised_localization.pdf). **IMWUT** 3(2): 65:1-65:23 (2019) https://doi.org/10.1145/3328936 **(CCF A)**
-
-• **Yongcai Wang\***, Tianyuan Sun, Guoyao Rao, Deying Li., [Formation Tracking in Sparse Airborne Networks](papers/jsac.pdf), **IEEE Journal on Selected Areas in Communications** **(JSAC)** 2018, Vol. 36, No.9, 2000-2014, **doi:**  [10.1109/JSAC.2018.2864374](https://doi.org/10.1109/JSAC.2018.2864374) **(CCF A)**
-
-• Tianyuan Sun, **Yongcai Wang\***, Deying Li, Zhaoquan Gu, Jia Xu., [WCS: Weighted Component Stitching for Sparse Network Localization](papers/wcs.pdf), **ACM/IEEE Transactions on Networking (TON)**, 2018, Volume: 26 , Issue: 5 , Oct. 2018. **doi:** [10.1109/TNET.2018.2866597](https://doi.org/10.1109/TNET.2018.2866597)**（CCF A**）
-
-• Xuehan Ye, **Yongcai Wang\***, Yuhe Guo, Wei Hu, Deying Li, [Accurate and Efficient Indoor Location by Dynamic Warping in Sequence Type Radio-map](papers/Ye-Ubicomp18.pdf), **Ubicomp**, Oct. 2018, Singapore. https://doi.org/10.1145/3191782**（CCF A**）
-
-• **Yongcai Wang\***, Lei Song, S.S. Iyengar, [An Efficient Technique for Locating Multiple Narrow-band Ultrasound Targets in Chorus Mode](papers/chorus.pdf), **IEEE Journal on Selected Areas in Communications** **(JSAC)** , Vol. 33, No. 11, 2343 - 2356, 2015, **doi:**  [10.1109/JSAC.2015.2441379](https://doi.org/10.1109/JSAC.2015.2441379) **(CCF A)**
-
-• Xiaohong Hao, Bangsheng Tang, **Yongcai Wang\***, [On the Balance of Meter Deployment Cost and NILM Accuracy](papers/ijcai.pdf). **IJCAI**, 2015, Buenos Aires, Argentina, 2603–2609, **(CCF A)**
-
-• Xiao Qi, **Yongcai Wang\***, Yuexuan Wang, Liwen Xu, [Compressive Sensing over Strongly Connected Digraph and Its Application in Traffic Monitoring](papers/Compressive_sensing.pdf), **INFOCOM**, Toronto, ON, Canada, 2014 **(CCF A)**
-
-• 蔡旭东，**王永才***，白雪薇，李德英: [基于先验地图的视觉重定位方法综述](papers/relocalization_survey.pdf). 《软件学报》, 2024, 35(2): 975-1009，DOI: [10.13328/j.cnki.jos.006946](http://dx.doi.org/10.13328/j.cnki.jos.006946) (**CCF** **中文**A类) 
-
-• 殷晓航，**王永才***，李德英，[基于U-Net结构改进的医学影像分割技术综述](papers/Unet_survey.pdf)，《软件学报》，2020，http://www.jos.org.cn/1000-9825/6104.htm (**CCF** **中文**A类)
-
-• 孙天元，**王永才***，李德英，[图实现算法综述与评测分析](papers/graph_realization_survey.pdf)，《自动化学报》， 46(4)，613-630，2020，**doi:**  [10.16383/j.aas.2018.c170561](https://dx.doi.org/10.16383/j.aas.2018.c170561) (**CCF** **中文**A类)
-
-• Hongyu Sun, **Yongcai Wang\***, Wang Chen, Haoran Deng, Deying Li, [Parameter-efficient Prompt Learning for 3D Point Cloud Understanding](ppt/ppt.pdf), **ICRA 2024**, Yokohama May 13th to 17th（**CCF B**) [![project](project1.jpg)](ppt/ppt.html)
-
-• Peng Wang, **Yongcai Wang\***, Deying Li, [DroneMOT: Drone-based Multi-Object Tracking Considering Detection Difficulties and Simultaneous Moving of Drones and Objects](DroneMOT/DroneMOT.html), **ICRA 2024**, Yokohama, Japan, May 13-17, 2024（**CCF B**) 
-
-• Xudong Cai, **Yongcai Wang\***, Zhe Huang, Yu Shao, Deying Li, [VOLoc: Visual Place Recognition by Querying Compressed Lidar Map](VOLoc/VOLoc.pdf), **ICRA 2024**, Yokohama May 13th to 17th（**CCF B**) [![project](project1.jpg)](VOLoc/VOLoc.html)
-
-• Xuewei Bai, **Yongcai Wang\***, Haodi Pin, Xiaojia Xu, Deying Li, Shuo Wang: [InferLoc: Hypothesis-Based Joint Edge Inference and Localization in Sparse Sensor Networks](papers/InferLoc.pdf). **ACM Trans. Sens. Networks** 20(1): 8:1-8:28 (2024)（**CCF B**)
 
 • Hongyu Sun, **Yongcai Wang\***, Xudong Cai, Xuewei Bai, Deying Li: [ViPFormer: Efficient Vision-and-Pointcloud Transformer for Unsupervised Pointcloud Understanding](vipformer/vipformer.pdf). **ICRA 2023**: 7234-7242 （CCF B) [![project](project1.jpg)](vipformer/vipformer.html)
 
@@ -114,6 +96,12 @@ Phone: 010-82500901
 • Haodi Ping, **Yongcai Wang\***, Xingfa Shen, Deying Li, Wenping Chen:
  [On Node Localizability Identification in Barycentric Linear Localization](papers/Node_Localizability.pdf). **ACM Trans. Sens. Networks** 19(1): 19:1-19:26 (2023)（**CCF B**)
 
+
+
+#### 2022 
+
+• Haodi Wang, **Yongcai Wang\***, Deying Li, Tianyuan Sun: [Flipping Free Conditions and Their Application in Sparse Network Localization](flippingfree/flippingfree.pdf), **IEEE Trans. on Mobile Computing**, 2022, Vol.21, No.3, 986-1003, **doi:** [10.1109/TMC.2020.3015480](https://doi.org/10.1109/TMC.2020.3015480) **(CCF A)** [![project](project1.jpg)](flippingfree/flippingfree.html)
+
 • Guoyao Rao, **YongcaiWang**, Wenping Chen, Deying Li, Weili Wu: [Union acceptable profit maximization in social networks](papers/Rao_TCS.pdf). **Theor. Comput. Sci.** 917: 107-121 (2022)（CCF B）
 
 • Xiujuan Zhang, **YongcaiWang**, Deying Li, Wenping Chen, Xingjian Ding: [Self-stabilizing spanner topology control solutions in wireless ad hoc networks](papers/ZhangTCS22.pdf). **Theor. Comput. Sci.** 922: 395-409 (2022)（**CCF B**）
@@ -122,15 +110,41 @@ Phone: 010-82500901
 
 • Xingfa Shen, Chuang Li, Weijie Chen, **YongcaiWang**, Quanbo Ge: [Transition Model-driven Unsupervised Localization Framework Based on Crowd-sensed Trajectory Data](papers/TOSN_2022_Shen.pdf). **ACM Trans. Sens. Networks** 18(2): 26:1-26:21 (2022)（**CCF B**)
 
+
+
+#### 2021 and Before
+
+• Chuanwen Luo, Deying Li, **Yongcai Wang** , Wenping Chen, Weili Wu: [Fine-grained Trajectory Optimization of Multiple UAVs for Efficient Data Gathering from WSNs](finegrained/Fine-Grained.pdf), **IEEE/ACM Transactions on Networking**.2021, Vol.29, No.1, 162-175, **doi:** [10.1109/TNET.2020.3027555](https://doi.org/10.1109/TNET.2020.3027555) **(CCF A)**
+
 • Ruidong Yan, Yi Li, Deying Li, **Yongcai Wang**, Yuqing Zhu, Weili Wu: [A Stochastic Algorithm Based on Reverse Sampling Technique to Fight Against the Cyberbullying](TKDD_2021_Yan.pdf). **ACM Trans. Knowl. Discov. Data** 15(4): 71:1-71:22 (2021)（**CCF B**)
 
 • Guoyao Rao, **Yongcai Wang**, Wenping Chen, Deying Li, Weili Wu: [Matching influence maximization in social networks](papers/Matching_influence_maximization.pdf). **Theor. Comput. Sci.** 857: 71-86 (2021)（**CCF B**）
+
+• Xiaohang Yin，**Yongcai Wang***，Deying Li，[Suvery of Medical Image Segmentation Technology Based on U-Net Structure Improvement](papers/Unet_survey.pdf)，**Journal of Software**，2020，http://www.jos.org.cn/1000-9825/6104.htm  (**CCF A**, in Chinese)
+
+• Tianyuan Sun，**Yongcai Wang***，Deying Li，[A Survey and Evaluation of Graph Realization Algorithms](papers/graph_realization_survey.pdf)，***ACTA AUTOMATICA SINICA***， 46(4)，613-630，2020，**doi:**  [10.16383/j.aas.2018.c170561](https://dx.doi.org/10.16383/j.aas.2018.c170561)  (**CCF A**, in Chinese)
 
 • Xingjian Ding, **Yongcai Wang**, Guodong Sun, Chuanwen Luo, Deying Li, Wenping Chen, Qian Hu: [Optimal charger placement for wireless power transfer](papers/CN-Ding-2020.pdf). **Comput. Networks** 170: 107123 (2020) (**CCF B**)
 
 • Xingjian Ding, Wenping Chen, **Yongcai Wang**, Deying Li, Yi Hong: [Efficient scheduling of a mobile charger in large-scale sensor networks](papers/tcs-DING-2020.pdf). **Theor. Comput. Sci.** 840: 219-233 (2020) （**CCF B**）
 
+• Xuehan Ye, Shuo Huang, **Yongcai Wang\***, Wenping Chen, Deying Li: [Unsupervised Localization by Learning Transition Model](papers/unsupervised_localization.pdf). **IMWUT** 3(2): 65:1-65:23 (2019) https://doi.org/10.1145/3328936 **(CCF A)**
+
 • Ruidong Yan, Yi Li, Weili Wu, Deying Li, **Yongcai Wang**: [Rumor Blocking through Online Link Deletion on Social Networks](papers/1-TKDD-yan-2019.pdf). **TKDD** 13 (2): 16:1-16:26 (2019) (**CCF B**)
+
+• **Yongcai Wang\***, Tianyuan Sun, Guoyao Rao, Deying Li., [Formation Tracking in Sparse Airborne Networks](papers/jsac.pdf), **IEEE Journal on Selected Areas in Communications** **(JSAC)** 2018, Vol. 36, No.9, 2000-2014, **doi:**  [10.1109/JSAC.2018.2864374](https://doi.org/10.1109/JSAC.2018.2864374) **(CCF A)**
+
+• Tianyuan Sun, **Yongcai Wang\***, Deying Li, Zhaoquan Gu, Jia Xu., [WCS: Weighted Component Stitching for Sparse Network Localization](papers/wcs.pdf), **ACM/IEEE Transactions on Networking (TON)**, 2018, Volume: 26 , Issue: 5 , Oct. 2018. **doi:** [10.1109/TNET.2018.2866597](https://doi.org/10.1109/TNET.2018.2866597)**（CCF A**）
+
+• Xuehan Ye, **Yongcai Wang\***, Yuhe Guo, Wei Hu, Deying Li, [Accurate and Efficient Indoor Location by Dynamic Warping in Sequence Type Radio-map](papers/Ye-Ubicomp18.pdf), **Ubicomp**, Oct. 2018, Singapore. https://doi.org/10.1145/3191782**（CCF A**）
+
+• Zhixian Lei, Xuehan Ye, **Yongcai Wang\***, Deying Li, Jia Xu, [Efficient Online Model Adaptation by Incremental Simplex Tableau](papers/aaai-yc.pdf), **AAAI**, 2017,2161-2167, San Francisco, California, USA **(CCF A)**
+
+• **Yongcai Wang\***, Lei Song, S.S. Iyengar, [An Efficient Technique for Locating Multiple Narrow-band Ultrasound Targets in Chorus Mode](papers/chorus.pdf), **IEEE Journal on Selected Areas in Communications** **(JSAC)** , Vol. 33, No. 11, 2343 - 2356, 2015, **doi:**  [10.1109/JSAC.2015.2441379](https://doi.org/10.1109/JSAC.2015.2441379) **(CCF A)**
+
+• Xiaohong Hao, Bangsheng Tang, **Yongcai Wang\***, [On the Balance of Meter Deployment Cost and NILM Accuracy](papers/ijcai.pdf). **IJCAI**, 2015, Buenos Aires, Argentina, 2603–2609, **(CCF A)**
+
+• Xiao Qi, **Yongcai Wang\***, Yuexuan Wang, Liwen Xu, [Compressive Sensing over Strongly Connected Digraph and Its Application in Traffic Monitoring](papers/Compressive_sensing.pdf), **INFOCOM**, Toronto, ON, Canada, 2014 **(CCF A)**
 
 • **Yongcai Wang\***, Haisheng Tan, Distributed probabilistic routing for sensor network lifetime optimization. **Wireless Networks** 22(3): 975-989 (2016) (**CCF B**)
 
@@ -152,13 +166,9 @@ Phone: 010-82500901
 
 ## 教学
 
+[《机器感知》![image-20240604203108428](image-20240604203108428.png)](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)，研究生专业课，2019-至今
+
 [《算法设计与分析II荣誉课程》![image-20240604203100911](image-20240604203100911.png)](http://123.56.110.195:8320/c/algorithm/6), 2021-至今 
-
-《机器感知：无人车和机器人是如何感知世界的？》新生研讨课，2023-至今
-
-[《机器感知》![image-20240604203108428](image-20240604203108428.png)](http://123.56.110.195:8320/c/robot-perception/5)，研究生专业课，2019-至今
-
-《机器感知技术基础》，本科生选修课，2022-至今
 
 [《运筹学建模与算法》![image-20240604203112498](image-20240604203112498.png)](http://123.56.110.195:8320/c/optimization/7)，2016-至今
 
