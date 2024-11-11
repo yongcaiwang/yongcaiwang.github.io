@@ -26,6 +26,14 @@ Phone：010-82500901
 • SLAM (Simultaneous Localization and Mapping)
 • Large-scale graph computation and mining
 
+## News 
+
+-   Hongyu Sun and Haoyu Liu [win National Scholarship](http://info.ruc.edu.cn/xwgg/xygg/3ecb6d7b5ee748779d4097f78230592c.htm), Congratulations🎉. ⏱2024. 11. 8. 
+-   [NeurIPS 2024](papers/neurips2024/Point_PRC.pdf) +1, Congratulations to Hongyu🎉.  ⏱2024.09.26
+-   [SIGMOD 2025](papers/SIGMOD2025.pdf) +1, Congratulations to Xiaojia and Haoyu🎉. ⏱2024.08.02
+-   [ACM Multimedia 2024](https://2024.acmmm.org)  +3, Congratulations to Zhe Huang, Shuo Wang, and Xudong🎉.  ⏱2024.07.26
+-   [RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment](https://arxiv.org/html/2408.00257v1) is selected as ACM Multimedia 2024 Oral 3.97%, Congratulaitons to Zhe Huang, 🎉, 2024.07.26
+
 ## Student Admission Information 
 
 • **Student Types**: Research-oriented undergraduate early talent, Master's (both academic and professional), Direct Ph.D., Ph.D., and Engineering Ph.D.
@@ -38,13 +46,15 @@ Phone：010-82500901
 
 ## Representative Publications
 
-• Xiaojia Xu, Haoyu Liu, Xiaowei Lv, Yongcai Wang, Deying Li, [An Efficient and Exact Algorithm for Locally h-Clique Densest Subgraph Discovery](papers/SIGMOD2025.pdf), SIGMOD International Conference on Management of Data (2025)  ( **CCF A**) 
+• Hongyu Sun, Qiuhong Ke, Yongcai Wang, Wang Chen, Kang Yang, Deying Li, Jianfei Cai, [A Prompt Learning Based Regulation Framework for Generalizable Point Cloud Analysis](papers/neurips2024/Point_PRC.pdf), NeurIPS 2024, Vancouver Convention Center, Canada Dec. 10 - Dec. 15  ( **CCF A**) , **codes**: https://github.com/auniquesun/Point-PRC, [**poster**](papers/neurips2024/Point_PRC_poster.pdf)
 
-• Zhe Huang, Shuo Wang, **Yongcai Wang***, Wanting Li, Deying Li, Lei Wang, [RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment](https://arxiv.org/html/2408.00257v1), ACM Multimedia 2024. (**Oral 3.97%， CCF A**) 
+• Xiaojia Xu, Haoyu Liu, Xiaowei Lv, Yongcai Wang, Deying Li, [An Efficient and Exact Algorithm for Locally h-Clique Densest Subgraph Discovery](papers/SIGMOD2025.pdf), SIGMOD International Conference on Management of Data (2025)  ( **CCF A**), **codes**:  https://github.com/Elssky/IPPV
 
-• Shuo Wang, **Yongcai Wang***, Zhimin Xu, Yongyu Guo, Wanting Li, Zhe Huang, Xuewei Bai, Deying Li, [GSLAMOT: A Tracklet and Query Graph-based Simultaneous Locating, Mapping, and Multiple Object Tracking System]() ACM Multimedia 2024. (**CCF A**) 
+• Zhe Huang, Shuo Wang, **Yongcai Wang***, Wanting Li, Deying Li, Lei Wang, [RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment](https://arxiv.org/html/2408.00257v1), ACM Multimedia 2024. (**Oral 3.97%， CCF A**), **codes**: https://github.com/HuangZhe885/RoCo
 
-• Xuedong Cai, Yongcai Wang, Lun Luo, Minhang Wang, Deying Li, Jintao Xu, Weihao Gu, Rui Ai, [PRISM: PRogressive dependency maxImization for Scale-invariant image Matching](https://www.arxiv.org/abs/2408.03598), ACM Multimedia 2024. ( **CCF A**) 
+• Shuo Wang, **Yongcai Wang***, Zhimin Xu, Yongyu Guo, Wanting Li, Zhe Huang, Xuewei Bai, Deying Li, [GSLAMOT: A Tracklet and Query Graph-based Simultaneous Locating, Mapping, and Multiple Object Tracking System]() ACM Multimedia 2024. (**CCF A**) , **codes**: https://github.com/markinruc/GSLAMOT
+
+• Xuedong Cai, Yongcai Wang, Lun Luo, Minhang Wang, Deying Li, Jintao Xu, Weihao Gu, Rui Ai, [PRISM: PRogressive dependency maxImization for Scale-invariant image Matching](https://www.arxiv.org/abs/2408.03598), ACM Multimedia 2024. ( **CCF A**), **codes**: https://github.com/Master-cai/PRISM
 
 • Hualong Cao, **Yongcai Wang\***, Deying Li, [DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph](DMS/DMS.pdf), **IEEE Transactions on Visualization and Computer Graphics**, 2024. doi: [10.1109/TVCG.2024.3400822](https://doi.org/10.1109/TVCG.2024.3400822) **(CCF A)** [![project](project1.jpg)](DMS/DMS.html)
 
