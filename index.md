@@ -17,7 +17,7 @@ Phone: 010-82500901
 
 -   ==**NEW**:==  近期报告. 
 
-    >   ⏱2024. 10. 28. [视觉里程计从图优化到深度学习优化的发展](report/VIO_from_graph_to_deep_learning.pdf), 中国自动化学会DEDS专委会大会报告
+    >   ⏱2024. 10. 28. [视觉里程计从图优化到深度学习优化的发展](report/VIO_from_graph_to_deep_learning.pdf), 中国自动化学会DEDS专委会报告
     >
     >   ⏱2024. 08. 02.[无人机MOT与多机协同感知相关工作介绍](report/MOT and Collaborative Perception.pdf), 华为北研所报告
     >
@@ -50,13 +50,13 @@ Phone: 010-82500901
 
 ## 教学
 
-《机器感知》，研究生专业课，2019-至今
+**《机器感知》**，研究生专业课，2019-至今
 
--    [飞书共享文档：课程资料、习题、必读论文、推荐论文等](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)
+>   [飞书共享文档：课程资料、习题、必读论文、推荐论文等](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)
 
-《算法设计与分析II荣誉课程》，本科生必修课，2021-至今 
+**《算法设计与分析II荣誉课程》**，本科生必修课，2021-至今 
 
--   [在线视频课程发布在腾讯创新平台![image-20241201121533173](image-20241201121533173.png)](https://url.v.tencent.com/WchOIaoU)
+>   [在线视频课程发布在腾讯创新平台![image-20241201121533173](image-20241201121533173.png)](https://url.v.tencent.com/WchOIaoU)
 
 [《运筹学建模与算法》![image-20240604203112498](image-20240604203112498.png)](http://123.56.110.195:8320/c/optimization/7)，2016-至今
 

@@ -52,10 +52,12 @@ Phone：010-82500901
 ## Teaching
 
 -   ["Machine Perception"](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home) , Graduate Professional Course 
-    -    [Course materials, including lecture notes、assignments、must read papers、recommended papers on FeiShu](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)
-
+    
+    >   [Course materials, including lecture notes、assignments、must read papers、recommended papers on FeiShu](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)
+    
 -   ["Algorithm Design and Analysis II Honors Course"](https://url.v.tencent.com/WchOIaoU ), Undergraduate Course
-    -   [Online Course on Tencent Intelligent Creation Platform![image-20241201121533173](image-20241201121533173.png)](https://url.v.tencent.com/WchOIaoU)
+    
+    >   [Online Course on Tencent Intelligent Creation Platform![image-20241201121533173](image-20241201121533173.png)](https://url.v.tencent.com/WchOIaoU)
 -   ["Operations Research Modeling and Algorithms," ![course](course.png)](http://202.112.113.162/c/optimization/7), Undergraduate Course
 -   "Graph Optimization and Graph SLAM," Short-Term Course
 -   "Ubiquitous Computing," 2016, 2017, 2018
