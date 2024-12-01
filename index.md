@@ -2,7 +2,7 @@
 
 
 
-|  <img src="k6g5nr-20240618072749426.png" align="left" />    |  [English Version](index_en.html)   |
+|  <img src="k6g5nr-20240618072749426.png" align="left" />    |  [English Version](index.html)   |
 | ---- | ---: |
 
 王永才，中国人民大学计算机系副教授，博士生导师，中国人民大学计算机系副系主任、中国人民大学信息学院科研与学科建设工委主任。他本科、博士均毕业与清华大学自动化系，师从郑大钟和赵千川教授，是CCF智能机器人专委会执行委员、物联网专委会执行委员、中国控制学会DEDS专委会执行委员、SIGBED  China专委、CAAI认知与信息处理等专委会委员，主要研究领域为**智能体系统、视觉空间计算、Spatial AI、协同感知、SLAM、大图结构计算与挖掘**，在国内外知名期刊和会议发表论文120余篇，其中**CCF A，B类论文50余篇**。研究成果被应用于智能车、智能船、视觉目标检测与定位等领域。主持国家自然科学基金项目多项，国家科技支撑计划子课题，企业项目多项，**2021年由于海上目标定位工作获得交通运输部航海学会技术发明奖一等奖，2022年获得交通运输部航海学会科技进步二等奖，交通运输部重大创新成果入库成果奖**。担任NuerIPS, WWW, ACM MM, TON, TMC等知名期刊和会议审稿人。
@@ -15,11 +15,54 @@ Phone: 010-82500901
 
 ## 新闻 
 
--   Hongyu Sun and Haoyu Liu [win National Scholarship](http://info.ruc.edu.cn/xwgg/xygg/3ecb6d7b5ee748779d4097f78230592c.htm), Congratulations🎉. ⏱2024. 11. 8. 
--   [NeurIPS 2024](papers/neurips2024/Point_PRC.pdf) +1, Congratulations to Hongyu🎉.  ⏱2024.09.26
--   [SIGMOD 2025](papers/SIGMOD2025.pdf) +1, Congratulations to Xiaojia and Haoyu🎉. ⏱2024.08.02
--   [ACM Multimedia 2024](https://2024.acmmm.org)  +3, Congratulations to Zhe Huang, Shuo Wang, and Xudong🎉.  ⏱2024.07.26
--   [RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment](https://arxiv.org/html/2408.00257v1) is selected as ACM Multimedia 2024 Oral 3.97%, Congratulaitons to Zhe Huang, 🎉, 2024.07.26
+-   ==**NEW**:==  近期报告. 
+
+    >   ⏱2024. 10. 28. [视觉里程计从图优化到深度学习优化的发展](report/VIO_from_graph_to_deep_learning.pdf), 中国自动化学会DEDS专委会大会报告
+    >
+    >   ⏱2024. 08. 02.[无人机MOT与多机协同感知相关工作介绍](report/MOT and Collaborative Perception.pdf), 华为北研所报告
+    >
+    >   ⏱2024. 07. 09. [多智能体协同SLAM的后端图优化关键问题研究](report/多智能体协同SLAM的后端图优化关键问题研究.pdf), 学术报告
+
+-   ⏱2024.11.28. [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945) +1, "IPT: Iterative Pairing and Transformation for Multiple Point Cloud Registration" is accepted by [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945), Congratulations to Hualong🎉.  
+
+-   ⏱2024. 11. 8.  Hongyu Sun and Haoyu Liu [win National Scholarship](http://info.ruc.edu.cn/xwgg/xygg/3ecb6d7b5ee748779d4097f78230592c.htm), Congratulations🎉. 
+
+-   ⏱2024.09.26. [NeurIPS 2024](papers/neurips2024/Point_PRC.pdf) +1, Congratulations to Hongyu🎉.  
+
+-   ⏱2024.08.02. [SIGMOD 2025](papers/SIGMOD2025.pdf) +1, Congratulations to Xiaojia and Haoyu🎉. 
+
+-   ⏱2024.07.26. [ACM Multimedia 2024](https://2024.acmmm.org)  +3, Congratulations to Zhe Huang, Shuo Wang, and Xudong🎉.  
+
+-   ⏱2024.07.26. [RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment](https://arxiv.org/html/2408.00257v1) is selected as ACM Multimedia 2024 Oral 3.97%, Congratulaitons to Zhe Huang, 🎉
+
+-   ⏱2024.05.06.  [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945) +1, , "[DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph](DMS/DMS.pdf)" is accepted by [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945), , Congratulations to Hualong🎉.  Codes are released. https://github.com/HualongCao/DMS
+
+-   ⏱2024.03.20.  [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945) +1, “[VSFormer: Mining Correlations in Flexible View Set for Multi-view 3D Shape Understanding](vsformer/VSFormer.pdf)” is accepted by [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945), Congratulations to Hongyu🎉. Codes are released. https://github.com/auniquesun/VSFormer
+
+<details> <summary>Early News</summary>
+<p>  ⏱2024.02.05. TON+1, "Understanding Hidden Knowledge in Generic Graphs" is accepted by IEEE/ACM Transactions on Networking, Congratulations to Haodi🎉 </p>
+<p>  ⏱2024.01.29. ICRA2024 +1, Parameter-efficient Prompt Learning for 3D Point Cloud Understanding is accepted by ICRA2024, Congratulations to Hongyu🎉 </p>
+<p> ⏱2024.01.29. ICRA2024 +1, DroneMOT: Drone-based Multi-Object Tracking Considering Detection Difficulties and Simultaneous Moving of Drones and Objects is accepted by ICRA2024, Congratulations to Wang Peng🎉.</p>
+<p> ⏱2024.01.29. ICRA2024 +1, VOLoc: Visual Place Recognition by Querying Compressed Lidar Map  is accepted by ICRA2024, Congratulations to Xudong🎉.</p>
+<p> ⏱2023.12.08, ICDE2024 +1, [Bottom-up k-Vertex Connected Component Enumeration by Multiple Extension](RIPPLE/RIPPLE.pdf) is accepted by ICDE 2024, Congratulations to Haoyu🎉. Codes are released. https://github.com/Elssky/RIPPLE</p>
+<p> ⏱2023.06.21, TOSN+1, InferLoc:  Hypothesis-based Joint Edge Inference and Localization in Sparse Sensor Networks is accepted by ACM Transactions on Sensor Networks, Congratulations to Xuewei🎉</p>
+<p> ⏱2023.06.11, TON+1, EMI: An Efficient Algorithm for Identifying Maximal Rigid Clusters in 3D Generic Graphs is accepted by  IEEE/ACM Transactions on Networking, Congratulations to Qinhan🎉 </p></details>
+
+## 教学
+
+《机器感知》，研究生专业课，2019-至今
+
+-    [飞书共享文档：课程资料、习题、必读论文、推荐论文等](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)
+
+《算法设计与分析II荣誉课程》，本科生必修课，2021-至今 
+
+-   [在线视频课程发布在腾讯创新平台![image-20241201121533173](image-20241201121533173.png)](https://url.v.tencent.com/WchOIaoU)
+
+[《运筹学建模与算法》![image-20240604203112498](image-20240604203112498.png)](http://123.56.110.195:8320/c/optimization/7)，2016-至今
+
+《图优化与Graph SLAM》，短期课程
+
+《普适计算》, 2016, 2017, 2018
 
 ## 主要研究方向
 
@@ -163,18 +206,6 @@ Phone: 010-82500901
 • Tongyang Li, **Yongcai Wang\***, Lei Song, Haisheng Tan, [On Target Counting by Sequential Snapshots of Binary Proximity Sensors](papers/Li-EWSN-2015.pdf). （**EWSN 2015**）: 19-34 (**CCF B**)
 
 • Yupeng Li, Haisheng Tan, **Yongcai Wang**, Zhenhua Han, Francis C. M. Lau: [Selfish task-driven routing in hybrid networks](papers/selfishrouting15.pdf). （**WiOpt 2015**）: 387-394 (**CCF B**)
-
-## 教学
-
-[《机器感知》![image-20240604203108428](image-20240604203108428.png)](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)，研究生专业课，2019-至今
-
-[《算法设计与分析II荣誉课程》![image-20240604203100911](image-20240604203100911.png)](http://123.56.110.195:8320/c/algorithm/6), 2021-至今 
-
-[《运筹学建模与算法》![image-20240604203112498](image-20240604203112498.png)](http://123.56.110.195:8320/c/optimization/7)，2016-至今
-
-《图优化与Graph SLAM》，短期课程
-
-《普适计算》, 2016, 2017, 2018
 
 ## 项目
 
