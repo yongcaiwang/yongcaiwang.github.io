@@ -1,4 +1,4 @@
-<a  href="http://in.ruc.edu.cn"><img src="image-20240618081037241.png" alt="image-20240618072025070" align="right" height="60"/></a><a  href="http://info.ruc.edu.cn"><img src="f35ea009087b38036b60fbe5.jpeg" alt="image-20240618072025070" align="right" height="60" /></a><a  href="http://www.ruc.edu.cn"><img src="image-20240618072025070.png" alt="image-20240618072025070" align="right" height="60"></a>  
+<img src="image-20240618081037241.png" alt="image-20240618072025070" align="right" height="60"/><img src="f35ea009087b38036b60fbe5.jpeg" alt="image-20240618072025070" align="right" height="60" /><img src="image-20240618072025070.png" alt="image-20240618072025070" align="right" height="60"> 
 
 
 
@@ -25,6 +25,10 @@ Phone：010-82500901
 
 -   ==**NEW**:== Recent report in Chinese. 
 
+    >   ⏱2024. 12. 08. [智能航运感知数据集整理](report/智能航运感知数据集整理.pdf),  2024人工智能与自主式交通国际学术会议
+    >
+    >   ⏱2024. 12. 04. [多智能体协同感知研究进展](report/多智能体协同感知研究进展.pdf),  中国人民大学计算机系第十届学术节
+    >
     >   ⏱2024. 10. 28. [视觉里程计从图优化到深度学习优化的发展](report/VIO_from_graph_to_deep_learning.pdf), 中国自动化学会DEDS专委会报告
     >
     >   ⏱2024. 08. 02.[无人机MOT与多机协同感知相关工作介绍](report/MOT and Collaborative Perception.pdf), 华为北研所报告
