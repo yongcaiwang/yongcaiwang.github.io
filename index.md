@@ -27,7 +27,11 @@ Phone: 010-82500901
     >
     >   ⏱2024. 07. 09. [多智能体协同SLAM的后端图优化关键问题研究](report/多智能体协同SLAM的后端图优化关键问题研究.pdf), 学术报告
 
--   ⏱2024.11.28. [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945) +1, "IPT: Iterative Pairing and Transformation for Multiple Point Cloud Registration" is accepted by [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945), Congratulations to Hualong🎉.  
+-   ⏱2025.01.28. [ICRA2025](https://2025.ieee-icra.org) +1, Congratulations to Kang🎉.  
+
+-   ⏱2025.01.20. [WWW2025](https://www2025.thewebconf.org) +1, Congratulations to Xiaowei🎉.  
+
+-   ⏱2024.11.28. [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945) +1,  Congratulations to Hualong🎉.  
 
 -   ⏱2024. 11. 8.  Hongyu Sun and Haoyu Liu [win National Scholarship](http://info.ruc.edu.cn/xwgg/xygg/3ecb6d7b5ee748779d4097f78230592c.htm), Congratulations🎉. 
 
