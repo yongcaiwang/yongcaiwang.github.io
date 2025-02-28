@@ -27,6 +27,8 @@ Phone: 010-82500901
     >
     >   ⏱2024. 07. 09. [多智能体协同SLAM的后端图优化关键问题研究](report/多智能体协同SLAM的后端图优化关键问题研究.pdf), 学术报告
 
+-   ⏱2025.02.26. [CVPR2025](https://cvpr.thecvf.com/Conferences/2025) +2, Congratulations to Hongyu and Shuo🎉.  
+
 -   ⏱2025.01.28. [ICRA2025](https://2025.ieee-icra.org) +1, Congratulations to Kang🎉.  
 
 -   ⏱2025.01.20. [WWW2025](https://www2025.thewebconf.org) +1, Congratulations to Xiaowei🎉.  
