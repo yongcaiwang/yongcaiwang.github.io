@@ -27,6 +27,8 @@ Phone: 010-82500901
     >
     >   ⏱2024. 07. 09. [多智能体协同SLAM的后端图优化关键问题研究](report/多智能体协同SLAM的后端图优化关键问题研究.pdf), 学术报告
 
+-   ⏱2025.06.26. ICCV+1, Congratulations to Peng Wang🎉.  
+
 -   ⏱2025.06.25. TOSN+1，Congratulations to Xuewei🎉.  
 
 -   ⏱2025.04.23. ICMR+1，Congratulations to Yance🎉.  
@@ -97,6 +99,8 @@ Phone: 010-82500901
 ## 代表性论文
 
 #### **2025**
+
+**[ICCV]** Peng Wang, **Yongcai Wang***, Hualong Cao, Wang Chen, Deying Li, [LA-MOTR: End-to-End Multi-Object Tracking by Learnable Association](https://openreview.net/forum?id=TPRpvvuvYM&referrer=[Author Console](%2Fgroup%3Fid%3Dthecvf.com%2FICCV%2F2025%2FConference%2FAuthors%23your-submissions)), International Conference on Computer Vision 2025, **CCF A**
 
 **[CVPR]** [Hongyu Sun](https://dblp.org/pid/33/2079-6.html), [Qiuhong Ke](https://dblp.org/pid/151/3574.html), [Ming Cheng](https://dblp.org/pid/82/104.html), **Yongcai Wang***, [Deying Li](https://dblp.org/pid/63/1296-1.html), [Chenhui Gou](https://dblp.org/pid/331/2816.html), [Jianfei Cai](https://dblp.org/pid/83/6096.html): [Point-Cache: Test-time Dynamic and Hierarchical Cache for Robust and Generalizable Point Cloud Analysis](https://openaccess.thecvf.com/content/CVPR2025/html/Sun_Point-Cache_Test-time_Dynamic_and_Hierarchical_Cache_for_Robust_and_Generalizable_CVPR_2025_paper.html). CVPR 2025, pp. 1263-1275, **CCF A**, **Codes**: https://github.com/auniquesun/Point-Cache
 
