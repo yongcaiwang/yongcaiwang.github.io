@@ -5,7 +5,7 @@
 |  <img src="k6g5nr-20240618072749426.png" align="left" />    |  [中文版](index.html)  |
 | ---- | :--- |
 
-**Wang Yongcai** is an Associate Professor and Ph.D. advisor at the Department of Computer Science, Renmin University of China (RUC). He also serves as the Deputy Head of the Computer Science Department and the Director of the Research and Discipline Construction Committee at the School of Information, RUC. 
+**Wang Yongcai** is a Professor and Ph.D. advisor at the Department of Computer Science, Renmin University of China (RUC). He also serves as the Deputy Head of the Computer Science Department and the Director of the Research and Discipline Construction Committee at the School of Information, RUC. 
 
 He received both his bachelor's and Ph.D. degrees from the Department of Automation at Tsinghua University, under the supervision of Professors Zheng Dazhong and Zhao Qianchuan. Wang is an executive member of several committees, including the CCF Technical Committee on Intelligent Robotics, the CCF Technical Committee on the Internet of Things, the Technical Committee on DEDS of the Chinese Association of Automation, SIGBED China, and the Technical Committee on Cognitive and Information Processing of CAAI.
 
@@ -13,7 +13,7 @@ His main research areas include **multi-agent systems, visual spatial computing,
 
 Wang has led several projects funded by the National Natural Science Foundation of China, as well as sub-projects of the National Science and Technology Support Program and various enterprise projects. In **2021**, he received the **First Prize of the Technical Invention Award** from the China Institute of Navigation for his work on maritime target localization. In **2022**, he was awarded the **Second Prize for Scientific and Technological Progress** by the same institute and received the **Major Innovation Achievement Award** from the Ministry of Transport. 
 
-He serves as a PC Members and reviewers for leading journals and conferences such as NeurIPS, WWW, ACM MM, TON, and TMC.
+He serves as a PC Members and reviewers for leading journals and conferences such as TPAMI, NeurIPS, WWW, ACM MM, TON, and TMC.
 
 DBLP:   https://dblp.org/pid/04/2124.html
 
