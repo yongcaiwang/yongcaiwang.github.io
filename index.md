@@ -29,7 +29,9 @@ Phone: 010-82500901
     >
     >   ⏱2024. 07. 09. [多智能体协同SLAM的后端图优化关键问题研究](report/多智能体协同SLAM的后端图优化关键问题研究.pdf), 学术报告
 
--   ⏱2025.06.26. ICCV+1, Congratulations to Peng Wang🎉.  
+-   ⏱2025.09.19. NeurIPS 2025+2, Congratulations to Xuewei Bai and Shuo Wang🎉.  
+
+-   ⏱2025.06.26. ICCV2025+1, Congratulations to Peng Wang🎉.  
 
 -   ⏱2025.06.25. TOSN+1，Congratulations to Xuewei🎉.  
 
@@ -101,6 +103,10 @@ Phone: 010-82500901
 ## 代表性论文
 
 #### **2025**
+
+**[NeurIPS]** Xuewei Bai, **Yongcai Wang***, Deying Li, Haodi Ping, LI Chunxu, [STAR: Spatial-Temporal Tracklet Matching for Multi-Object Tracking](https://neurips.cc/virtual/2025/poster/116808), The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego Convention Center, Dec. 2, 2025.  **CCF A**
+
+**[NeurIPS]** Shuo Wang, **Yongcai Wang***, Wanting Li, Xudong Cai, Yucheng Wang, Maiyue Chen, kaihui.wang, Zhizhong Su, Deying Li, Zhaoxin Fan*, [Aux-Think: Exploring Reasoning Strategies for Data-Efficient Vision-Language Navigation](https://horizonrobotics.github.io/robot_lab/aux-think/index.html), The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego Convention Center, Dec. 2, 2025. [<img src="GitHub-Logo-20251007114145666.png" alt="GitHub Logo, symbol, meaning, history, PNG, brand" style="zoom:1.5%;" />Codes](https://github.com/HorizonRobotics/RoboOrchardLab/tree/master/projects/aux_think).  **CCF A**
 
 **[ICCV]** Peng Wang, **Yongcai Wang***, Hualong Cao, Wang Chen, Deying Li, [LA-MOTR: End-to-End Multi-Object Tracking by Learnable Association](https://openreview.net/forum?id=TPRpvvuvYM&referrer=[Author Console](%2Fgroup%3Fid%3Dthecvf.com%2FICCV%2F2025%2FConference%2FAuthors%23your-submissions)), International Conference on Computer Vision 2025, **CCF A**
 
