@@ -9,7 +9,7 @@
 
 He received both his bachelor's and Ph.D. degrees from the Department of Automation at Tsinghua University, under the supervision of Professors Zheng Dazhong and Zhao Qianchuan. Wang is an executive member of several committees, including the CCF Technical Committee on Intelligent Robotics, the CCF Technical Committee on the Internet of Things, the Technical Committee on DEDS of the Chinese Association of Automation, SIGBED China, and the Technical Committee on Cognitive and Information Processing of CAAI.
 
-His main research areas include **multi-agent systems, visual spatial computing, Spatial AI, collaborative perception, SLAM, and large-scale graph computing and mining**. He has published over 120 papers in renowned journals and conferences, including more than **50 CCF A and B category papers**. His research has been applied in fields such as intelligent vehicles, smart ships, and visual object detection and localization.
+His main research areas include **multi-agent systems, visual spatial computing, Spatial AI, collaborative perception, and large-scale graph computing and mining**. He has published over 120 papers in renowned journals and conferences, including more than **50 CCF A and B category papers**. His research has been applied in fields such as intelligent vehicles, smart ships, and visual object detection and localization.
 
 Wang has led several projects funded by the National Natural Science Foundation of China, as well as sub-projects of the National Science and Technology Support Program and various enterprise projects. In **2021**, he received the **First Prize of the Technical Invention Award** from the China Institute of Navigation for his work on maritime target localization. In **2022**, he was awarded the **Second Prize for Scientific and Technological Progress** by the same institute and received the **Major Innovation Achievement Award** from the Ministry of Transport. 
 
@@ -25,6 +25,8 @@ Phone：010-82500901
 
 -   ==**NEW**:== Recent report in Chinese. 
 
+    >   ⏱2025. 09. 07. [3D视觉 SLAM 技术前沿与进展](report/3D视觉 SLAM 的前沿与进展.pdf)，CWSN2025，低空经济论坛专题报告
+    >
     >   ⏱2024. 12. 08. [智能航运感知数据集整理](report/智能航运感知数据集整理.pdf),  2024人工智能与自主式交通国际学术会议
     >
     >   ⏱2024. 12. 04. [多智能体协同感知研究进展](report/多智能体协同感知研究进展.pdf),  中国人民大学计算机系第十届学术节
@@ -35,8 +37,11 @@ Phone：010-82500901
     >
     >   ⏱2024. 07. 09. [多智能体协同SLAM的后端图优化关键问题研究](report/多智能体协同SLAM的后端图优化关键问题研究.pdf), 学术报告
 
--   ⏱2025.09.19. NeurIPS 2025+2, Congratulations to Xuewei Bai and Shuo Wang🎉. 
--   ⏱2025.06.26. ICCV+1, Congratulations to Peng Wang🎉.  
+-   ⏱2025.11.08. [AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)+2, Congratulations to Xudong Cai and Shuo Wang🎉.  
+-   ⏱2025.09.19. [NeurIPS 2025](https://neurips.cc)+2, Congratulations to Xuewei Bai and Shuo Wang🎉.  
+
+-   ⏱2025.06.26. [ICCV2025](https://iccv.thecvf.com)+1, Congratulations to Peng Wang🎉.  
+
 -   ⏱2025.06.25. TOSN+1，Congratulations to Xuewei🎉.  
 -   ⏱2025.04.23. ICMR+1，Congratulations to Yance🎉.  
 
@@ -100,6 +105,10 @@ Phone：010-82500901
 ## Representative Publications
 
 #### **2025**
+
+**[AAAI]** Xudong Cai, Shuo Wang, Peng Wang, **Yongcai Wang***, Zhaoxin Fan, Wanting Li, Tianbao Zhang, Jianrong Tao, Yeying Jin, Deying Li, [Mem4D: Decoupling Static and Dynamic Memory for Dynamic Scene Reconstruction](https://openreview.net/forum?id=wVCOgaKBn9&referrer=[Author Console](%2Fgroup%3Fid%3DAAAI.org%2F2026%2FConference%2FAuthors%23your-submissions)), The Fortieth AAAI Conference on Artificial Intelligence, (AAAI 2026), Jan.20 *–* Jan. 27, 2026, Singapore.  **CCF A**
+
+**[AAAI]** Shuo Wang, **Yongcai Wang***, Wanting Li, Yucheng Wang, Maiyue Chen, kaihui.wang, Zhizhong Su, Xudong Cai, Yeying Jin, Deying Li, Zhaoxin Fan, [MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming](https://openreview.net/forum?id=Fus8j5fewA&referrer=[Author Console](%2Fgroup%3Fid%3DAAAI.org%2F2026%2FConference%2FAuthors%23your-submissions)), The Fortieth AAAI Conference on Artificial Intelligence, (AAAI 2026), Jan.20 *–* Jan. 27, 2026, Singapore.  **CCF A**
 
 **[NeurIPS]** Xuewei Bai, **Yongcai Wang***, Deying Li, Haodi Ping, LI Chunxu, [STAR: Spatial-Temporal Tracklet Matching for Multi-Object Tracking](https://neurips.cc/virtual/2025/poster/116808), The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025), San Diego Convention Center, Dec. 2, 2025.  **CCF A**
 
