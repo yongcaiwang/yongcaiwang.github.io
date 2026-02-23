@@ -37,6 +37,8 @@ Phone：010-82500901
     >
     >   ⏱2024. 07. 09. [多智能体协同SLAM的后端图优化关键问题研究](report/多智能体协同SLAM的后端图优化关键问题研究.pdf), 学术报告
 
+-   ⏱2026.02.21. [CVPR2026](https://cvpr.thecvf.com)+2, Congratulations to Peng Wang and Shuo Wang🎉. 
+-   ⏱2026.01.31. [ICRA2026](https://2026.ieee-icra.org)+2,  Congratulations to Shuai Liu and Kang Yang🎉. 
 -   ⏱2025.11.08. [AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)+2, Congratulations to Xudong Cai and Shuo Wang🎉.  
 -   ⏱2025.09.19. [NeurIPS 2025](https://neurips.cc)+2, Congratulations to Xuewei Bai and Shuo Wang🎉.  
 
@@ -103,6 +105,16 @@ Phone：010-82500901
 • **Contact**: Please feel free to send your resume or self-introduction to [ycw@ruc.edu.cn](mailto:ycw@ruc.edu.cn). I look forward to hear from you.
 
 ## Representative Publications
+
+#### **2026**
+
+**[CVPR]**  Peng Wang, **Yongcai Wang***, Wang Chen, Hualong Cao, Kang Yang, Chunxu Li, Wen Jie, Deying Li，[MOSAIC3D:Modular Scene Assembly for Real-Time 3D Segment Anything](https://github.com/PenK1nG/SAMosaic3D). (CVPR 2026)  **CCF A**
+
+**[CVPR]** Shuo Wang, Yucheng Wang, Guoxin Lian, **Yongcai Wang***, Maiyue Chen, Kaihui Wang, Bo Zhang, Zhizhong Su, Yutian Zhou, Wanting Li, Deying Li, Zhaoxin Fan: [Progress-Think: Semantic Progress Reasoning for Vision-Language Navigation.](https://horizonrobotics.github.io/robot_lab/progress-think/) (**CVPR 2026**) **CCF A**
+
+**[ICRA]** Kang Yang, Peng Wang, Lantao Li, Tianci Bu, Chen Sun, Deying Li, **Yongcai Wang***, EIMC:Efficient Instance-aware Multi-modal Collaborative Perception,  IEEE International Conference on Robotics and Automation (**ICRA 2026**).  **CCF B**
+
+**[ICRA]** Shuai Liu, **Yongcai Wang***, Wenping Chen, Wang Chen, Deying Li, SupGS-SLAM: Gaussian Splatting SLAM with Efficient Keyframe Strategy and Supplementary Mapping, 2026 IEEE International Conference on Robotics and Automation (**ICRA 2026**). **CCF B**
 
 #### **2025**
 
