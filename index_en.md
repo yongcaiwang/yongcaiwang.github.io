@@ -33,44 +33,45 @@ Phone：010-82500901
     >
     >   ⏱2024. 10. 28. [视觉里程计从图优化到深度学习优化的发展](report/VIO_from_graph_to_deep_learning.pdf), 中国自动化学会DEDS专委会报告
     >
-    >   ⏱2024. 08. 02.[无人机MOT与多机协同感知相关工作介绍](report/MOT and Collaborative Perception.pdf), 华为北研所报告
-    >
-    >   ⏱2024. 07. 09. [多智能体协同SLAM的后端图优化关键问题研究](report/多智能体协同SLAM的后端图优化关键问题研究.pdf), 学术报告
+    
+-   ⏱2026.03.22. TVCG+1, Congratulations to Xudong🎉. 
 
 -   ⏱2026.02.21. [CVPR2026](https://cvpr.thecvf.com)+2, Congratulations to Peng Wang and Shuo Wang🎉. 
+
 -   ⏱2026.01.31. [ICRA2026](https://2026.ieee-icra.org)+2,  Congratulations to Shuai Liu and Kang Yang🎉. 
+
 -   ⏱2025.11.08. [AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)+2, Congratulations to Xudong Cai and Shuo Wang🎉.  
+
 -   ⏱2025.09.19. [NeurIPS 2025](https://neurips.cc)+2, Congratulations to Xuewei Bai and Shuo Wang🎉.  
 
 -   ⏱2025.06.26. [ICCV2025](https://iccv.thecvf.com)+1, Congratulations to Peng Wang🎉.  
 
--   ⏱2025.06.25. TOSN+1，Congratulations to Xuewei🎉.  
--   ⏱2025.04.23. ICMR+1，Congratulations to Yance🎉.  
+-   ⏱2025.06.25. TOSN+1，Congratulations to Xuewei🎉.
 
--   ⏱2025.04.09. [ADVEI](https://www.sciencedirect.com/science/article/abs/pii/S1474034625002447)+1，Congratulations to Zhe Huang🎉.  
+-   ⏱2025.04.23. ICMR+1，Congratulations to Yance🎉. 
 
--   ⏱2025.02.26. [CVPR2025](https://cvpr.thecvf.com/Conferences/2025) +2, Congratulations to Hongyu and Shuo🎉.  
--   ⏱2025.01.28. [ICRA2025](https://2025.ieee-icra.org) +1, Congratulations to Kang🎉.  
--   ⏱2025.01.20. [WWW2025](https://www2025.thewebconf.org) +1, Congratulations to Xiaowei🎉.  
-
--   ⏱2024.11.28. [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945) +1,  Congratulations to Hualong🎉.  
-
--   ⏱2024. 11. 8.  Hongyu Sun and Haoyu Liu [win National Scholarship](http://info.ruc.edu.cn/xwgg/xygg/3ecb6d7b5ee748779d4097f78230592c.htm), Congratulations🎉. 
--   ⏱2024.09.26. [NeurIPS 2024](papers/neurips2024/Point_PRC.pdf) +1, Congratulations to Hongyu🎉.  
--   ⏱2024.08.02. [SIGMOD 2025](papers/SIGMOD2025.pdf) +1, Congratulations to Xiaojia and Haoyu🎉. 
--   ⏱2024.07.26. [ACM Multimedia 2024](https://2024.acmmm.org)  +3, Congratulations to Zhe Huang, Shuo Wang, and Xudong🎉.  
--   ⏱2024.07.26. [RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment](https://arxiv.org/html/2408.00257v1) is selected as ACM Multimedia 2024 Oral 3.97%, Congratulaitons to Zhe Huang, 🎉
--   ⏱2024.05.06.  [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945) +1, , "[DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph](DMS/DMS.pdf)" is accepted by [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945), , Congratulations to Hualong🎉.  Codes are released. https://github.com/HualongCao/DMS
--   ⏱2024.03.20.  [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945) +1, “[VSFormer: Mining Correlations in Flexible View Set for Multi-view 3D Shape Understanding](vsformer/VSFormer.pdf)” is accepted by [TVCG](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945), Congratulations to Hongyu🎉. Codes are released. https://github.com/auniquesun/VSFormer
+-   ⏱2025.02.26. CVPR2025+2, Congratulations to Hongyu and Shuo🎉.
 
 <details> <summary>Early News</summary>
-<p>  ⏱2024.02.05. TON+1, "Understanding Hidden Knowledge in Generic Graphs" is accepted by IEEE/ACM Transactions on Networking, Congratulations to Haodi🎉 </p>
-<p>  ⏱2024.01.29. ICRA2024 +1, Parameter-efficient Prompt Learning for 3D Point Cloud Understanding is accepted by ICRA2024, Congratulations to Hongyu🎉 </p>
-<p> ⏱2024.01.29. ICRA2024 +1, DroneMOT: Drone-based Multi-Object Tracking Considering Detection Difficulties and Simultaneous Moving of Drones and Objects is accepted by ICRA2024, Congratulations to Wang Peng🎉.</p>
-<p> ⏱2024.01.29. ICRA2024 +1, VOLoc: Visual Place Recognition by Querying Compressed Lidar Map  is accepted by ICRA2024, Congratulations to Xudong🎉.</p>
-<p> ⏱2023.12.08, ICDE2024 +1, [Bottom-up k-Vertex Connected Component Enumeration by Multiple Extension](RIPPLE/RIPPLE.pdf) is accepted by ICDE 2024, Congratulations to Haoyu🎉. Codes are released. https://github.com/Elssky/RIPPLE</p>
-<p> ⏱2023.06.21, TOSN+1, InferLoc:  Hypothesis-based Joint Edge Inference and Localization in Sparse Sensor Networks is accepted by ACM Transactions on Sensor Networks, Congratulations to Xuewei🎉</p>
-<p> ⏱2023.06.11, TON+1, EMI: An Efficient Algorithm for Identifying Maximal Rigid Clusters in 3D Generic Graphs is accepted by  IEEE/ACM Transactions on Networking, Congratulations to Qinhan🎉 </p></details>
+<p>   ⏱2025.04.09. ADVEI+1，Congratulations to Zhe Huang🎉.  </p>
+<p>  ⏱2025.01.28. ICRA2025 +1, Congratulations to Kang🎉.  </p>
+<p>  ⏱2025.01.20. WWW2025 +1, Congratulations to Xiaowei🎉.</p>
+<p>  ⏱2024.11.28. TVCG +1,  Congratulations to Hualong🎉.  </p>
+<p>  ⏱2024. 11. 8.  Hongyu Sun and Haoyu Liu win National Scholarship, Congratulations🎉. </p>
+<p>  ⏱2024.09.26. NeurIPS 2024 +1, Congratulations to Hongyu🎉.  </p>
+<p>  ⏱2024.08.02. SIGMOD 2025 +1, Congratulations to Xiaojia and Haoyu🎉. </p>
+<p>  ⏱2024.07.26. ACM Multimedia 2024 +3, Congratulations to Zhe Huang, Shuo Wang, and Xudong🎉.  </p>
+<p>  ⏱2024.07.26. RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment is selected as ACM Multimedia 2024 Oral 3.97%, Congratulaitons to Zhe Huang, 🎉</p>
+<p>  ⏱2024.05.06.  TVCG +1 , Congratulations to Hualong🎉.  </p>
+<p>  ⏱2024.03.20.  TVCG +1,  Congratulations to Hongyu🎉. </p>
+<p>  ⏱2024.02.05. TON+1, Congratulations to Haodi🎉 </p>
+<p>  ⏱2024.01.29. ICRA2024 +1,  Congratulations to Hongyu🎉 </p>
+<p> ⏱2024.01.29. ICRA2024 +1,  Congratulations to Wang Peng🎉.</p>
+<p> ⏱2024.01.29. ICRA2024 +1, Congratulations to Xudong🎉.</p>
+<p> ⏱2023.12.08, ICDE2024 +1,  Congratulations to Haoyu🎉. Codes are released. https://github.com/Elssky/RIPPLE</p>
+<p> ⏱2023.06.21, TOSN+1,  Congratulations to Xuewei🎉</p>
+<p> ⏱2023.06.11, TON+1,  Congratulations to Qinhan🎉 </p></details>
+
 
 ## Teaching
 
@@ -79,9 +80,7 @@ Phone：010-82500901
     >   [Course materials, including lecture notes、assignments、must read papers、recommended papers on FeiShu](https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299?ccm_open_type=lark_wiki_spaceLink&open_tab_from=wiki_home)
     
 -   ["Algorithm Design and Analysis II Honors Course"](https://url.v.tencent.com/WchOIaoU ), Undergraduate Course
-    
-    >   [Online Course on Tencent Intelligent Creation Platform![image-20241201121533173](image-20241201121533173.png)](https://url.v.tencent.com/WchOIaoU)
--   ["Operations Research Modeling and Algorithms," ![course](course.png)](http://202.112.113.162/c/optimization/7), Undergraduate Course
+-   "Operations Research Modeling and Algorithms," , Undergraduate Course
 -   "Graph Optimization and Graph SLAM," Short-Term Course
 -   "Ubiquitous Computing," 2016, 2017, 2018
 
@@ -107,6 +106,10 @@ Phone：010-82500901
 ## Representative Publications
 
 #### **2026**
+
+**[ICLR workshop]** [Xiaowei Lv](https://dblp.org/pid/92/8066.html), [Zhilin Zhang](https://dblp.org/pid/95/1820.html), [Yijun Li](https://dblp.org/pid/52/6049.html), [Yusen Huo](https://dblp.org/pid/249/8158.html), [Siyuan Ju](https://dblp.org/pid/426/9336.html), [Xuyan Li](https://dblp.org/pid/181/9849.html), [Chunxiang Hong](https://dblp.org/pid/426/9694.html), [Tianyu Wang](https://dblp.org/pid/35/8397.html), Yongcai Wang, [Peng Sun](https://dblp.org/pid/88/619.html), [Chuan Yu](https://dblp.org/pid/50/790.html), [Jian Xu](https://dblp.org/pid/73/1149.html), [Bo Zheng](https://dblp.org/pid/33/1610.html):**DecisionLLM: Large Language Models for Long Sequence Decision Exploration**, ICLR 2026 Workshop, 2026
+
+**[TVCG]** [Xudong Cai](https://ieeexplore.ieee.org/author/37089893125); [Yongcai Wang](https://ieeexplore.ieee.org/author/37086331551); [Zhaoxin Fan](https://ieeexplore.ieee.org/author/37089721336); [Haoran Deng](https://ieeexplore.ieee.org/author/37085369729); [Shuo Wang](https://ieeexplore.ieee.org/author/37089762544); [Wanting Li](https://ieeexplore.ieee.org/author/37089687107), Dust to Tower: Prior-Driven Coarse-to-Fine Photo-Realistic Scene Reconstruction from Sparse Uncalibrated Images,  [IEEE Transactions on Visualization and Computer Graphics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945)  (**TVCG 2026**), **CCF A**,  [**Codes**](https://github.com/minoTrey/DUSt3R-Paper-Collection/blob/main/docs/gaussian-splatting/dust-to-tower.md)
 
 **[CVPR]**  Peng Wang, **Yongcai Wang***, Wang Chen, Hualong Cao, Kang Yang, Chunxu Li, Wen Jie, Deying Li，[MOSAIC3D:Modular Scene Assembly for Real-Time 3D Segment Anything](https://github.com/PenK1nG/SAMosaic3D). (CVPR 2026)  **CCF A**
 
