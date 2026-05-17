@@ -5,26 +5,24 @@
 |  <img src="k6g5nr-20240618072749426.png" align="left" />    |  [中文版](index.html)  |
 | ---- | :--- |
 
-**Wang Yongcai** is a Professor and Ph.D. advisor at the Department of Computer Science, Renmin University of China (RUC). He also serves as the Deputy Head of the Computer Science Department and the Director of the Research and Discipline Construction Committee at the School of Information, RUC. 
+**Wang Yongcai** is a Professor and Doctoral Supervisor at the School of Computer Science, Renmin University of China. He also serves as Deputy Chair of the Department of Computer Science and Director of the Research & Discipline Construction Working Committee of the School of Information.
 
-He received both his bachelor's and Ph.D. degrees from the Department of Automation at Tsinghua University, under the supervision of Professors Zheng Dazhong and Zhao Qianchuan. Wang is an executive member of several committees, including the CCF Technical Committee on Intelligent Robotics, the CCF Technical Committee on the Internet of Things, the Technical Committee on DEDS of the Chinese Association of Automation, SIGBED China, and the Technical Committee on Cognitive and Information Processing of CAAI.
+He received his bachelor’s and doctoral degrees both from the Department of Automation, Tsinghua University. **His primary research interests include agent systems, machine vision, Spatial AI, collaborative perception and multi-agent reinforcement learning. He has authored over 120 papers in top-tier domestic and international journals and conferences, among which more than 60 are published in CCF Rank A and B venues.** His research achievements have been applied to intelligent vehicles, intelligent ships, visual object detection and localization and other practical fields.
 
-His main research areas include **multi-agent systems, visual spatial computing, Spatial AI, collaborative perception, and large-scale graph computing and mining**. He has published over 120 papers in renowned journals and conferences, including more than **50 CCF A and B category papers**. His research has been applied in fields such as intelligent vehicles, smart ships, and visual object detection and localization.
+He has presided over multiple projects funded by the National Natural Science Foundation of China, sub-projects of the National Science and Technology Support Program, and numerous industrial research projects. **He was awarded the First Prize of Technical Invention by the China Institute of Navigation, Ministry of Transport in 2021 for his research on maritime target localization, the Second Prize of Science and Technology Progress and the Major Innovative Achievement Inclusion Award from the same institute in 2022, and the Third Prize of Science and Technology Progress in Petroleum and Chemical Automation in 2026.**
 
-Wang has led several projects funded by the National Natural Science Foundation of China, as well as sub-projects of the National Science and Technology Support Program and various enterprise projects. In **2021**, he received the **First Prize of the Technical Invention Award** from the China Institute of Navigation for his work on maritime target localization. In **2022**, he was awarded the **Second Prize for Scientific and Technological Progress** by the same institute and received the **Major Innovation Achievement Award** from the Ministry of Transport. 
-
-He serves as a PC Members and reviewers for leading journals and conferences such as TPAMI, NeurIPS, WWW, ACM MM, TON, and TMC.
+Professor Wang currently holds concurrent academic positions including Executive Member of the CCF Technical Committee on Intelligent Robotics and Internet of Things, Executive Member of the DEDS Technical Committee of Chinese Association of Automation, Member of SIGBED China Committee and CAAI Technical Committee on Cognition and Information Processing. He has served as a Program Committee Member for academic conferences including CIKM 2025, WWW 2025 and AAAI 2026. Additionally, he acts as an editorial board member for *Computer Science and Technology* and *International Journal of Robotics and Automation Technology*.
 
 DBLP:   https://dblp.org/pid/04/2124.html
 
 Email: [ycw@ruc.edu.cn](ycw@ruc.edu.cn)
 
-Phone：010-82500901
-
 ## News 
 
 -   ==**NEW**:== Recent report in Chinese. 
 
+    >   ⏱2026. 04. 25. [具身导航与三维重建的发展与交叉]()，WISE2026，澳门科技大学创新工程系十年庆典活动
+    >
     >   ⏱2025. 09. 07. [3D视觉 SLAM 技术前沿与进展](report/3D视觉 SLAM 的前沿与进展.pdf)，CWSN2025，低空经济论坛专题报告
     >
     >   ⏱2024. 12. 08. [智能航运感知数据集整理](report/智能航运感知数据集整理.pdf),  2024人工智能与自主式交通国际学术会议
@@ -34,7 +32,9 @@ Phone：010-82500901
     >   ⏱2024. 10. 28. [视觉里程计从图优化到深度学习优化的发展](report/VIO_from_graph_to_deep_learning.pdf), 中国自动化学会DEDS专委会报告
     >
     
--   ⏱2026.03.22. TVCG+1, Congratulations to Xudong🎉. 
+-   ⏱2026.05.01. [ICML](https://arxiv.org/abs/2602.00222)+1，Congratulations to Guoxin Lian🎉.
+
+-   ⏱2026.03.22. [TVCG](https://ieeexplore.ieee.org/document/11456202/media#media)+1, Congratulations to Xudong Cai🎉. 
 
 -   ⏱2026.02.21. [CVPR2026](https://cvpr.thecvf.com)+2, Congratulations to Peng Wang and Shuo Wang🎉. 
 
@@ -106,6 +106,8 @@ Phone：010-82500901
 ## Representative Publications
 
 #### **2026**
+
+**[ICML]** [Guoxin Lian](https://arxiv.org/search/cs?searchtype=author&query=Lian,+G), [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+S), [Yucheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Y), [Yongcai Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Y), [Maiyue Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+M), [Kaihui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+K), [Bo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+B), [Zhizhong Su](https://arxiv.org/search/cs?searchtype=author&query=Su,+Z), [Deying Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+D), [Zhaoxin Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan,+Z), **[MapDream: Task-Driven Map Learning for Vision-Language Navigation](https://arxiv.org/abs/2602.00222)**, ICML 2026. 
 
 **[ICLR workshop]** [Xiaowei Lv](https://dblp.org/pid/92/8066.html), [Zhilin Zhang](https://dblp.org/pid/95/1820.html), [Yijun Li](https://dblp.org/pid/52/6049.html), [Yusen Huo](https://dblp.org/pid/249/8158.html), [Siyuan Ju](https://dblp.org/pid/426/9336.html), [Xuyan Li](https://dblp.org/pid/181/9849.html), [Chunxiang Hong](https://dblp.org/pid/426/9694.html), [Tianyu Wang](https://dblp.org/pid/35/8397.html), Yongcai Wang, [Peng Sun](https://dblp.org/pid/88/619.html), [Chuan Yu](https://dblp.org/pid/50/790.html), [Jian Xu](https://dblp.org/pid/73/1149.html), [Bo Zheng](https://dblp.org/pid/33/1610.html):**DecisionLLM: Large Language Models for Long Sequence Decision Exploration**, ICLR 2026 Workshop, 2026
 
@@ -278,29 +280,33 @@ Phone：010-82500901
 
 ## Projects
 
-1. "Research on Environment Localization Perception of Mobile Robots in Dynamic Complex Scenes," Enterprise Horizontal Project, Project Leader, 11/2022-11/2023
+1. Development of Road Defect Detection and 3D Measurement Technology, PI, 2026.04.30–2027.06.30
 
-2. "Research on High-Precision Point Cloud Map Construction and Visual Localization Navigation Methods," Key Open Topic of the Ministry of Public Security, Project Leader, 01/2023-12/2023
+2. Development of Full-domain Perception Algorithm in Complex Scenarios, PI, 2025.11.30–2026.11.30
 
-3. "Visual-based Airport Bird Detection System," Enterprise Horizontal Project, Project Leader, 01/2022-12/2023
+3. "Research on Environment Localization Perception of Mobile Robots in Dynamic Complex Scenes," Enterprise Horizontal Project, Project Leader, 11/2022-11/2023
 
-4. "Key Issues in Group-SLAM Research Based on Module Stitching," National Natural Science Foundation General Project, Project Leader, (No. 61972404), 1/2020-12/2023
+4. "Research on High-Precision Point Cloud Map Construction and Visual Localization Navigation Methods," Key Open Topic of the Ministry of Public Security, Project Leader, 01/2023-12/2023
 
-5. "Assisted Driving Decision System for Unmanned Intelligent Ships," Sub-project of the Ministry of Transport's National Science and Technology Support Program, Project Leader, 09/2019-12/2022
+5. "Visual-based Airport Bird Detection System," Enterprise Horizontal Project, Project Leader, 01/2022-12/2023
 
-6. "Research on Fusion Optimization of Tightly Coupled Multi-source Synchronous Positioning and Map Building," National Natural Science Foundation Project, Project Leader, (No.62672524), 01/2017-12/2020
+6. "Key Issues in Group-SLAM Research Based on Module Stitching," National Natural Science Foundation General Project, Project Leader, (No. 61972404), 1/2020-12/2023
 
-7. "National Science and Technology Support Program Project - Personnel Activity Detection Sensor Device Processing Contract," Sub-project Leader, (No. 2014BAK12B06), 01/2016-12/2016
+7. "Assisted Driving Decision System for Unmanned Intelligent Ships," Sub-project of the Ministry of Transport's National Science and Technology Support Program, Project Leader, 09/2019-12/2022
 
-8. "User Instantaneous State Analysis and Feature Classification Based on Portable Sensing Big Data," New Teacher Startup Project of Renmin University, Project Leader, (No.2015030273), 01/2016-12/2018
+8. "Research on Fusion Optimization of Tightly Coupled Multi-source Synchronous Positioning and Map Building," National Natural Science Foundation Project, Project Leader, (No.62672524), 01/2017-12/2020
 
-9. "Research on Sequence Decoding and Deployment Optimization Key Issues for Tracking Power Equipment Status in Sparse Multisensor Networks," National Natural Science Foundation Youth Fund, Project Leader, (No. 61202360), 01/2013-12/2015
+9. "National Science and Technology Support Program Project - Personnel Activity Detection Sensor Device Processing Contract," Sub-project Leader, (No. 2014BAK12B06), 01/2016-12/2016
 
-10. "Research on Large-scale Wireless Localization and Self-Calibration Methods Based on Sequence Optimization," Ministry of Education Doctoral Fund, Project Leader, (No. 20120002120003), 01/2013-12/2014
+10. "User Instantaneous State Analysis and Feature Classification Based on Portable Sensing Big Data," New Teacher Startup Project of Renmin University, Project Leader, (No.2015030273), 01/2016-12/2018
 
-11. "Intelligent Life Based on Intelligent Perception," International Cooperative Project with NEC Research Institute, Project Leader, (No. 041902003), 01/2013-12/2014
+11. "Research on Sequence Decoding and Deployment Optimization Key Issues for Tracking Power Equipment Status in Sparse Multisensor Networks," National Natural Science Foundation Youth Fund, Project Leader, (No. 61202360), 01/2013-12/2015
 
-12. "Key Technologies Research on Load Balancing and Energy Saving in Wireless Sensor Networks Combining Compressed Sampling and Network Coding," National Natural Science Foundation, Backbone Project, (No.61073174), 01/2011-12/2013
+12. "Research on Large-scale Wireless Localization and Self-Calibration Methods Based on Sequence Optimization," Ministry of Education Doctoral Fund, Project Leader, (No. 20120002120003), 01/2013-12/2014
+
+13. "Intelligent Life Based on Intelligent Perception," International Cooperative Project with NEC Research Institute, Project Leader, (No. 041902003), 01/2013-12/2014
+
+14. "Key Technologies Research on Load Balancing and Energy Saving in Wireless Sensor Networks Combining Compressed Sampling and Network Coding," National Natural Science Foundation, Backbone Project, (No.61073174), 01/2011-12/2013
 
 ## Academic Service
 
