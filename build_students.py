@@ -658,7 +658,7 @@ def parse_papers(html: str) -> List[dict]:
     end = html.find("<!-- PROJECTS -->", start)
     section = html[start:end]
     items = re.findall(
-        r'<div class="paper-item">([\s\S]*?)</div>\s*</div>\s*(?=\n<div class="paper-item">|</div><div class="paper-item">|\n</div>\n<div class="year-group">|\n</section>)',
+        r'<div class="paper-item">([\s\S]*?)</div>\s*</div>\s*(?=\n<div class="paper-item">|</div><motion class="paper-item">|</motion><div class="paper-item">|\n</div>\n<div class="year-group">|\n</section>)',
         section,
     )
 
@@ -771,6 +771,7 @@ def main() -> None:
     nav = """<nav>
 <div class="nav-section-label">个人信息</div>
 <a href="index.html#profile"><span class="nav-icon">◎</span> 个人简介</a>
+<a href="index.html#background"><span class="nav-icon">◎</span> 教育和工作背景</a>
 <a href="index.html#research"><span class="nav-icon">◈</span> 研究方向</a>
 <a href="index.html#recruit"><span class="nav-icon">✦</span> 招生信息</a>
 <div class="nav-section-label">学术动态</div>
@@ -786,7 +787,6 @@ def main() -> None:
 <a href="index.html#society"><span class="nav-icon">◑</span> 学会任职</a>
 <a href="index.html#awards"><span class="nav-icon">★</span> 获奖</a>
 <div class="nav-section-label">其他</div>
-<a href="index.html#background"><span class="nav-icon">◎</span> 教育和工作背景</a>
 <a href="index.html#hobbies"><span class="nav-icon">◌</span> 闲暇爱好</a>
 </nav>"""
 
