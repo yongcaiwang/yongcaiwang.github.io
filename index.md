@@ -5,7 +5,7 @@
 |  <img src="k6g5nr-20240618072749426.png" align="left" />    |  [English Version](index_en.html)  |
 | ---- | ---: |
 
-王永才，中国人民大学计算机系教授，博导，计算机系副系主任、信息学院科研与学科建设工委主任。本科、博士均毕业于清华大学自动化系，**主要研究领域为智能体系统、机器视觉、Spatial AI、协同感知、多智能体强化学习，在国内外知名期刊和会议发表论文120余篇，其中CCF A，B类论文 60余篇。研究成果被应用于智能车、智能船、视觉目标检测与定位等领域。主持国家自然科学基金项目多项，国家科技支撑计划子课题，企业项目多项，2021年由于海上目标定位工作获得交通运输部航海学会技术发明奖一等奖，2022年获得交通运输部航海学会科技进步二等奖，交通运输部重大创新成果入库成果奖，2026 年获得石油和化工自动化科学技术三等奖。**担任CCF智能机器人专委会执行委员、物联网专委会执行委员、中国控制学会DEDS专委会执行委员、SIGBED  China专委、CAAI认知与信息处理等专委会委员，CIKM2025, WWW2025, AAAI2026 等会议程序委员会委员，Computer Science and Technology 期刊编委，International Journal of Robotics and Automation Technology 期刊编委。
+王永才，中国人民大学计算机系教授，博导，计算机系副系主任、信息学院科研与学科建设工委主任。本科、博士均毕业于清华大学自动化系，**主要研究领域为智能体系统、机器视觉、Spatial AI、协同感知、多智能体强化学习，在国内外知名期刊和会议发表论文120余篇，其中CCF A，B类论文 70余篇。研究成果被应用于智能车、智能船、视觉目标检测与定位等领域。主持国家自然科学基金项目多项，国家科技支撑计划子课题，企业项目多项，2021年由于海上目标定位工作获得交通运输部航海学会技术发明奖一等奖，2022年获得交通运输部航海学会科技进步二等奖，交通运输部重大创新成果入库成果奖，2026 年获得石油和化工自动化科学技术三等奖。**担任CCF智能机器人专委会执行委员、物联网专委会执行委员、中国控制学会DEDS专委会执行委员、SIGBED  China专委、CAAI认知与信息处理等专委会委员，CIKM2025, WWW2025, AAAI2026 等会议程序委员会委员，Computer Science and Technology 期刊编委，International Journal of Robotics and Automation Technology 期刊编委。
 
 **DBLP**论文目录：https://dblp.org/pid/04/2124.html
 
@@ -102,7 +102,6 @@ Email: ycw@ruc.edu.cn
 
 **[ICML]** [Guoxin Lian](https://arxiv.org/search/cs?searchtype=author&query=Lian,+G), [Shuo Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+S), [Yucheng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Y), [Yongcai Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+Y), [Maiyue Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+M), [Kaihui Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+K), [Bo Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+B), [Zhizhong Su](https://arxiv.org/search/cs?searchtype=author&query=Su,+Z), [Deying Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+D), [Zhaoxin Fan](https://arxiv.org/search/cs?searchtype=author&query=Fan,+Z), **[MapDream: Task-Driven Map Learning for Vision-Language Navigation](https://arxiv.org/abs/2602.00222)**, ICML 2026. 
 
-**[ICLR workshop]** [Xiaowei Lv](https://dblp.org/pid/92/8066.html), [Zhilin Zhang](https://dblp.org/pid/95/1820.html), [Yijun Li](https://dblp.org/pid/52/6049.html), [Yusen Huo](https://dblp.org/pid/249/8158.html), [Siyuan Ju](https://dblp.org/pid/426/9336.html), [Xuyan Li](https://dblp.org/pid/181/9849.html), [Chunxiang Hong](https://dblp.org/pid/426/9694.html), [Tianyu Wang](https://dblp.org/pid/35/8397.html), Yongcai Wang, [Peng Sun](https://dblp.org/pid/88/619.html), [Chuan Yu](https://dblp.org/pid/50/790.html), [Jian Xu](https://dblp.org/pid/73/1149.html), [Bo Zheng](https://dblp.org/pid/33/1610.html): [**DecisionLLM: Large Language Models for Long Sequence Decision Exploration**](https://arxiv.org/abs/2601.10148), ICLR 2026 Workshop, 2026
 
 **[TVCG]** [Xudong Cai](https://ieeexplore.ieee.org/author/37089893125); [Yongcai Wang](https://ieeexplore.ieee.org/author/37086331551); [Zhaoxin Fan](https://ieeexplore.ieee.org/author/37089721336); [Haoran Deng](https://ieeexplore.ieee.org/author/37085369729); [Shuo Wang](https://ieeexplore.ieee.org/author/37089762544); [Wanting Li](https://ieeexplore.ieee.org/author/37089687107), **[Dust to Tower: Prior-Driven Coarse-to-Fine Photo-Realistic Scene Reconstruction from Sparse Uncalibrated Images](https://ieeexplore.ieee.org/document/11456202/media#media)**,  [IEEE Transactions on Visualization and Computer Graphics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945)  (**TVCG 2026**), **CCF A**,  [**Codes**](https://github.com/minoTrey/DUSt3R-Paper-Collection/blob/main/docs/gaussian-splatting/dust-to-tower.md)
 
@@ -139,6 +138,8 @@ Email: ycw@ruc.edu.cn
 **[TOSN]** Xuewei Bai, **Yongcai Wang***, Peng Wang, Chunxu Li, Shuo Wang, Xudong Cai, Deying Li,  A Geometric and Hypothesis-Based Method for Low-Overlap, Sparse, and Featureless Point Set Matching, [Transactions on Sensor Networks](http://mc.manuscriptcentral.com/tosn) (2025), accepted. 
 
 **[ICMR]**  Yance Fang, Hualong Cao, **Yongcai Wang***, Haoyu Liu, Deying Li, QUEST: QUasi-clique Enhanced Structure-aware Transformation for Low-overlap Point Cloud Registration, ICMR 2025, **CCF B**, **Codes:** https://github.com/Flanture/QUEST-QUasi-clique-Enhanced-Structure-aware-Transformation-for-Low-overlap-Point-Cloud-Registration
+
+**[TVCG]**  Hualong Cao, **Yongcai Wang\***, Deying Li, [IPT: Iterative Pairing and Transformation for Multiple Point Cloud Registration](https://doi.org/10.1109/TVCG.2024.3509896), **IEEE Transactions on Visualization and Computer Graphics**, 31(9), 6321-6336, 2025, **doi:** [10.1109/TVCG.2024.3509896](https://doi.org/10.1109/TVCG.2024.3509896) **(CCF A)**
 
 **[TCS]**  Xiaowei Lv, **Yongcai Wang**, Deying Li*, [Maximum core spanning tree maintenance for large dynamic graphs](papers/Maximum_core_spanning_TCS2025.pdf), Theoretical Computer Science, 1044(2025) 115278, 1-13, **CCF B**
 
