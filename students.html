@@ -24,7 +24,7 @@
     --ink-faint: #8888aa;
     --paper: #faf9f7;
     --paper-warm: #f3f0ea;
-    --paper-tags-col: 200px;
+    --paper-label-col: 108px;
     --accent: #9b1b1b;
     --accent-gold: #b8860b;
     --accent-soft: #f0dada;
@@ -591,7 +591,7 @@
     padding: 14px 0;
     border-bottom: 1px solid var(--border);
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) var(--paper-tags-col);
+    grid-template-columns: max-content minmax(0, 1fr);
     column-gap: 16px;
     row-gap: 4px;
     align-items: start;
@@ -600,6 +600,17 @@
   }
 
   .paper-item:last-child { border-bottom: none; }
+
+  .paper-labels {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    width: max-content;
+    min-width: 60px;
+  }
 
   .paper-venue-tag {
     display: inline-block;
@@ -612,9 +623,7 @@
     min-width: 60px;
     text-align: center;
     height: fit-content;
-    margin-top: 2px;
-    grid-column: 1;
-    grid-row: 1 / span 2;
+    flex-shrink: 0;
     letter-spacing: 0.02em;
   }
 
@@ -654,18 +663,20 @@
   }
 
   .paper-tags {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-    align-self: start;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-end;
-    align-content: flex-start;
-    gap: 8px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
     margin: 0;
-    padding-top: 2px;
     min-height: 0;
+    width: 100%;
+  }
+
+  .paper-labels .link-badge,
+  .paper-labels .text-note {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
   }
 
   .paper-tags:empty {
@@ -1170,15 +1181,10 @@
       grid-template-columns: 1fr;
     }
     .paper-item {
-      grid-template-columns: auto minmax(0, 1fr) minmax(120px, var(--paper-tags-col));
+      grid-template-columns: max-content minmax(0, 1fr);
     }
-    .paper-tags {
-      grid-column: 3;
-      grid-row: 1 / span 2;
-      justify-content: flex-end;
-    }
-    .paper-venue-tag {
-      grid-row: 1 / span 2;
+    .paper-labels {
+      min-width: 56px;
     }
   }
 
@@ -1487,51 +1493,63 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name"><a class="student-linked-name" href="https://markinruc.github.io/" target="_blank" rel="noopener noreferrer">Shuo Wang</a></h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">6 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">CVPR</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://horizonrobotics.github.io/robot_lab/progress-think/" target="_blank">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="https://horizonrobotics.github.io/robot_lab/progress-think/">Progress-Think: Semantic Progress Reasoning for Vision-Language Navigation</a>
 <div class="paper-authors">Shuo Wang, Yucheng Wang, Guoxin Lian, <strong>Yongcai Wang*</strong>, et al. CVPR 2026</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://horizonrobotics.github.io/robot_lab/progress-think/" target="_blank">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">AAAI</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://horizonrobotics.github.io/robot_lab/monodream/" target="_blank">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="https://openreview.net/forum?id=Fus8j5fewA">MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming</a>
 <div class="paper-authors">Shuo Wang, <strong>Yongcai Wang*</strong>, Wanting Li, et al. AAAI 2026</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://horizonrobotics.github.io/robot_lab/monodream/" target="_blank">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">NeurIPS</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/HorizonRobotics/RoboOrchardLab/tree/master/projects/aux_think" target="_blank">Code</a><a class="link-badge" href="https://horizonrobotics.github.io/robot_lab/aux-think/index.html" target="_blank">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="https://horizonrobotics.github.io/robot_lab/aux-think/index.html">Aux-Think: Exploring Reasoning Strategies for Data-Efficient Vision-Language Navigation</a>
 <div class="paper-authors">Shuo Wang, <strong>Yongcai Wang*</strong>, et al. NeurIPS 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/HorizonRobotics/RoboOrchardLab/tree/master/projects/aux_think" target="_blank">Code</a><a class="link-badge" href="https://horizonrobotics.github.io/robot_lab/aux-think/index.html" target="_blank">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">CVPR</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Wang_MambaVO_Deep_Visual_Odometry_Based_on_Sequential_Matching_Refinement_and_CVPR_2025_paper.html">MambaVO: Deep Visual Odometry Based on Sequential Matching Refinement and Training Smoothing</a>
 <div class="paper-authors">Shuo Wang, Wanting Li, <strong>Yongcai Wang*</strong>, et al. CVPR 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">MM</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/markinruc/GSLAMOT" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://github.com/markinruc/GSLAMOT">GSLAMOT: A Tracklet and Query Graph-based Simultaneous Locating, Mapping, and Multiple Object Tracking System</a>
 <div class="paper-authors">Shuo Wang, <strong>Yongcai Wang*</strong>, et al. ACM MM 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/markinruc/GSLAMOT" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">JSAC</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="JSAC2023/JSAC2023Wang.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="JSAC2023/JSAC2023Wang.pdf">Communication Efficient, Distributed Relative State Estimation in UAV Networks</a>
 <div class="paper-authors">Shuo Wang, <strong>Yongcai Wang*</strong>, Xuewei Bai, Deying Li. IEEE JSAC 2023</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="JSAC2023/JSAC2023Wang.html">Project</a></div>
 </div>
 </div>
 </div></article>
@@ -1539,43 +1557,53 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name"><a class="student-linked-name" href="https://auniquesun.github.io/" target="_blank" rel="noopener noreferrer">Hongyu Sun</a></h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">5 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">CVPR</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/auniquesun/Point-Cache" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Sun_Point-Cache_Test-time_Dynamic_and_Hierarchical_Cache_for_Robust_and_Generalizable_CVPR_2025_paper.html">Point-Cache: Test-time Dynamic and Hierarchical Cache for Robust and Generalizable Point Cloud Analysis</a>
 <div class="paper-authors">Hongyu Sun, Qiuhong Ke, <strong>Yongcai Wang*</strong>, et al. CVPR 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/auniquesun/Point-Cache" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">NeurIPS</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/auniquesun/Point-PRC" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="papers/neurips2024/Point_PRC.pdf">A Prompt Learning Based Regulation Framework for Generalizable Point Cloud Analysis</a>
 <div class="paper-authors">Hongyu Sun, Qiuhong Ke, <strong>Yongcai Wang*</strong>, et al. NeurIPS 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/auniquesun/Point-PRC" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TVCG</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="vsformer/VSFormer.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="vsformer/VSFormer.pdf">VSFormer: Mining Correlations in Flexible View Set for Multi-view 3D Shape Understanding</a>
 <div class="paper-authors">Hongyu Sun, <strong>Yongcai Wang*</strong>, et al. IEEE TVCG 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="vsformer/VSFormer.html">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="ppt/ppt.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="ppt/ppt.pdf">Parameter-efficient Prompt Learning for 3D Point Cloud Understanding</a>
 <div class="paper-authors">Hongyu Sun, <strong>Yongcai Wang*</strong>, et al. ICRA 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="ppt/ppt.html">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="vipformer/vipformer.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="vipformer/vipformer.pdf">ViPFormer: Efficient Vision-and-Pointcloud Transformer for Unsupervised Pointcloud Understanding</a>
 <div class="paper-authors">Hongyu Sun, <strong>Yongcai Wang*</strong>, Xudong Cai, Xuewei Bai, Deying Li. ICRA 2023</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="vipformer/vipformer.html">Project</a></div>
 </div>
 </div>
 </div></article>
@@ -1583,43 +1611,53 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name"><a class="student-linked-name" href="https://master-cai.github.io/" target="_blank" rel="noopener noreferrer">Xudong Cai</a></h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">5 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TVCG</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/minoTrey/DUSt3R-Paper-Collection/blob/main/docs/gaussian-splatting/dust-to-tower.md" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://ieeexplore.ieee.org/document/11456202/media#media">Dust to Tower: Prior-Driven Coarse-to-Fine Photo-Realistic Scene Reconstruction from Sparse Uncalibrated Images</a>
 <div class="paper-authors">Xudong Cai, <strong>Yongcai Wang</strong>, Zhaoxin Fan, et al. IEEE TVCG 2026</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/minoTrey/DUSt3R-Paper-Collection/blob/main/docs/gaussian-splatting/dust-to-tower.md" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">AAAI</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="https://openreview.net/forum?id=wVCOgaKBn9">Mem4D: Decoupling Static and Dynamic Memory for Dynamic Scene Reconstruction</a>
 <div class="paper-authors">Xudong Cai, Shuo Wang, Peng Wang, <strong>Yongcai Wang*</strong>, et al. AAAI 2026</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">MM</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/Master-cai/PRISM" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://www.arxiv.org/abs/2408.03598">PRISM: PRogressive dependency maxImization for Scale-invariant image Matching</a>
 <div class="paper-authors">Xudong Cai, <strong>Yongcai Wang*</strong>, et al. ACM MM 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/Master-cai/PRISM" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">软件学报</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/relocalization_survey.pdf">Survey on Visual Relocalization in Prior Map</a>
 <div class="paper-authors">Xudong Cai, <strong>Yongcai Wang*</strong>, Xuewei Bai, Deying Li. Journal of Software, 2024 (in Chinese)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="VOLoc/VOLoc.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="VOLoc/VOLoc.pdf">VOLoc: Visual Place Recognition by Querying Compressed Lidar Map</a>
 <div class="paper-authors">Xudong Cai, <strong>Yongcai Wang*</strong>, Zhe Huang, et al. ICRA 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="VOLoc/VOLoc.html">Project</a></div>
 </div>
 </div>
 </div></article>
@@ -1627,35 +1665,43 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name"><a class="student-linked-name" href="https://haodi-ping.github.io/" target="_blank" rel="noopener noreferrer">Haodi Ping</a></h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">4 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TON</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/Understanding.pdf">Understanding Hidden Knowledge in Generic Graphs</a>
 <div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Yu Zhang, Deying Li, Lihua Xie. IEEE/ACM TON 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TON</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="localizability/localizability.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="localizability/Understanding.pdf">Understanding Node Localizability in Barycentric Linear Localization</a>
 <div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Deying Li, Wenping Chen. IEEE/ACM TON 2022</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="localizability/localizability.html">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TMC</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="flippingfree/flippingfree.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="flippingfree/flippingfree.pdf">Flipping Free Conditions and Their Application in Sparse Network Localization</a>
 <div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Deying Li, Tianyuan Sun. IEEE TMC 21(3), 986-1003, 2022</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="flippingfree/flippingfree.html">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">TOSN</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/Node_Localizability.pdf">On Node Localizability Identification in Barycentric Linear Localization</a>
 <div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Xingfa Shen, Deying Li, Wenping Chen. ACM TOSN 19(1) (2023)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 </div></article>
@@ -1663,35 +1709,43 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Wanting Li</h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">4 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">MM</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="colslam/ColSLAM.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="colslam/ColSLAM.pdf">ColSLAM: A Versatile Collaborative SLAM System for Mobile Phones Using Point-Line Features and Map Caching</a>
 <div class="paper-authors">Wanting Li, <strong>Yongcai Wang*</strong>, Yongyu Guo, Shuo Wang, et al. ACM Multimedia 2023</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="colslam/ColSLAM.html">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">TCS</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/mapmatching.pdf">A robust map matching method by considering memorized multiple matching candidates</a>
 <div class="paper-authors">Wanting Li, <strong>Yongcai Wang*</strong>, Deying Li, Xiaojia Xu. Theor. Comput. Sci. 941 (2023)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">FGCS</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="https://doi.org/10.1016/j.future.2023.07.019">TrackPuzzle: Efficient registration of unlabeled PDR trajectories for learning indoor route graph</a>
 <div class="paper-authors">Wanting Li, <strong>Yongcai Wang*</strong>, Yu Shao, Gaowei Hu, Deying Li. Future Gener. Comput. Syst. 149, 171-183 (2023)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ">AAIM</span>
+
+</div>
 <div class="paper-content">
 <a href="https://doi.org/10.1007/978-3-031-16081-3_20">MCM: A Robust Map Matching Method by Tracking Multiple Road Candidates</a>
 <div class="paper-authors">Wanting Li, <strong>Yongcai Wang*</strong>, Deying Li, Xiaojia Xu. AAIM 2022</div>
-
 </div>
 </div>
 </div></article>
@@ -1699,35 +1753,43 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Xiaojia Xu</h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">4 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">SIGMOD</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/Elssky/IPPV" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="papers/SIGMOD2025.pdf">An Efficient and Exact Algorithm for Locally h-Clique Densest Subgraph Discovery</a>
 <div class="paper-authors">Xiaojia Xu, Haoyu Liu, Xiaowei Lv, <strong>Yongcai Wang*</strong>, et al. SIGMOD 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/Elssky/IPPV" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">TCS</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="Defend/Defend.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="Defend/Defend.pdf">A fault diagnosis method to defend scapegoating attack in network tomography</a>
 <div class="paper-authors">Xiaojia Xu, <strong>Yongcai Wang*</strong>, Yu Zhang, Deying Li. Theor. Comput. Sci. 939 (2023)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="Defend/Defend.html">Project</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">TNSE</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="https://ieeexplore.ieee.org/document/10109847">LSA: Understanding the Threat of Link-Based Scapegoating Attack in Network Tomography</a>
 <div class="paper-authors">Xiaojia Xu, <strong>Yongcai Wang*</strong>, Lanling Xu, Deying Li. IEEE TNSE 10(6), 3670-3681 (2023)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ">AAIM</span>
+
+</div>
 <div class="paper-content">
 <a href="https://doi.org/10.1007/978-3-031-16081-3_15">Defense of Scapegoating Attack in Network Tomography</a>
 <div class="paper-authors">Xiaojia Xu, <strong>Yongcai Wang*</strong>, Yu Zhang, Deying Li. AAIM 2022</div>
-
 </div>
 </div>
 </div></article>
@@ -1735,35 +1797,43 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Zhe Huang</h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">4 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">MM</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><span class="text-note">Oral 3.97%</span><a class="link-badge" href="https://github.com/HuangZhe885/RoCo" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://arxiv.org/html/2408.00257v1">RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment</a>
 <div class="paper-authors">Zhe Huang, Shuo Wang, <strong>Yongcai Wang*</strong>, et al. ACM MM 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><span class="text-note">Oral 3.97%</span><a class="link-badge" href="https://github.com/HuangZhe885/RoCo" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ADVEI</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/HuangZhe885/Collaborative-Perception" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://www.sciencedirect.com/science/article/abs/pii/S1474034625002447">Collaborative 3D object detection by smart vehicles considering semantic information and agent heterogeneity</a>
 <div class="paper-authors">Zhe Huang, <strong>Yongcai Wang*</strong>, Deying Li, Yunjun Han, Lei Wang. Adv. Eng. Informatics 65 (2025)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/HuangZhe885/Collaborative-Perception" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ADVEI</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/object_detection.pdf">An object detection algorithm combining semantic and geometric information of the 3D point cloud</a>
 <div class="paper-authors">Zhe Huang, <strong>Yongcai Wang*</strong>, Jie Wen, Peng Wang, Xudong Cai. Adv. Eng. Informatics 56 (2023)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ">IJCNN</span>
+<div class="paper-tags"><a class="link-badge" href="https://github.com/HuangZhe885/Boundary-Aware-SA" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://doi.org/10.1109/IJCNN54540.2023.10191728">Boundary-Aware Set Abstraction for 3D Object Detection</a>
 <div class="paper-authors">Zhe Huang, <strong>Yongcai Wang*</strong>, Xingui Tang, Hongyu Sun. IJCNN 2023</div>
-<div class="paper-tags"><a class="link-badge" href="https://github.com/HuangZhe885/Boundary-Aware-SA" target="_blank">Code</a></div>
 </div>
 </div>
 </div></article>
@@ -1771,27 +1841,33 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name"><a class="student-linked-name" href="https://penk1ng.github.io/" target="_blank" rel="noopener noreferrer">Peng Wang</a></h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">3 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">CVPR</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/PenK1nG/SAMosaic3D" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://github.com/PenK1nG/SAMosaic3D">MOSAIC3D: Modular Scene Assembly for Real-Time 3D Segment Anything</a>
 <div class="paper-authors">Peng Wang, <strong>Yongcai Wang*</strong>, Wang Chen, Hualong Cao, et al. CVPR 2026</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/PenK1nG/SAMosaic3D" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">ICCV</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/PenK1nG/LA-MOTR" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://openreview.net/forum?id=TPRpvvuvYM">LA-MOTR: End-to-End Multi-Object Tracking by Learnable Association</a>
 <div class="paper-authors">Peng Wang, <strong>Yongcai Wang*</strong>, Hualong Cao, et al. ICCV 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/PenK1nG/LA-MOTR" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="DroneMOT/DroneMOT.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="DroneMOT/DroneMOT.html">DroneMOT: Drone-based Multi-Object Tracking Considering Detection Difficulties and Simultaneous Moving of Drones and Objects</a>
 <div class="paper-authors">Peng Wang, <strong>Yongcai Wang*</strong>, Deying Li. ICRA 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="DroneMOT/DroneMOT.html">Project</a></div>
 </div>
 </div>
 </div></article>
@@ -1799,27 +1875,33 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Xuewei Bai</h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">3 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">NeurIPS</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/baixuewei430-dotcom/STAR" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://neurips.cc/virtual/2025/poster/116808">STAR: Spatial-Temporal Tracklet Matching for Multi-Object Tracking</a>
 <div class="paper-authors">Xuewei Bai, <strong>Yongcai Wang*</strong>, Deying Li, et al. NeurIPS 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/baixuewei430-dotcom/STAR" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">TOSN</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="https://doi.org/10.1145/3746453">A Geometric and Hypothesis-Based Method for Low-Overlap, Sparse, and Featureless Point Set Matching</a>
 <div class="paper-authors">Xuewei Bai, <strong>Yongcai Wang*</strong>, Peng Wang, Chunxu Li, Shuo Wang, Xudong Cai, Deying Li. ACM TOSN (2025)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">TOSN</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/InferLoc.pdf">InferLoc: Hypothesis-Based Joint Edge Inference and Localization in Sparse Sensor Networks</a>
 <div class="paper-authors">Xuewei Bai, <strong>Yongcai Wang*</strong>, Haodi Pin, et al. ACM TOSN 20(1) (2024)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 </div></article>
@@ -1827,19 +1909,23 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Hualong Cao</h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">2 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TVCG</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="https://doi.org/10.1109/TVCG.2024.3509896">IPT: Iterative Pairing and Transformation for Multiple Point Cloud Registration</a>
 <div class="paper-authors">Hualong Cao, <strong>Yongcai Wang*</strong>, Deying Li. IEEE TVCG 31(9), 6321-6336 (2025)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TVCG</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="DMS/DMS.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="DMS/DMS.pdf">DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph</a>
 <div class="paper-authors">Hualong Cao, <strong>Yongcai Wang*</strong>, Deying Li. IEEE TVCG 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="DMS/DMS.html">Project</a></div>
 </div>
 </div>
 </div></article>
@@ -1847,19 +1933,23 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Kang Yang</h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">2 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/sidiangongyuan/EIMC" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://arxiv.org/abs/2603.02532">EIMC: Efficient Instance-aware Multi-modal Collaborative Perception</a>
 <div class="paper-authors">Kang Yang, Peng Wang, Lantao Li, <strong>Yongcai Wang*</strong>, et al. ICRA 2026</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/sidiangongyuan/EIMC" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/sidiangongyuan/ACCO" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://arxiv.org/abs/2503.13946">Is Discretization Fusion All You Need for Collaborative Perception?</a>
 <div class="paper-authors">Kang Yang, Tianci Bu, Lantao Li, <strong>Yongcai Wang*</strong>, et al. ICRA 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/sidiangongyuan/ACCO" target="_blank">Code</a></div>
 </div>
 </div>
 </div></article>
@@ -1867,11 +1957,13 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Shuai Liu</h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">1 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <span style="font-weight:600;color:var(--ink)">SupGS-SLAM: Gaussian Splatting SLAM with Efficient Keyframe Strategy and Supplementary Mapping</span>
 <div class="paper-authors">Shuai Liu, <strong>Yongcai Wang*</strong>, Wenping Chen, et al. ICRA 2026</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 </div></article>
@@ -1879,11 +1971,13 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Yance Fang</h3><span class="student-degree phd">Ph.D.</span></div><div class="student-meta"><span class="student-count">1 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICMR</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/Flanture/QUEST-QUasi-clique-Enhanced-Structure-aware-Transformation-for-Low-overlap-Point-Cloud-Registration" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="https://github.com/Flanture/QUEST-QUasi-clique-Enhanced-Structure-aware-Transformation-for-Low-overlap-Point-Cloud-Registration">QUEST: QUasi-clique Enhanced Structure-aware Transformation for Low-overlap Point Cloud Registration</a>
 <div class="paper-authors">Yance Fang, Hualong Cao, <strong>Yongcai Wang*</strong>, Haoyu Liu, Deying Li. ICMR 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/Flanture/QUEST-QUasi-clique-Enhanced-Structure-aware-Transformation-for-Low-overlap-Point-Cloud-Registration" target="_blank">Code</a></div>
 </div>
 </div>
 </div></article>
@@ -1894,27 +1988,33 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name"><a class="student-linked-name" href="https://gom168.github.io/" target="_blank" rel="noopener noreferrer">Xiaowei Lv</a></h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">3 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">WWW</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/gom168/CorenessMaximization" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="papers/Coreness Maximization, WWW2025.pdf">Coreness Maximization through Budget-Limited Edge Insertion</a>
 <div class="paper-authors">Xiaowei Lv, Xiaojia Xu, <strong>Yongcai Wang*</strong>, et al. WWW 2025</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://github.com/gom168/CorenessMaximization" target="_blank">Code</a></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">TCS</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="https://doi.org/10.1016/j.tcs.2025.115278">Maximum core spanning tree maintenance for large dynamic graphs</a>
 <div class="paper-authors">Xiaowei Lv, <strong>Yongcai Wang</strong>, Deying Li*. Theor. Comput. Sci. 1044, 115278, 1-13 (2025)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ">ICLR workshop</span>
+
+</div>
 <div class="paper-content">
 <a href="https://arxiv.org/abs/2601.10148">DecisionLLM: Large Language Models for Long Sequence Decision Exploration</a>
 <div class="paper-authors">Xiaowei Lv, Zhilin Zhang, Yijun Li, Yusen Huo, Siyuan Ju, Xuyan Li, Chunxiang Hong, Tianyu Wang, <strong>Yongcai Wang</strong>, Peng Sun, Chuan Yu, Jian Xu, Bo Zheng. ICLR 2026 Workshop</div>
-
 </div>
 </div>
 </div></article>
@@ -1922,27 +2022,33 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Xuehan Ye</h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">3 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">Ubicomp</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/unsupervised_localization.pdf">Unsupervised Localization by Learning Transition Model</a>
 <div class="paper-authors">Xuehan Ye, Shuo Huang, <strong>Yongcai Wang*</strong>, Wenping Chen, Deying Li. IMWUT 3(2) (2019)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">Ubicomp</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/Ye-Ubicomp18.pdf">Accurate and Efficient Indoor Location by Dynamic Warping in Sequence Type Radio-map</a>
 <div class="paper-authors">Xuehan Ye, <strong>Yongcai Wang*</strong>, Yuhe Guo, Wei Hu, Deying Li. Ubicomp, Oct. 2018</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">SECON</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="https://yongcaiwang.github.io/papers/warpmap.pdf">WarpMap: Accurate and Efficient Indoor Locating by Dynamic Warping in Sequence-type Radio-map</a>
 <div class="paper-authors">Xuehan Ye, <strong>Yongcai Wang*</strong>, Wei Hu, Lei Song, Zhaoquan Gu, Deying Li. SECON 2016</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 </div></article>
@@ -1950,19 +2056,23 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Tianyuan Sun</h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">2 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">自动化学报</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/graph_realization_survey.pdf">A Survey and Evaluation of Graph Realization Algorithms</a>
 <div class="paper-authors">Tianyuan Sun, <strong>Yongcai Wang*</strong>, Deying Li. ACTA AUTOMATICA SINICA 46(4), 2020 (CCF A, in Chinese)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TON</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/wcs.pdf">WCS: Weighted Component Stitching for Sparse Network Localization</a>
 <div class="paper-authors">Tianyuan Sun, <strong>Yongcai Wang*</strong>, Deying Li, Zhaoquan Gu, Jia Xu. IEEE/ACM TON 26(5), 2018</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 </div></article>
@@ -1970,11 +2080,13 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Guoxin Lian</h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">1 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">ICML</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://horizonrobotics.github.io/robot_lab/mapdream/" target="_blank">Project</a><a class="link-badge" href="https://www.horizon.auto/news/technology/436" target="_blank">News</a></div>
+</div>
 <div class="paper-content">
 <a href="https://arxiv.org/abs/2602.00222">MapDream: Task-Driven Map Learning for Vision-Language Navigation</a>
 <div class="paper-authors">Guoxin Lian, Shuo Wang, Yucheng Wang, <strong>Yongcai Wang</strong>, et al. ICML 2026</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="https://horizonrobotics.github.io/robot_lab/mapdream/" target="_blank">Project</a><a class="link-badge" href="https://www.horizon.auto/news/technology/436" target="_blank">News</a></div>
 </div>
 </div>
 </div></article>
@@ -1982,11 +2094,13 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Haoyu Liu</h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">1 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">ICDE</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="RIPPLE/RIPPLE.html">Project</a><a class="link-badge" href="https://github.com/Elssky/RIPPLE" target="_blank">Code</a></div>
+</div>
 <div class="paper-content">
 <a href="RIPPLE/RIPPLE.pdf">Bottom-up k-Vertex Connected Component Enumeration by Multiple Extension</a>
 <div class="paper-authors">Haoyu Liu, <strong>Yongcai Wang*</strong>, Xiaojia Xu, Deying Li. ICDE 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="RIPPLE/RIPPLE.html">Project</a><a class="link-badge" href="https://github.com/Elssky/RIPPLE" target="_blank">Code</a></div>
 </div>
 </div>
 </div></article>
@@ -1994,11 +2108,13 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Qinhan Wei</h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">1 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">TON</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="EMI/EMI.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="EMI/EMI.pdf">EMI: An Efficient Algorithm for Identifying Maximal Rigid Clusters in 3D Generic Graphs</a>
 <div class="paper-authors">Qinhan Wei, <strong>Yongcai Wang*</strong>, Deying Li. IEEE/ACM TON 32(1), 460-474, 2024</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span><a class="link-badge" href="EMI/EMI.html">Project</a></div>
 </div>
 </div>
 </div></article>
@@ -2006,11 +2122,13 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Wenshuang Song</h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">1 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ISMAR</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
 <div class="paper-content">
 <a href="VTONShoes.pdf">VTONShoes: Virtual Try-on of Shoes in Augmented Reality on a Mobile Device</a>
 <div class="paper-authors">Wenshuang Song, Yanhe Gong, <strong>Yongcai Wang*</strong>. ISMAR 2022</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 </div></article>
@@ -2018,11 +2136,13 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Xiaohang Yin</h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">1 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfa">软件学报</span>
+<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
 <div class="paper-content">
 <a href="papers/Unet_survey.pdf">Survey of Medical Image Segmentation Technology Based on U-Net Structure Improvement</a>
 <div class="paper-authors">Xiaohang Yin, <strong>Yongcai Wang*</strong>, Deying Li. Journal of Software, 2020 (CCF A, in Chinese)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
 </div>
 </div>
 </div></article>
@@ -2030,11 +2150,13 @@
 <header class="student-header"><div class="student-identity"><h3 class="student-name">Yu Zhang</h3><span class="student-degree master">Master Student</span></div><div class="student-meta"><span class="student-count">1 篇</span></div></header>
 <div class="student-papers">
 <div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">TOSN</span>
+<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="Gpart/Gpart.html">Project</a></div>
+</div>
 <div class="paper-content">
 <a href="papers/TOSN_2023_GPART.pdf">GPART: Partitioning Maximal Redundant Rigid and Maximal Global Rigid Components in Generic Distance Graphs</a>
 <div class="paper-authors">Yu Zhang, Qinhan Wei, <strong>Yongcai Wang*</strong>, Haodi Ping, Deying Li. ACM TOSN 19(4) (2023)</div>
-<div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="Gpart/Gpart.html">Project</a></div>
 </div>
 </div>
 </div></article>

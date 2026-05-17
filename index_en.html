@@ -29,7 +29,7 @@
     --ink-faint: #8888aa;
     --paper: #faf9f7;
     --paper-warm: #f3f0ea;
-    --paper-tags-col: 200px;
+    --paper-label-col: 108px;
     --accent: #9b1b1b;
     --accent-gold: #b8860b;
     --accent-soft: #f0dada;
@@ -596,7 +596,7 @@
     padding: 14px 0;
     border-bottom: 1px solid var(--border);
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) var(--paper-tags-col);
+    grid-template-columns: max-content minmax(0, 1fr);
     column-gap: 16px;
     row-gap: 4px;
     align-items: start;
@@ -605,6 +605,17 @@
   }
 
   .paper-item:last-child { border-bottom: none; }
+
+  .paper-labels {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    width: max-content;
+    min-width: 60px;
+  }
 
   .paper-venue-tag {
     display: inline-block;
@@ -617,9 +628,7 @@
     min-width: 60px;
     text-align: center;
     height: fit-content;
-    margin-top: 2px;
-    grid-column: 1;
-    grid-row: 1 / span 2;
+    flex-shrink: 0;
     letter-spacing: 0.02em;
   }
 
@@ -659,18 +668,20 @@
   }
 
   .paper-tags {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-    align-self: start;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-end;
-    align-content: flex-start;
-    gap: 8px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
     margin: 0;
-    padding-top: 2px;
     min-height: 0;
+    width: 100%;
+  }
+
+  .paper-labels .link-badge,
+  .paper-labels .text-note {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
   }
 
   .paper-tags:empty {
@@ -1175,15 +1186,10 @@
       grid-template-columns: 1fr;
     }
     .paper-item {
-      grid-template-columns: auto minmax(0, 1fr) minmax(120px, var(--paper-tags-col));
+      grid-template-columns: max-content minmax(0, 1fr);
     }
-    .paper-tags {
-      grid-column: 3;
-      grid-row: 1 / span 2;
-      justify-content: flex-end;
-    }
-    .paper-venue-tag {
-      grid-row: 1 / span 2;
+    .paper-labels {
+      min-width: 56px;
     }
   }
 
@@ -1205,7 +1211,6 @@
 <nav>
 <div class="nav-section-label">Profile</div>
 <a href="#profile"><span class="nav-icon">◎</span> About</a>
-<a href="#background"><span class="nav-icon">◎</span> Education &amp; Experience</a>
 <a href="#research"><span class="nav-icon">◈</span> Research</a>
 <a href="#recruit"><span class="nav-icon">✦</span> Prospective Students</a>
 <div class="nav-section-label">News &amp; Talks</div>
@@ -1221,6 +1226,7 @@
 <a href="#society"><span class="nav-icon">◑</span> Professional Societies</a>
 <a href="#awards"><span class="nav-icon">★</span> Awards</a>
 <div class="nav-section-label">More</div>
+<a href="#background"><span class="nav-icon">◎</span> Education &amp; Experience</a>
 <a href="#hobbies"><span class="nav-icon">◌</span> Hobbies</a>
 </nav>
 <div class="sidebar-footer">
@@ -1250,55 +1256,6 @@
 </div>
 <div class="profile-contact">
 <p><a href="https://dblp.org/pid/04/2124.html" rel="noopener noreferrer" target="_blank">DBLP</a><span class="contact-sep">·</span><a href="mailto:ycw@ruc.edu.cn">ycw@ruc.edu.cn</a></p>
-</div>
-</section>
-<!-- BACKGROUND -->
-<section class="section" id="background">
-<div class="section-header">
-<h2>Education &amp; Experience</h2>
-<div class="section-line"></div>
-</div>
-<div class="bg-timeline">
-<div class="bg-item bg-item--current">
-<span class="bg-period">2025.07—Present</span>
-<span class="bg-inst"><a href="http://info.ruc.edu.cn/" rel="noopener noreferrer" target="_blank">School of Information, RUC</a></span>
-<span class="bg-role">Professor</span>
-</div>
-<div class="bg-item">
-<span class="bg-period">2015.08—2025.07</span>
-<span class="bg-inst"><a href="http://info.ruc.edu.cn/" rel="noopener noreferrer" target="_blank">School of Information, RUC</a></span>
-<span class="bg-role">Associate Professor</span>
-</div>
-<div class="bg-item">
-<span class="bg-period">2014.02—2014.08</span>
-<span class="bg-inst"><a href="http://www.cornell.edu" rel="noopener noreferrer" target="_blank">Cornell University</a></span>
-<span class="bg-role">Visiting Scholar</span>
-</div>
-<div class="bg-item">
-<span class="bg-period">2011.08—2015.08</span>
-<span class="bg-inst"><a href="http://iiis.tsinghua.edu.cn" rel="noopener noreferrer" target="_blank">IIIS, Tsinghua University</a></span>
-<span class="bg-role">Asst. Researcher</span>
-</div>
-<div class="bg-item">
-<span class="bg-period">2009.08—2011.07</span>
-<span class="bg-inst"><a href="http://iiis.tsinghua.edu.cn" rel="noopener noreferrer" target="_blank">IIIS, Tsinghua University</a></span>
-<span class="bg-role">Postdoc</span>
-</div>
-<div class="bg-item">
-<span class="bg-period">2006.12—2009.08</span>
-<span class="bg-inst"><a href="https://cn.nec.com/zh_CN/research/" rel="noopener noreferrer" target="_blank">NEC Labs China</a></span>
-<span class="bg-role">Assoc. Researcher</span>
-</div>
-<div class="bg-item">
-<span class="bg-period">2001.08—2006.12</span>
-<span class="bg-inst"><a href="http://cfins.au.tsinghua.edu.cn/" rel="noopener noreferrer" target="_blank">Dept. of Automation, Tsinghua University</a></span>
-<span class="bg-role">Ph.D.</span>
-</div>
-<div class="bg-item">
-<span class="bg-period">1997.08—2001.07</span>
-<span class="bg-inst"><a href="https://www.au.tsinghua.edu.cn/" rel="noopener noreferrer" target="_blank">Dept. of Automation, Tsinghua University</a></span>
-<span class="bg-role">B.S.</span>
-</div>
 </div>
 </section>
 <!-- RESEARCH -->
@@ -1789,6 +1746,20 @@
 </div>
 </div>
 <div class="paper-item">
+<span class="paper-venue-tag ccfb">TKDD</span>
+<div class="paper-content">
+<a href="TKDD_2021_Yan.pdf">A Stochastic Algorithm Based on Reverse Sampling Technique to Fight Against the Cyberbullying</a>
+<div class="paper-authors">Ruidong Yan, Yi Li, Deying Li, <strong>Yongcai Wang</strong>, et al. ACM TKDD 15(4) (2021)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
+</div>
+<div class="paper-item">
+<span class="paper-venue-tag ccfb">TCS</span>
+<div class="paper-content">
+<a href="papers/Matching_influence_maximization.pdf">Matching influence maximization in social networks</a>
+<div class="paper-authors">Guoyao Rao, <strong>Yongcai Wang</strong>, Wenping Chen, Deying Li, Weili Wu. Theor. Comput. Sci. 857 (2021)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
+</div>
+<div class="paper-item">
 <span class="paper-venue-tag ccfa">JoSW</span>
 <div class="paper-content">
 <a href="papers/Unet_survey.pdf">Survey of Medical Image Segmentation Technology Based on U-Net Structure Improvement</a>
@@ -1803,10 +1774,31 @@
 </div>
 </div>
 <div class="paper-item">
+<span class="paper-venue-tag ccfb">CN</span>
+<div class="paper-content">
+<a href="papers/CN-Ding-2020.pdf">Optimal charger placement for wireless power transfer</a>
+<div class="paper-authors">Xingjian Ding, <strong>Yongcai Wang</strong>, Guodong Sun, et al. Comput. Networks 170 (2020)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
+</div>
+<div class="paper-item">
+<span class="paper-venue-tag ccfb">TCS</span>
+<div class="paper-content">
+<a href="papers/tcs-DING-2020.pdf">Efficient scheduling of a mobile charger in large-scale sensor networks</a>
+<div class="paper-authors">Xingjian Ding, Wenping Chen, <strong>Yongcai Wang</strong>, Deying Li, Yi Hong. Theor. Comput. Sci. 840 (2020)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
+</div>
+</div>
+<div class="paper-item">
 <span class="paper-venue-tag ccfa">Ubicomp</span>
 <div class="paper-content">
 <a href="papers/unsupervised_localization.pdf">Unsupervised Localization by Learning Transition Model</a>
 <div class="paper-authors">Xuehan Ye, Shuo Huang, <strong>Yongcai Wang*</strong>, Wenping Chen, Deying Li. IMWUT 3(2) (2019)</div><div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
+</div>
+</div>
+<div class="paper-item">
+<span class="paper-venue-tag ccfb">TKDD</span>
+<div class="paper-content">
+<a href="papers/1-TKDD-yan-2019.pdf">Rumor Blocking through Online Link Deletion on Social Networks</a>
+<div class="paper-authors">Ruidong Yan, Yi Li, Weili Wu, Deying Li, <strong>Yongcai Wang</strong>. TKDD 13(2) (2019)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 <div class="paper-item">
@@ -1856,41 +1848,6 @@
 <div class="paper-content">
 <a href="papers/Compressive_sensing.pdf">Compressive Sensing over Strongly Connected Digraph and Its Application in Traffic Monitoring</a>
 <div class="paper-authors">Xiao Qi, <strong>Yongcai Wang*</strong>, Yuexuan Wang, Liwen Xu. INFOCOM 2014</div><div class="paper-tags"><span class="ccf-badge ccf-a">CCF A</span></div>
-</div>
-</div>
-<div class="paper-item">
-<span class="paper-venue-tag ccfb">TKDD</span>
-<div class="paper-content">
-<a href="TKDD_2021_Yan.pdf">A Stochastic Algorithm Based on Reverse Sampling Technique to Fight Against the Cyberbullying</a>
-<div class="paper-authors">Ruidong Yan, Yi Li, Deying Li, <strong>Yongcai Wang</strong>, et al. ACM TKDD 15(4) (2021)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
-</div>
-</div>
-<div class="paper-item">
-<span class="paper-venue-tag ccfb">TCS</span>
-<div class="paper-content">
-<a href="papers/Matching_influence_maximization.pdf">Matching influence maximization in social networks</a>
-<div class="paper-authors">Guoyao Rao, <strong>Yongcai Wang</strong>, Wenping Chen, Deying Li, Weili Wu. Theor. Comput. Sci. 857 (2021)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
-</div>
-</div>
-<div class="paper-item">
-<span class="paper-venue-tag ccfb">CN</span>
-<div class="paper-content">
-<a href="papers/CN-Ding-2020.pdf">Optimal charger placement for wireless power transfer</a>
-<div class="paper-authors">Xingjian Ding, <strong>Yongcai Wang</strong>, Guodong Sun, et al. Comput. Networks 170 (2020)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
-</div>
-</div>
-<div class="paper-item">
-<span class="paper-venue-tag ccfb">TCS</span>
-<div class="paper-content">
-<a href="papers/tcs-DING-2020.pdf">Efficient scheduling of a mobile charger in large-scale sensor networks</a>
-<div class="paper-authors">Xingjian Ding, Wenping Chen, <strong>Yongcai Wang</strong>, Deying Li, Yi Hong. Theor. Comput. Sci. 840 (2020)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
-</div>
-</div>
-<div class="paper-item">
-<span class="paper-venue-tag ccfb">TKDD</span>
-<div class="paper-content">
-<a href="papers/1-TKDD-yan-2019.pdf">Rumor Blocking through Online Link Deletion on Social Networks</a>
-<div class="paper-authors">Ruidong Yan, Yi Li, Weili Wu, Deying Li, <strong>Yongcai Wang</strong>. TKDD 13(2) (2019)</div><div class="paper-tags"><span class="ccf-badge ccf-b">CCF B</span></div>
 </div>
 </div>
 <div class="paper-item">
@@ -2159,7 +2116,55 @@
 <div class="award-item"><span class="award-year">2009</span>Best Paper Award, Ubiquitous Computing and Communications Conference</div>
 </div>
 </section>
-
+<!-- BACKGROUND -->
+<section class="section" id="background">
+<div class="section-header">
+<h2>Education &amp; Experience</h2>
+<div class="section-line"></div>
+</div>
+<div class="bg-timeline">
+<div class="bg-item bg-item--current">
+<span class="bg-period">2025.07—Present</span>
+<span class="bg-inst"><a href="http://info.ruc.edu.cn/" rel="noopener noreferrer" target="_blank">School of Information, RUC</a></span>
+<span class="bg-role">Professor</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2015.08—2025.07</span>
+<span class="bg-inst"><a href="http://info.ruc.edu.cn/" rel="noopener noreferrer" target="_blank">School of Information, RUC</a></span>
+<span class="bg-role">Associate Professor</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2014.02—2014.08</span>
+<span class="bg-inst"><a href="http://www.cornell.edu" rel="noopener noreferrer" target="_blank">Cornell University</a></span>
+<span class="bg-role">Visiting Scholar</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2011.08—2015.08</span>
+<span class="bg-inst"><a href="http://iiis.tsinghua.edu.cn" rel="noopener noreferrer" target="_blank">IIIS, Tsinghua University</a></span>
+<span class="bg-role">Asst. Researcher</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2009.08—2011.07</span>
+<span class="bg-inst"><a href="http://iiis.tsinghua.edu.cn" rel="noopener noreferrer" target="_blank">IIIS, Tsinghua University</a></span>
+<span class="bg-role">Postdoc</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2006.12—2009.08</span>
+<span class="bg-inst"><a href="https://cn.nec.com/zh_CN/research/" rel="noopener noreferrer" target="_blank">NEC Labs China</a></span>
+<span class="bg-role">Assoc. Researcher</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2001.08—2006.12</span>
+<span class="bg-inst"><a href="http://cfins.au.tsinghua.edu.cn/" rel="noopener noreferrer" target="_blank">Dept. of Automation, Tsinghua University</a></span>
+<span class="bg-role">Ph.D.</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">1997.08—2001.07</span>
+<span class="bg-inst"><a href="https://www.au.tsinghua.edu.cn/" rel="noopener noreferrer" target="_blank">Dept. of Automation, Tsinghua University</a></span>
+<span class="bg-role">B.S.</span>
+</div>
+</div>
+</section>
 <!-- HOBBIES -->
 <section class="section" id="hobbies">
 <div class="section-header">

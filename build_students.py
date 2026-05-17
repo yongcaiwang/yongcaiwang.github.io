@@ -603,14 +603,17 @@ def render_student_card(name: str, student_papers: List[dict]) -> str:
             if p["venue"]
             else ""
         )
-        tags = f'<div class="paper-tags">{p["tags_html"]}</div>' if p["tags_html"] else ""
+        tags_inner = p["tags_html"] or ""
+        tags_block = f'<div class="paper-tags">{tags_inner}</div>' if tags_inner else ""
         parts.append(
             f"""<div class="paper-item">
+<div class="paper-labels">
 {vtag}
+{tags_block}
+</div>
 <div class="paper-content">
 {p['title_html']}
 <div class="paper-authors">{p['auth_html']}</div>
-{tags}
 </div>
 </div>"""
         )
