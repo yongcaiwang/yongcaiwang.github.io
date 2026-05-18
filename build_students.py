@@ -35,6 +35,13 @@ AUTHOR_NAME_FIXES = [
 
 PROF = {"yongcai wang"}
 
+VENUE_ABBREV = {
+    "iclr workshop": "ICLRW",
+    "iclr 2026 workshop": "ICLRW",
+}
+
+CCF_TAG = re.compile(r'<span class="ccf-badge[^"]*">CCF [AB]</span>\s*', re.I)
+
 DEFAULT_STUDENT_DEGREE = "Master Student"
 
 # 学生学位（未列出的默认为 Master Student）
@@ -206,7 +213,7 @@ EXTRA_PAPERS: Dict[str, List[dict]] = {
         {
             "title": "DecisionLLM: Large Language Models for Long Sequence Decision Exploration",
             "link": "https://arxiv.org/abs/2601.10148",
-            "venue": "ICLR workshop",
+            "venue": "ICLRW",
             "tag_cls": "",
             "auth_html": "Xiaowei Lv, Zhilin Zhang, Yijun Li, Yusen Huo, Siyuan Ju, Xuyan Li, Chunxiang Hong, Tianyu Wang, <strong>Yongcai Wang</strong>, Peng Sun, Chuan Yu, Jian Xu, Bo Zheng. ICLR 2026 Workshop",
             "year": 2026,
@@ -424,6 +431,41 @@ def strip_tags(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+def abbrev_venue(venue: str) -> str:
+    v = (venue or "").strip()
+    if not v:
+        return v
+    key = re.sub(r"\s+", " ", v).lower()
+    return VENUE_ABBREV.get(key, v)
+
+
+def clean_tags_html(html: str) -> str:
+    """去掉 CCF 徽章，保留 Code/Project/News 并加样式类。"""
+    return enhance_link_badges(CCF_TAG.sub("", html or "").strip())
+
+
+def enhance_link_badges(html: str) -> str:
+    """为 Code / Project / News 链接加上区分样式类。"""
+    if not html:
+        return html
+    html = re.sub(
+        r'<a class="link-badge"([^>]*)>Code</a>',
+        r'<a class="link-badge link-badge--code"\1>Code</a>',
+        html,
+    )
+    html = re.sub(
+        r'<a class="link-badge"([^>]*)>Project</a>',
+        r'<a class="link-badge link-badge--project"\1>Project</a>',
+        html,
+    )
+    html = re.sub(
+        r'<a class="link-badge"([^>]*)>News</a>',
+        r'<a class="link-badge link-badge--news"\1>News</a>',
+        html,
+    )
+    return html
+
+
 def fix_author_html(auth_html: str) -> str:
     for pattern, repl in AUTHOR_NAME_FIXES:
         auth_html = pattern.sub(repl, auth_html)
@@ -603,17 +645,14 @@ def render_student_card(name: str, student_papers: List[dict]) -> str:
             if p["venue"]
             else ""
         )
-        tags_inner = p["tags_html"] or ""
-        tags_block = f'<div class="paper-tags">{tags_inner}</div>' if tags_inner else ""
+        tags = f'<div class="paper-tags">{p["tags_html"]}</div>' if p["tags_html"] else ""
         parts.append(
             f"""<div class="paper-item">
-<div class="paper-labels">
 {vtag}
-{tags_block}
-</div>
 <div class="paper-content">
 {p['title_html']}
 <div class="paper-authors">{p['auth_html']}</div>
+{tags}
 </div>
 </div>"""
         )
@@ -669,7 +708,7 @@ def parse_papers(html: str) -> List[dict]:
     for block in items:
         venue_m = re.search(r'<span class="paper-venue-tag ([^"]*)">([^<]+)</span>', block)
         tag_cls = venue_m.group(1) if venue_m else ""
-        venue = venue_m.group(2).strip() if venue_m else ""
+        venue = abbrev_venue(venue_m.group(2).strip() if venue_m else "")
 
         title_m = re.search(r'<a href="([^"]*)"[^>]*>([^<]+)</a>', block)
         if title_m:
@@ -721,7 +760,7 @@ def extra_to_paper(student: str, spec: dict) -> dict:
         "tag_cls": spec.get("tag_cls", ""),
         "auth_html": spec["auth_html"],
         "year": spec.get("year", 0),
-        "tags_html": spec.get("tags_html", ""),
+        "tags_html": clean_tags_html(spec.get("tags_html", "")),
         "_key": _paper_key(title),
     }
 
@@ -831,6 +870,20 @@ def main() -> None:
 {body}
 </section>
 </main>
+<script>
+(function () {{
+  function labelWeight(text) {{
+    var t = (text || '').trim();
+    var cjk = (t.match(/[\\u4e00-\\u9fff]/g) || []).length;
+    return t.length + Math.floor(cjk * 0.6);
+  }}
+  document.querySelectorAll('.paper-labels .paper-venue-tag, .paper-labels .link-badge, .paper-labels .text-note').forEach(function (el) {{
+    var w = labelWeight(el.textContent);
+    if (w >= 10) el.classList.add('label-xs');
+    else if (w >= 6) el.classList.add('label-compact');
+  }});
+}})();
+</script>
 </body>
 </html>
 """
