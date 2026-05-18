@@ -1,0 +1,42 @@
+---
+description: 个人主页论文列表标签规范（禁止 CCF 文字标签，固定等宽样式）
+globs: index.html,index_en.html,students.html,rebuild_papers.py
+alwaysApply: false
+---
+
+# 论文列表标签（固定规范）
+
+## 禁止
+
+- **不要**在论文条目中添加 `CCF A`、`CCF B` 文字标签（`<span class="ccf-badge">`）。
+- **不要**把 `paper-tags` 放回 `paper-content` 内，或改回旧版单行 `paper-item` 布局。
+
+## CCF 等级如何表示
+
+仅用**会议/期刊标签颜色**（`paper-venue-tag`）：
+
+- `ccfa`：红色 = CCF A
+- `ccfb`：蓝色 = CCF B
+
+论文区顶部可保留 `papers-ccf-legend` 图例。
+
+## 固定 HTML 结构
+
+每条论文：
+
+- `paper-item` → 左 `paper-labels`（venue + 可选 `paper-tags` 里的 Code/Project/News）+ 右 `paper-content`（标题 + `paper-authors`）
+- Code/Project/News 必须使用 `link-badge link-badge--code|project|news`
+
+## 固定样式（勿随意改动）
+
+- `:root` 的 `--paper-label-col: 92px` 控制标签列等宽
+- 保留 `.paper-labels`、`.paper-item` 的 grid 与等宽规则
+- 改 SEO、侧栏、招生等其它板块时，**不要**顺带重写论文区 CSS
+
+## 批量改论文后
+
+```bash
+python3 rebuild_papers.py
+```
+
+会去掉残留 `ccf-badge`、归一化 `paper-labels` 布局、补全链接颜色 class。

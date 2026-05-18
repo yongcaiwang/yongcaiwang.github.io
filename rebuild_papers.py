@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Normalize paper items: strip per-paper CCF badges; stack venue + links in paper-labels."""
+"""Normalize paper items: strip per-paper CCF badges; stack venue + links in paper-labels.
+
+Site policy (do not revert):
+- Never add CCF A / CCF B text badges (<span class="ccf-badge">) in paper lists.
+- CCF level = paper-venue-tag color only (ccfa red, ccfb blue).
+- Keep paper-labels left column equal width (--paper-label-col) and link-badge--code/project/news colors.
+Run after any bulk paper HTML edits: python3 rebuild_papers.py
+"""
 import re
 from pathlib import Path
 from typing import Dict, List
