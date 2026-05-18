@@ -216,6 +216,34 @@ def rebuild_page(path: Path, db: dict, legend: str) -> None:
     )
 
 
+BACKGROUND_BLOCK = re.compile(
+    r"<!-- BACKGROUND -->\s*<section class=\"section\" id=\"background\">[\s\S]*?</section>\s*",
+    re.I,
+)
+
+
+def move_background_before_research(path: Path) -> None:
+    html = path.read_text(encoding="utf-8")
+    bg_pos = html.find('id="background"')
+    res_pos = html.find('id="research"')
+    if bg_pos >= 0 and res_pos >= 0 and bg_pos < res_pos:
+        print(path.name, "background already before research")
+        return
+    m = BACKGROUND_BLOCK.search(html)
+    if not m:
+        print(path.name, "background block not found")
+        return
+    block = m.group(0)
+    html = BACKGROUND_BLOCK.sub("", html, count=1)
+    marker = "<!-- RESEARCH -->"
+    if marker not in html:
+        print(path.name, "RESEARCH marker not found")
+        return
+    html = html.replace(marker, block + marker, 1)
+    path.write_text(html, encoding="utf-8")
+    print(path.name, "moved background before research")
+
+
 def rebuild_students(path: Path, db: dict) -> None:
     html = path.read_text(encoding="utf-8")
     pos, parts = 0, []
@@ -244,6 +272,9 @@ if __name__ == "__main__":
     extra = Path(
         "/Users/wangyongcai/Documents/[18]博客/个人主页/yongcaiwang.github.io/students.html"
     )
+    for page in (ROOT / "index.html", ROOT / "index_en.html"):
+        if page.exists():
+            move_background_before_research(page)
     db = build_author_db(backups + [extra, ROOT / "students.html"])
     rebuild_page(ROOT / "index.html", db, LEGEND_CN)
     rebuild_page(ROOT / "index_en.html", db, LEGEND_EN)
