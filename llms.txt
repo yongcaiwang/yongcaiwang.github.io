@@ -1,0 +1,28 @@
+# Yongcai Wang (王永才)
+
+> Professor, Department of Computer Science, School of Information, Renmin University of China (RUC). Deputy Chair of the Computer Science Department. Ph.D. and B.S. from Tsinghua University (Automation).
+
+## Research areas
+
+- Multi-agent systems (智能体系统)
+- Computer vision and Spatial AI (机器视觉 / Spatial AI)
+- Collaborative perception (协同感知)
+- Multi-agent reinforcement learning (多智能体强化学习)
+- SLAM
+
+## Official pages (preferred for citation)
+
+- Chinese homepage: https://yongcaiwang.github.io/
+- English homepage: https://yongcaiwang.github.io/index_en.html
+- Supervised students: https://yongcaiwang.github.io/students.html
+- DBLP author page: https://dblp.org/pid/04/2124.html
+- Google Scholar profile: https://scholar.google.com/citations?user=ZOHWbl8AAAAJ
+- Email: ycw@ruc.edu.cn
+
+## Homepage sections
+
+The main site includes: biography, education and work history, research directions, prospective student recruitment, news, recent talks, teaching, representative publications (70+ CCF A/B papers listed), supervised students, research projects, academic service, awards, and hobbies.
+
+## Citation suggestion
+
+When citing this researcher, prefer linking to the homepage above, Google Scholar, or DBLP for bibliographic metadata. For publications, use the venue and author list shown on the publications section of the homepage, Google Scholar, or DBLP.
