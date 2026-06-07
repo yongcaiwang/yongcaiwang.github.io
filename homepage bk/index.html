@@ -1,0 +1,2644 @@
+<!DOCTYPE html>
+
+<!--
+  ══ 编辑说明 ══
+  1. 改颜色、字号：在下方 <style> 的 :root { } 里调整变量
+  2. 改侧栏信息：搜索「SIDEBAR」
+  3. 改正文：搜索各 section 注释（PROFILE / NEWS / PAPERS 等）
+  4. 整体放大缩小字号：改 --font-scale（1 = 默认，1.1 = 再大 10%）
+  5. 部署时请把 robots.txt、sitemap.xml、llms.txt 放在站点根目录（与 index.html 同级）
+  6. 论文列表：禁止 CCF A/B 文字标签；标签等宽与 Code/Project 配色见 .cursor/rules/paper-labels.mdc；改论文后运行 python3 rebuild_papers.py
+-->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>王永才 — 中国人民大学计算机系教授 | 智能体系统 · Spatial AI · 协同感知</title>
+<meta name="description" content="王永才（Yongcai Wang），中国人民大学信息学院计算机系教授、博士生导师。研究方向：智能体系统、机器视觉、Spatial AI、协同感知、多智能体强化学习、SLAM。代表性论文、招生信息、学术服务与学生指导。"/>
+<meta name="keywords" content="王永才,Yongcai Wang,中国人民大学,计算机系,智能体系统,Spatial AI,协同感知,多智能体强化学习,SLAM,机器视觉,招生"/>
+<meta name="author" content="王永才"/>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+<meta name="theme-color" content="#2e2c3a"/>
+<link rel="canonical" href="https://yongcaiwang.github.io/"/>
+<link rel="alternate" hreflang="zh-CN" href="https://yongcaiwang.github.io/"/>
+<link rel="alternate" hreflang="en" href="https://yongcaiwang.github.io/index_en.html"/>
+<link rel="alternate" hreflang="x-default" href="https://yongcaiwang.github.io/"/>
+<link rel="alternate" type="text/plain" href="https://yongcaiwang.github.io/llms.txt" title="Site summary for AI systems"/>
+<meta property="og:type" content="profile"/>
+<meta property="og:locale" content="zh_CN"/>
+<meta property="og:site_name" content="王永才 — 中国人民大学"/>
+<meta property="og:title" content="王永才 — 中国人民大学计算机系教授"/>
+<meta property="og:description" content="智能体系统、Spatial AI、协同感知与多智能体强化学习。论文、招生、学术服务与学生指导。"/>
+<meta property="og:url" content="https://yongcaiwang.github.io/"/>
+<meta property="og:image" content="https://yongcaiwang.github.io/ycw_large.jpg"/>
+<meta property="profile:first_name" content="Yongcai"/>
+<meta property="profile:last_name" content="Wang"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="王永才 — 中国人民大学计算机系教授"/>
+<meta name="twitter:description" content="智能体系统、Spatial AI、协同感知与多智能体强化学习。论文、招生与学生指导。"/>
+<meta name="twitter:image" content="https://yongcaiwang.github.io/ycw_large.jpg"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://yongcaiwang.github.io/#website",
+      "url": "https://yongcaiwang.github.io/",
+      "name": "王永才 — 中国人民大学计算机系",
+      "description": "王永才教授个人主页：研究方向、代表性论文、招生信息、学术服务与学生指导。",
+      "inLanguage": "zh-CN",
+      "publisher": { "@id": "https://yongcaiwang.github.io/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://yongcaiwang.github.io/#person",
+      "name": "王永才",
+      "alternateName": ["Yongcai Wang", "Yongcai Wang 王永才"],
+      "url": "https://yongcaiwang.github.io/",
+      "email": "ycw@ruc.edu.cn",
+      "image": "https://yongcaiwang.github.io/ycw_large.jpg",
+      "jobTitle": "Professor",
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "Renmin University of China",
+        "url": "https://www.ruc.edu.cn/",
+        "department": "Department of Computer Science, School of Information"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Tsinghua University",
+        "url": "https://www.tsinghua.edu.cn/"
+      },
+      "knowsAbout": [
+        "multi-agent systems",
+        "computer vision",
+        "Spatial AI",
+        "collaborative perception",
+        "multi-agent reinforcement learning",
+        "SLAM",
+        "intelligent agents"
+      ],
+      "sameAs": [
+        "https://dblp.org/pid/04/2124.html",
+        "https://scholar.google.com/citations?user=ZOHWbl8AAAAJ",
+        "https://yongcaiwang.github.io/index_en.html"
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://yongcaiwang.github.io/#webpage",
+      "url": "https://yongcaiwang.github.io/",
+      "name": "王永才 — 中国人民大学计算机系教授",
+      "description": "王永才（Yongcai Wang）教授个人学术主页。",
+      "isPartOf": { "@id": "https://yongcaiwang.github.io/#website" },
+      "about": { "@id": "https://yongcaiwang.github.io/#person" },
+      "inLanguage": "zh-CN"
+    }
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&amp;family=Noto+Sans+SC:wght@300;400;500&amp;family=DM+Serif+Display:ital@0;1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+  /* ══ 站点配置（优先改这里）══ */
+  :root {
+    --font-scale: 1.1;
+    --text-2xs: 0.58rem;
+    --text-xs: 0.78rem;
+    --text-sm: 0.9rem;
+    --text-base: 0.98rem;
+    --text-md: 1.05rem;
+    --text-lg: 1.28rem;
+    --text-xl: 1.42rem;
+    --text-2xl: 1.75rem;
+    --text-3xl: 2.15rem;
+    --ink: #1a1a2e;
+    --ink-light: #4a4a6a;
+    --ink-faint: #8888aa;
+    --paper: #faf9f7;
+    --paper-warm: #f3f0ea;
+    --paper-label-col: 92px;
+    --paper-label-font: var(--text-xs);
+    --paper-label-font-compact: calc(var(--text-xs) * 0.86);
+    --paper-label-font-xs: var(--text-2xs);
+    --accent: #9b1b1b;
+    --accent-gold: #b8860b;
+    --accent-soft: #f0dada;
+    --border: #ddd8ce;
+    --shadow: 0 2px 20px rgba(26,26,46,0.08);
+    /* 侧栏：比正文略深、带暖灰紫调，与米色主区形成层次 */
+    --sidebar-bg: #2e2c3a;
+    --sidebar-bg-soft: #38364a;
+    --sidebar-text: #eceaf2;
+    --sidebar-muted: #a8a6b8;
+    --sidebar-accent: #d4847a;
+    --sidebar-hover: #3f3d50;
+    --sidebar-border: rgba(255,255,255,0.09);
+    --tag-bg: #2e2c3a;
+    /* 头像（与 yongcaiwang.github.io 一致） */
+    --avatar-file: ycw_large.jpg;
+    --avatar-size: 162px;
+    --avatar-offset-top: 20px;  /* 头像整体在侧栏里下移的距离 */
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: calc(16px * var(--font-scale));
+  }
+
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: var(--text-base);
+    background: var(--paper);
+    color: var(--ink);
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── SIDEBAR ─────────────────────────────── */
+  #sidebar {
+    width: 260px;
+    min-width: 260px;
+    background: linear-gradient(175deg, var(--sidebar-bg-soft) 0%, var(--sidebar-bg) 55%, #262432 100%);
+    color: var(--sidebar-text);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    overflow-y: auto;
+    z-index: 100;
+    border-right: 1px solid var(--sidebar-border);
+    box-shadow: 4px 0 24px rgba(26,26,46,0.12);
+  }
+
+  .sidebar-profile {
+    padding: 28px 24px 28px;
+    border-bottom: 1px solid var(--sidebar-border);
+    text-align: center;
+  }
+
+  .sidebar-avatar {
+    width: var(--avatar-size, 162px);
+    height: var(--avatar-size, 162px);
+    border-radius: 50%;
+    margin: var(--avatar-offset-top) auto 18px;
+    overflow: hidden;
+    border: 3px solid rgba(212,132,122,0.65);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    background: rgba(255,255,255,0.06);
+  }
+
+  .sidebar-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+    transform: scale(1.0);
+    transform-origin: center 22%;
+  }
+
+  .sidebar-name {
+    font-family: 'Noto Serif SC', serif;
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 4px;
+    line-height: 1.3;
+  }
+
+  .sidebar-title {
+    font-size: var(--text-sm);
+    color: var(--sidebar-muted);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .sidebar-inst {
+    font-size: var(--text-sm);
+    color: var(--sidebar-accent);
+    margin-top: 6px;
+    font-weight: 500;
+  }
+
+  nav {
+    padding: 20px 0;
+    flex: 1;
+  }
+
+  nav .nav-section-label {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sidebar-muted);
+    padding: 14px 24px 6px;
+  }
+
+  nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    font-size: var(--text-base);
+    font-weight: 400;
+    transition: all 0.18s;
+    border-left: 3px solid transparent;
+    opacity: 0.88;
+  }
+
+  nav a:hover, nav a.active {
+    background: var(--sidebar-hover);
+    border-left-color: var(--sidebar-accent);
+    color: #fff;
+    opacity: 1;
+  }
+
+  nav a .nav-icon {
+    width: 16px;
+    text-align: center;
+    font-size: var(--text-md);
+    opacity: 0.7;
+  }
+
+  .sidebar-footer {
+    padding: 20px 24px;
+    border-top: 1px solid var(--sidebar-border);
+    font-size: var(--text-xs);
+    color: var(--sidebar-muted);
+    line-height: 1.6;
+  }
+
+  .sidebar-footer a {
+    color: var(--sidebar-muted);
+    text-decoration: none;
+  }
+  .sidebar-footer a:hover { color: var(--sidebar-accent); }
+
+  /* ── MAIN CONTENT ───────────────────────── */
+  #main {
+    margin-left: 260px;
+    flex: 1;
+    max-width: 900px;
+    padding: 48px 56px;
+  }
+
+  /* ── SECTIONS ───────────────────────────── */
+  .section {
+    margin-bottom: 64px;
+    scroll-margin-top: 40px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .section-header h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .section-header .section-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--border), transparent);
+  }
+
+  /* ── PROFILE HERO ───────────────────────── */
+  #profile {
+    background: linear-gradient(135deg, #fff8f7, #ffeee8);
+    border: 1px solid #f0c0b8;
+    color: var(--ink);
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 56px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #profile::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(192,57,43,0.04);
+    pointer-events: none;
+  }
+
+  #profile::after {
+    content: '';
+    position: absolute;
+    bottom: -30px; left: 40px;
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    background: rgba(192,57,43,0.03);
+    pointer-events: none;
+  }
+
+  .profile-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    margin-bottom: 20px;
+  }
+
+  .profile-logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .profile-logos a {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+  }
+
+  .profile-logos img {
+    height: 52px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    border-radius: 4px;
+    background: transparent;
+    padding: 0;
+    filter: none;
+  }
+
+  .profile-main h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+
+  .profile-main .title-line {
+    font-size: var(--text-base);
+    color: var(--ink-light);
+    line-height: 1.8;
+    margin-bottom: 4px;
+  }
+
+  .profile-bio-wrap {
+    max-width: 780px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .profile-bio-lead {
+    font-size: var(--text-md);
+    line-height: 1.9;
+    color: var(--ink-light);
+    margin: 0;
+  }
+
+  .profile-bio-lead strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .profile-bio-details {
+    margin-top: 10px;
+    font-size: var(--text-md);
+    line-height: 1.9;
+    color: var(--ink-light);
+  }
+
+  .profile-bio-details summary {
+    cursor: pointer;
+    color: var(--accent);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    list-style: none;
+    user-select: none;
+  }
+
+  .profile-bio-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .profile-bio-details summary::before {
+    content: '▸ ';
+  }
+
+  .profile-bio-details[open] summary::before {
+    content: '▾ ';
+  }
+
+  .profile-bio-more {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .profile-bio-more p {
+    margin: 0 0 0.75em;
+  }
+
+  .profile-bio-more p:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-bio-more em {
+    font-style: italic;
+  }
+
+  .profile-contact {
+    margin-top: 14px;
+    position: relative;
+    z-index: 2;
+    font-size: var(--text-sm);
+    line-height: 1.8;
+    color: var(--ink-light);
+  }
+
+  .profile-contact p {
+    margin: 0;
+  }
+
+  .profile-contact a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(192, 57, 43, 0.35);
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .profile-contact a:hover {
+    color: #8b2e22;
+    border-bottom-color: var(--accent);
+  }
+
+  .profile-contact .contact-sep {
+    margin: 0 0.35em;
+    color: var(--ink-faint);
+  }
+
+  .contact-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: var(--text-sm);
+    color: var(--ink-light);
+  }
+
+  .contact-item a {
+    color: var(--accent);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-sm);
+  }
+
+  .contact-item a:hover { text-decoration: underline; }
+
+  /* ── NEWS ───────────────────────────────── */
+  .news-list { list-style: none; }
+
+  .news-list li {
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: var(--text-base);
+    line-height: 1.6;
+  }
+
+  .news-list li:last-child { border-bottom: none; }
+
+  .news-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-xs);
+    color: var(--ink-faint);
+    min-width: 88px;
+    padding-top: 2px;
+  }
+
+  .news-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: var(--text-2xs);
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 4px;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
+  }
+
+  .news-list a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .news-list a:hover { text-decoration: underline; }
+
+  details summary {
+    cursor: pointer;
+    font-size: var(--text-sm);
+    color: var(--ink-faint);
+    padding: 10px 0;
+    user-select: none;
+  }
+
+  details[open] summary { color: var(--accent); }
+
+  .early-news {
+    background: var(--paper-warm);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 8px;
+  }
+
+  .early-news p {
+    font-size: var(--text-sm);
+    color: var(--ink-light);
+    line-height: 1.8;
+    padding: 3px 0;
+  }
+
+  /* ── REPORTS ────────────────────────────── */
+  .reports-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .report-item {
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: box-shadow 0.18s;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .report-item:hover {
+    box-shadow: var(--shadow);
+    border-color: #ccc;
+  }
+
+  .report-date-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-xs);
+    color: var(--ink-faint);
+    min-width: 80px;
+  }
+
+  .report-title {
+    font-size: var(--text-base);
+    color: var(--ink);
+    font-weight: 500;
+    flex: 1;
+  }
+
+  .report-venue {
+    font-size: var(--text-sm);
+    color: var(--ink-faint);
+  }
+
+  /* ── TEACHING ───────────────────────────── */
+  .teaching-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .course-card {
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    transition: box-shadow 0.18s;
+  }
+
+  .course-card:hover { box-shadow: var(--shadow); }
+
+  .course-name {
+    font-family: 'Noto Serif SC', serif;
+    font-size: var(--text-md);
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .course-meta {
+    font-size: var(--text-sm);
+    color: var(--ink-faint);
+    margin-bottom: 8px;
+  }
+
+  .course-card a {
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .course-card a:hover { text-decoration: underline; }
+
+  /* ── PAPERS ─────────────────────────────── */
+  .year-group { margin-bottom: 32px; }
+
+  .year-label {
+    font-family: 'DM Serif Display', serif;
+    font-size: var(--text-2xl);
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .year-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .paper-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    column-gap: 16px;
+    row-gap: 4px;
+    align-items: start;
+    font-size: var(--text-base);
+    line-height: 1.7;
+  }
+
+  .paper-item:last-child { border-bottom: none; }
+
+  .paper-labels {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    width: var(--paper-label-col);
+    min-width: var(--paper-label-col);
+    max-width: var(--paper-label-col);
+    flex-shrink: 0;
+  }
+
+  .paper-labels > .paper-venue-tag,
+  .paper-labels .paper-tags > .link-badge,
+  .paper-labels .paper-tags > .text-note {
+    width: 100%;
+    min-height: 26px;
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    line-height: 1.15;
+    font-size: var(--paper-label-font);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .paper-labels > .paper-venue-tag {
+    background: var(--tag-bg);
+    color: #fff;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .paper-labels .label-compact {
+    font-size: var(--paper-label-font-compact);
+    letter-spacing: -0.02em;
+    padding-inline: 4px;
+  }
+
+  .paper-labels .label-xs {
+    font-size: var(--paper-label-font-xs);
+    letter-spacing: -0.03em;
+    padding-inline: 3px;
+  }
+
+  .papers-ccf-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 24px;
+    margin: 14px 0 4px;
+    padding: 0;
+    font-size: var(--text-sm);
+    color: var(--ink-light);
+    line-height: 1.5;
+  }
+
+  .papers-ccf-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .papers-ccf-legend .papers-ccf-legend-swatch {
+    width: auto;
+    min-width: 2em;
+    padding: 2px 8px;
+  }
+
+  .paper-labels .link-badge--code {
+    color: #0b5c45;
+    background: #e3f3ec;
+    border: 1px solid #7ec4a8;
+  }
+
+  .paper-labels .link-badge--code:hover {
+    background: #cce9dc;
+    border-color: #5aad8a;
+  }
+
+  .paper-labels .link-badge--project {
+    color: #6b4a0a;
+    background: #fdf4e3;
+    border: 1px solid #e2c070;
+  }
+
+  .paper-labels .link-badge--project:hover {
+    background: #fae8c4;
+    border-color: #d4a84a;
+  }
+
+  .paper-labels .link-badge--news {
+    color: #1a4f78;
+    background: #e7f2fb;
+    border: 1px solid #8ebce0;
+  }
+
+  .paper-labels .link-badge--news:hover {
+    background: #d4e8f8;
+    border-color: #6aa3cf;
+  }
+
+  .paper-venue-tag {
+    display: inline-block;
+    background: var(--tag-bg);
+    color: #fff;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    min-width: 60px;
+    text-align: center;
+    height: fit-content;
+    flex-shrink: 0;
+    letter-spacing: 0.02em;
+  }
+
+  .paper-venue-tag.ccfa { background: var(--accent); }
+  .paper-venue-tag.ccfb { background: #2980b9; }
+
+  .paper-content {
+    display: contents;
+  }
+
+  .paper-content a {
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .paper-content a:hover { color: var(--accent); text-decoration: underline; }
+
+  .paper-content > a,
+  .paper-content > span[style*="font-weight"] {
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+  }
+
+  .paper-authors {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: var(--text-sm);
+    color: var(--ink-light);
+    margin-top: 2px;
+  }
+
+  .paper-authors strong {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .paper-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    margin: 0;
+    min-height: 0;
+    width: 100%;
+  }
+
+  .paper-tags:empty {
+    display: none;
+  }
+
+  .ccf-badge,
+  .text-note,
+  .link-badge {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .ccf-badge {
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 0;
+  }
+
+  .link-badge {
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border: 1px solid transparent;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+
+  .link-badge:hover {
+    text-decoration: none;
+  }
+
+  .link-badge--code {
+    color: #0b5c45;
+    background: #e3f3ec;
+    border-color: #7ec4a8;
+  }
+
+  .link-badge--code:hover {
+    background: #cce9dc;
+    border-color: #5aad8a;
+  }
+
+  .link-badge--project {
+    color: #6b4a0a;
+    background: #fdf4e3;
+    border-color: #e2c070;
+  }
+
+  .link-badge--project:hover {
+    background: #fae8c4;
+    border-color: #d4a84a;
+  }
+
+  .link-badge--news {
+    color: #1a4f78;
+    background: #e7f2fb;
+    border-color: #8ebce0;
+  }
+
+  .link-badge--news:hover {
+    background: #d4e8f8;
+    border-color: #6aa3cf;
+  }
+
+  .ccf-a { background: #fde8e6; color: var(--accent); border: 1px solid #e8b0b0; }
+  .ccf-b { background: #ddeeff; color: #1a6b9a; border: 1px solid #a8d0ee; }
+
+  /* ── PROJECTS ───────────────────────────── */
+  .projects-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-item {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: 0 16px;
+    align-items: start;
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    border-left: 3px solid var(--accent);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .project-item:hover {
+    box-shadow: 0 3px 12px rgba(26, 26, 46, 0.07);
+    border-color: #cfc8bc;
+  }
+
+  .project-period {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--accent);
+    line-height: 1.4;
+    padding-top: 2px;
+    text-align: right;
+  }
+
+  .project-period span {
+    display: block;
+    font-size: var(--text-2xs);
+    font-weight: 400;
+    color: var(--ink-faint);
+    margin-top: 2px;
+  }
+
+  .project-main {
+    min-width: 0;
+  }
+
+  .project-title {
+    margin: 0 0 8px;
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.55;
+  }
+
+  .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 8px;
+    font-size: var(--text-sm);
+    color: var(--ink-faint);
+    line-height: 1.5;
+  }
+
+  .project-role {
+    font-weight: 500;
+    color: var(--ink-light);
+  }
+
+  .project-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-xs);
+    color: var(--ink-faint);
+  }
+
+  .project-meta .meta-sep {
+    color: var(--border);
+    user-select: none;
+  }
+
+  .project-tag {
+    display: inline-block;
+    font-size: var(--text-2xs);
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+
+  .project-tag-nsfc {
+    background: #e8f4ea;
+    color: #2d6a3e;
+    border: 1px solid #b8dcc0;
+  }
+
+  .project-tag-youth {
+    background: #e8eef8;
+    color: #2a5080;
+    border: 1px solid #b8cce8;
+  }
+
+  .project-tag-moe {
+    background: #f3ebe8;
+    color: #7a4a32;
+    border: 1px solid #dcc8bc;
+  }
+
+  .project-tag-national {
+    background: #f0e8f4;
+    color: #5a3a6a;
+    border: 1px solid #d4b8e0;
+  }
+
+  .project-grant {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-2xs);
+    color: var(--ink-faint);
+  }
+
+  @media (max-width: 640px) {
+    .project-item {
+      grid-template-columns: 1fr;
+      gap: 8px 0;
+    }
+
+    .project-period {
+      text-align: left;
+      padding-top: 0;
+    }
+
+    .project-period span {
+      display: inline;
+      margin-left: 0.35em;
+    }
+  }
+
+  /* ── AWARDS ─────────────────────────────── */
+  .awards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .award-item {
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: var(--text-base);
+    color: var(--ink-light);
+    line-height: 1.5;
+  }
+
+  .award-year {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-xs);
+    color: var(--accent);
+    font-weight: 600;
+    min-width: 36px;
+  }
+
+  /* ── SERVICE ────────────────────────────── */
+  .service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service-item {
+    display: grid;
+    grid-template-columns: 4.6rem 1fr;
+    gap: 0 14px;
+    align-items: start;
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 13px 15px;
+    border-left: 3px solid var(--accent-gold);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .service-item:hover {
+    box-shadow: 0 3px 12px rgba(26, 26, 46, 0.07);
+    border-color: #cfc8bc;
+  }
+
+  .service-type {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--accent-gold);
+    line-height: 1.35;
+    text-align: right;
+    padding-top: 2px;
+  }
+
+  .service-body {
+    min-width: 0;
+  }
+
+  .service-text {
+    margin: 0;
+    font-size: var(--text-base);
+    line-height: 1.65;
+    color: var(--ink-light);
+  }
+
+  .service-text em {
+    font-style: italic;
+    color: var(--ink);
+  }
+
+  .service-text strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .service-journals {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .service-journals li {
+    font-size: var(--text-base);
+    line-height: 1.5;
+    color: var(--ink-light);
+  }
+
+  .service-journals li em {
+    font-style: italic;
+    color: var(--ink);
+  }
+
+  @media (max-width: 640px) {
+    .service-item {
+      grid-template-columns: 1fr;
+      gap: 6px 0;
+    }
+
+    .service-type {
+      text-align: left;
+    }
+  }
+
+  /* ── SOCIETY ──────────────────────────────── */
+  .society-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .society-list li {
+    padding: 9px 14px;
+    background: var(--paper-warm);
+    border-radius: 7px;
+    font-size: var(--text-base);
+    color: var(--ink-light);
+    border-left: 3px solid var(--border);
+  }
+
+  /* ── BACKGROUND ─────────────────────────── */
+  .bg-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .bg-item {
+    display: grid;
+    grid-template-columns: minmax(6.8rem, auto) 1fr auto;
+    gap: 0 16px;
+    align-items: center;
+    padding: 12px 14px;
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    border-left: 3px solid var(--border);
+    font-size: var(--text-base);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .bg-item:hover {
+    box-shadow: 0 2px 10px rgba(26, 26, 46, 0.06);
+    border-color: #cfc8bc;
+  }
+
+  .bg-item--current {
+    border-left-color: var(--accent);
+    background: linear-gradient(135deg, #fff8f7, var(--paper-warm));
+  }
+
+  .bg-period {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--accent);
+    line-height: 1.4;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .bg-inst {
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.5;
+    min-width: 0;
+  }
+
+  .bg-inst a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .bg-inst a:hover { color: var(--accent); }
+
+  .bg-role {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--ink-light);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .bg-item--current .bg-role {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  @media (max-width: 720px) {
+    .bg-item {
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto auto;
+      gap: 6px 10px;
+    }
+
+    .bg-period {
+      grid-column: 1 / -1;
+      text-align: left;
+    }
+
+    .bg-inst {
+      grid-column: 1;
+    }
+
+    .bg-role {
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: end;
+    }
+  }
+
+  /* ── HOBBIES ────────────────────────────── */
+  .hobbies-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .hobby-tag {
+    padding: 8px 18px;
+    background: var(--paper-warm);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: var(--text-base);
+    color: var(--ink-light);
+    transition: all 0.18s;
+  }
+
+  .hobby-tag:hover {
+    background: var(--tag-bg);
+    color: #fff;
+    border-color: var(--tag-bg);
+  }
+
+  /* ── RECRUITMENT BOX ────────────────────── */
+  .recruit-box {
+    background: linear-gradient(135deg, #fff8f7, #ffeee8);
+    border: 1px solid #f0c0b8;
+    border-radius: 12px;
+    padding: 24px 28px;
+  }
+
+  .recruit-box p {
+    font-size: var(--text-base);
+    line-height: 1.9;
+    color: var(--ink-light);
+    margin-bottom: 8px;
+  }
+
+  .recruit-box p:last-child { margin-bottom: 0; }
+
+  .recruit-box strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .recruit-box a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .research-tag {
+    background: var(--tag-bg);
+    color: #fff;
+    font-size: var(--text-sm);
+    padding: 4px 12px;
+    border-radius: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  .text-caption {
+    font-size: var(--text-base);
+    color: var(--ink-faint);
+    margin-bottom: 14px;
+  }
+  .text-caption a { color: var(--accent); text-decoration: none; }
+  .text-caption a:hover { text-decoration: underline; }
+  .paper-labels .text-note {
+    color: var(--accent);
+    background: #fff5f0;
+    border: 1px solid #f0c0b8;
+    border-radius: 4px;
+  }
+
+  /* ── SCROLLBAR ──────────────────────────── */
+  #sidebar::-webkit-scrollbar { width: 4px; }
+  #sidebar::-webkit-scrollbar-track { background: transparent; }
+  #sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.18); border-radius: 2px; }
+
+  /* ── RESPONSIVE ─────────────────────────── */
+  @media (max-width: 900px) {
+    #sidebar {
+      width: 220px;
+      min-width: 220px;
+    }
+    #main {
+      margin-left: 220px;
+      padding: 32px 28px;
+    }
+    .teaching-grid, .awards-grid {
+      grid-template-columns: 1fr;
+    }
+    .paper-item {
+      grid-template-columns: max-content minmax(0, 1fr);
+    }
+    .paper-labels {
+      width: var(--paper-label-col);
+      min-width: var(--paper-label-col);
+      max-width: var(--paper-label-col);
+    }
+  }
+
+  @media (max-width: 640px) {
+    #sidebar { display: none; }
+    #main { margin-left: 0; padding: 20px; }
+  }
+</style>
+</head>
+<body>
+<!-- ═══════ SIDEBAR ═══════ -->
+<aside id="sidebar">
+<div class="sidebar-profile">
+<div class="sidebar-avatar"><img alt="王永才 — 中国人民大学计算机系教授" src="ycw_large.jpg" width="162" height="162" decoding="async"/></div>
+<h1 class="sidebar-name">王永才</h1>
+<div class="sidebar-title">教授 · 博士生导师<br/>计算机系副系主任</div>
+<div class="sidebar-inst">中国人民大学信息学院</div>
+</div>
+<nav>
+<div class="nav-section-label">个人信息</div>
+<a href="#profile"><span class="nav-icon">◎</span> 个人简介</a>
+<a href="#background"><span class="nav-icon">◉</span> 教育和工作背景</a>
+<a href="#research"><span class="nav-icon">◈</span> 研究方向</a>
+<a href="#recruit"><span class="nav-icon">✦</span> 招生信息</a>
+<div class="nav-section-label">学术动态</div>
+<a href="#news"><span class="nav-icon">⚡</span> 新闻动态</a>
+<a href="#reports"><span class="nav-icon">◉</span> 近期报告</a>
+<div class="nav-section-label">教学科研</div>
+<a href="#teaching"><span class="nav-icon">◧</span> 教学</a>
+<a href="#papers"><span class="nav-icon">◆</span> 代表性论文</a>
+<a href="students.html"><span class="nav-icon">◇</span> 指导学生</a>
+<a href="#projects"><span class="nav-icon">◈</span> 科研项目</a>
+<div class="nav-section-label">服务与荣誉</div>
+<a href="#service"><span class="nav-icon">◐</span> 学术服务</a>
+<a href="#society"><span class="nav-icon">◑</span> 学会任职</a>
+<a href="#awards"><span class="nav-icon">★</span> 获奖</a>
+<div class="nav-section-label">其他</div>
+<a href="#hobbies"><span class="nav-icon">◌</span> 闲暇爱好</a>
+</nav>
+<div class="sidebar-footer">
+<a href="https://dblp.org/pid/04/2124.html" target="_blank">DBLP 论文目录 ↗</a><br/>
+<a href="https://scholar.google.com/citations?user=ZOHWbl8AAAAJ&amp;hl=zh-CN" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a><br/>
+<a href="index_en.html">English Version ↗</a><br/><br/>
+<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024071883号</a>
+</div>
+</aside>
+<!-- ═══════ MAIN ═══════ -->
+<main id="main">
+<!-- PROFILE HERO -->
+<section class="section" id="profile">
+<div class="profile-logos">
+<a href="http://www.ruc.edu.cn" rel="noopener noreferrer" target="_blank"><img alt="中国人民大学" src="image-20240618072025070.png"/></a>
+<a href="http://info.ruc.edu.cn" rel="noopener noreferrer" target="_blank"><img alt="中国人民大学信息学院" src="f35ea009087b38036b60fbe5.jpeg"/></a>
+<a href="http://in.ruc.edu.cn" rel="noopener noreferrer" target="_blank"><img alt="中国人民大学计算机学院" src="image-20240618081037241.png"/></a>
+</div>
+<div class="profile-bio-wrap">
+<p class="profile-bio-lead">王永才，中国人民大学计算机系教授，博导，计算机系副系主任、信息学院科研与学科建设工委主任。本科、博士均毕业于清华大学自动化系。<strong>主要研究领域为智能体系统、机器视觉、Spatial AI、协同感知、多智能体强化学习</strong>，在国内外知名期刊和会议发表论文 120 余篇，其中 CCF A、B 类论文 70 余篇。研究成果被应用于智能车、智能船、视觉目标检测与定位等领域。</p>
+<details class="profile-bio-details">
+<summary>展开更多信息（项目、获奖与学术服务）</summary>
+<div class="profile-bio-more">
+<p>主持国家自然科学基金项目多项，国家科技支撑计划子课题，以及多项企业合作项目。2021 年因海上目标定位工作获交通运输部航海学会技术发明奖一等奖；2022 年获航海学会科技进步二等奖及交通运输部重大创新成果入库成果奖；2026 年获石油和化工自动化科学技术三等奖。</p>
+<p>担任 CCF 智能机器人与物联网专委会执行委员、中国控制学会 DEDS 专委会执行委员、SIGBED China 专委、CAAI 认知与信息处理等专委会委员；任 CIKM 2025、WWW 2025、AAAI 2026 等会议程序委员会委员，以及 <em>Computer Science and Technology</em>、<em>International Journal of Robotics and Automation Technology</em> 期刊编委。</p>
+</div>
+</details>
+</div>
+<div class="profile-contact">
+<p><a href="https://dblp.org/pid/04/2124.html" rel="noopener noreferrer" target="_blank">DBLP</a><span class="contact-sep">·</span><a href="https://scholar.google.com/citations?user=ZOHWbl8AAAAJ&amp;hl=zh-CN" rel="noopener noreferrer" target="_blank">Google Scholar</a><span class="contact-sep">·</span><a href="mailto:ycw@ruc.edu.cn">ycw@ruc.edu.cn</a></p>
+</div>
+</section>
+<!-- BACKGROUND -->
+<section class="section" id="background">
+<div class="section-header">
+<h2>教育和工作背景</h2>
+<div class="section-line"></div>
+</div>
+<div class="bg-timeline">
+<div class="bg-item bg-item--current">
+<span class="bg-period">2025.07—至今</span>
+<span class="bg-inst"><a href="http://info.ruc.edu.cn/" rel="noopener noreferrer" target="_blank">中国人民大学信息学院</a></span>
+<span class="bg-role">教授</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2015.08—2025.07</span>
+<span class="bg-inst"><a href="http://info.ruc.edu.cn/" rel="noopener noreferrer" target="_blank">中国人民大学信息学院</a></span>
+<span class="bg-role">副教授</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2014.02—2014.08</span>
+<span class="bg-inst"><a href="http://www.cornell.edu" rel="noopener noreferrer" target="_blank">美国康奈尔大学</a></span>
+<span class="bg-role">访问学者</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2011.08—2015.08</span>
+<span class="bg-inst"><a href="http://iiis.tsinghua.edu.cn" rel="noopener noreferrer" target="_blank">清华大学交叉信息研究院</a></span>
+<span class="bg-role">助理研究员</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2009.08—2011.07</span>
+<span class="bg-inst"><a href="http://iiis.tsinghua.edu.cn" rel="noopener noreferrer" target="_blank">清华大学交叉信息研究院</a></span>
+<span class="bg-role">博士后</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2006.12—2009.08</span>
+<span class="bg-inst"><a href="https://cn.nec.com/zh_CN/research/" rel="noopener noreferrer" target="_blank">NEC 中国研究院</a></span>
+<span class="bg-role">副研究员</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">2001.08—2006.12</span>
+<span class="bg-inst"><a href="http://cfins.au.tsinghua.edu.cn/" rel="noopener noreferrer" target="_blank">清华大学自动化系</a></span>
+<span class="bg-role">直博</span>
+</div>
+<div class="bg-item">
+<span class="bg-period">1997.08—2001.07</span>
+<span class="bg-inst"><a href="https://www.au.tsinghua.edu.cn/" rel="noopener noreferrer" target="_blank">清华大学自动化系</a></span>
+<span class="bg-role">本科</span>
+</div>
+</div>
+</section>
+<!-- RESEARCH -->
+<section class="section" id="research">
+<div class="section-header">
+<h2>主要研究方向</h2>
+<div class="section-line"></div>
+</div>
+<div class="research-tags">
+<span class="research-tag">智能体系统</span>
+<span class="research-tag">Spatial AI</span>
+<span class="research-tag">协同感知</span>
+<span class="research-tag">SLAM</span>
+<span class="research-tag">多智能体强化学习</span>
+</div>
+</section>
+<!-- RECRUIT -->
+<section class="section" id="recruit">
+<div class="section-header">
+<h2>招生信息</h2>
+<div class="section-line"></div>
+</div>
+<div class="recruit-box">
+<p><strong>招生类型：</strong>科研早培本科生、学硕、专硕、直博、普博、工程博士</p>
+<p><strong>期望要求：</strong>学习能力强，英文听说读写能力好，编程能力强，自驱力强，对上述方向感兴趣，善于独立思考。</p>
+<p><strong>加分项目：</strong>有科研论文发表、投稿、或重要比赛获奖经历的优先。</p>
+<p><strong>联系方式：</strong>欢迎发送简历或自我介绍到 <a href="mailto:ycw@ruc.edu.cn">ycw@ruc.edu.cn</a>，欢迎联系。</p>
+</div>
+</section>
+<!-- NEWS -->
+<section class="section" id="news">
+<div class="section-header">
+<h2>新闻动态</h2>
+<div class="section-line"></div>
+</div>
+<ul class="news-list">
+<li><span class="news-date">2026.05.01</span><span><a href="https://arxiv.org/abs/2602.00222">ICML</a>+1，Congratulations to Guoxin Lian 🎉</span></li>
+<li><span class="news-date">2026.03.22</span><span><a href="https://ieeexplore.ieee.org/document/11456202/media#media">TVCG</a>+1, Congratulations to Xudong Cai 🎉</span></li>
+<li><span class="news-date">2026.02.21</span><span><a href="https://cvpr.thecvf.com">CVPR2026</a>+2, Congratulations to Peng Wang and Shuo Wang 🎉</span></li>
+<li><span class="news-date">2026.01.31</span><span><a href="https://2026.ieee-icra.org">ICRA2026</a>+2, Congratulations to Shuai Liu and Kang Yang 🎉</span></li>
+<li><span class="news-date">2025.11.08</span><span><a href="https://aaai.org/conference/aaai/aaai-26/">AAAI 2026</a>+2, Congratulations to Xudong Cai and Shuo Wang 🎉</span></li>
+<li><span class="news-date">2025.09.19</span><span><a href="https://neurips.cc">NeurIPS 2025</a>+2, Congratulations to Xuewei Bai and Shuo Wang 🎉</span></li>
+<li><span class="news-date">2025.06.26</span><span><a href="https://iccv.thecvf.com">ICCV2025</a>+1, Congratulations to Peng Wang 🎉</span></li>
+<li><span class="news-date">2025.06.25</span><span>TOSN+1，Congratulations to Xuewei 🎉</span></li>
+<li><span class="news-date">2025.04.23</span><span>ICMR+1，Congratulations to Yance 🎉</span></li>
+<li><span class="news-date">2025.02.26</span><span>CVPR2025+2, Congratulations to Hongyu and Shuo 🎉</span></li>
+</ul>
+<details>
+<summary>▼ 展开早期动态</summary>
+<div class="early-news">
+<p>⏱2025.04.09. ADVEI+1，Congratulations to Zhe Huang 🎉</p>
+<p>⏱2025.01.28. ICRA2025 +1, Congratulations to Kang 🎉</p>
+<p>⏱2025.01.20. WWW2025 +1, Congratulations to Xiaowei 🎉</p>
+<p>⏱2024.11.28. TVCG +1, Congratulations to Hualong 🎉</p>
+<p>⏱2024.11.8. Hongyu Sun and Haoyu Liu win National Scholarship 🎉</p>
+<p>⏱2024.09.26. NeurIPS 2024 +1, Congratulations to Hongyu 🎉</p>
+<p>⏱2024.08.02. SIGMOD 2025 +1, Congratulations to Xiaojia and Haoyu 🎉</p>
+<p>⏱2024.07.26. ACM Multimedia 2024 +3, Congratulations to Zhe Huang, Shuo Wang, and Xudong 🎉</p>
+<p>⏱2024.07.26. RoCo: Robust Cooperative Perception 被 ACM Multimedia 2024 <strong>Oral 3.97%</strong> 录用，Congratulations to Zhe Huang 🎉</p>
+<p>⏱2024.05.06. TVCG +1, Congratulations to Hualong 🎉</p>
+<p>⏱2024.03.20. TVCG +1, Congratulations to Hongyu 🎉</p>
+<p>⏱2024.02.05. TON+1, Congratulations to Haodi 🎉</p>
+<p>⏱2024.01.29. ICRA2024 +1, Congratulations to Hongyu 🎉</p>
+<p>⏱2024.01.29. ICRA2024 +1, Congratulations to Wang Peng 🎉</p>
+<p>⏱2024.01.29. ICRA2024 +1, Congratulations to Xudong 🎉</p>
+<p>⏱2023.12.08. ICDE2024 +1, Congratulations to Haoyu 🎉</p>
+<p>⏱2023.06.21. TOSN+1, Congratulations to Xuewei 🎉</p>
+<p>⏱2023.06.11. TON+1, Congratulations to Qinhan 🎉</p>
+</div>
+</details>
+</section>
+<!-- REPORTS -->
+<section class="section" id="reports">
+<div class="section-header">
+<h2>近期报告</h2>
+<div class="section-line"></div>
+</div>
+<div class="reports-list">
+<a class="report-item" href="#">
+<span class="report-date-tag">2026.04.25</span>
+<span class="report-title">具身导航与三维重建的发展与交叉</span>
+<span class="report-venue">WISE2026 · 澳门科技大学</span>
+</a>
+<a class="report-item" href="report/3D视觉 SLAM 的前沿与进展.pdf">
+<span class="report-date-tag">2025.09.07</span>
+<span class="report-title">3D视觉 SLAM 技术前沿与进展</span>
+<span class="report-venue">CWSN2025 · 低空经济论坛</span>
+</a>
+<a class="report-item" href="report/智能航运感知数据集整理.pdf">
+<span class="report-date-tag">2024.12.08</span>
+<span class="report-title">智能航运感知数据集整理</span>
+<span class="report-venue">2024人工智能与自主式交通国际学术会议</span>
+</a>
+<a class="report-item" href="report/多智能体协同感知研究进展.pdf">
+<span class="report-date-tag">2024.12.04</span>
+<span class="report-title">多智能体协同感知研究进展</span>
+<span class="report-venue">中国人民大学计算机系第十届学术节</span>
+</a>
+<a class="report-item" href="report/VIO_from_graph_to_deep_learning.pdf">
+<span class="report-date-tag">2024.10.28</span>
+<span class="report-title">视觉里程计从图优化到深度学习优化的发展</span>
+<span class="report-venue">中国自动化学会DEDS专委会</span>
+</a>
+</div>
+</section>
+<!-- TEACHING -->
+<section class="section" id="teaching">
+<div class="section-header">
+<h2>教学</h2>
+<div class="section-line"></div>
+</div>
+<div class="teaching-grid">
+<div class="course-card">
+<div class="course-name">《机器感知》</div>
+<div class="course-meta">研究生专业课 · 2019—至今</div>
+<a href="https://v63s64hxao.feishu.cn/wiki/space/7424013477947703299" target="_blank">飞书共享文档：课程资料、习题等 ↗</a>
+</div>
+<div class="course-card">
+<div class="course-name">《算法设计与分析II荣誉课程》</div>
+<div class="course-meta">本科生必修课 · 2021—至今</div>
+</div>
+<div class="course-card">
+<div class="course-name">《运筹学建模与算法》</div>
+<div class="course-meta">2016—至今</div>
+<a href="http://123.56.110.195:8320/c/optimization/7" target="_blank">课程主页 ↗</a>
+</div>
+<div class="course-card">
+<div class="course-name">《图优化与Graph SLAM》</div>
+<div class="course-meta">短期课程</div>
+</div>
+<div class="course-card">
+<div class="course-name">《普适计算》</div>
+<div class="course-meta">2016, 2017, 2018</div>
+</div>
+</div>
+</section>
+<!-- PAPERS -->
+<section class="section" id="papers">
+<div class="section-header">
+<h2>代表性论文</h2>
+<div class="section-line"></div>
+</div>
+<p class="papers-ccf-legend">
+<span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfa papers-ccf-legend-swatch" aria-hidden="true">A</span>红色标签代表 CCF A</span>
+<span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfb papers-ccf-legend-swatch" aria-hidden="true">B</span>蓝色标签代表 CCF B</span>
+</p>
+<div class="year-group">
+<div class="year-label">2026</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">ICML</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="https://horizonrobotics.github.io/robot_lab/mapdream/" target="_blank">Project</a><a class="link-badge link-badge--news" href="https://www.horizon.auto/news/technology/436" target="_blank">News</a></div>
+</div>
+<div class="paper-content">
+<a href="https://arxiv.org/abs/2602.00222">MapDream: Task-Driven Map Learning for Vision-Language Navigation</a>
+<div class="paper-authors">Guoxin Lian, Shuo Wang, Yucheng Wang, <strong>Yongcai Wang</strong>, et al. ICML 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TVCG</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/minoTrey/DUSt3R-Paper-Collection/blob/main/docs/gaussian-splatting/dust-to-tower.md" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://ieeexplore.ieee.org/document/11456202/media#media">Dust to Tower: Prior-Driven Coarse-to-Fine Photo-Realistic Scene Reconstruction from Sparse Uncalibrated Images</a>
+<div class="paper-authors">Xudong Cai, <strong>Yongcai Wang</strong>, Zhaoxin Fan, et al. IEEE TVCG 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">CVPR</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/PenK1nG/SAMosaic3D" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://github.com/PenK1nG/SAMosaic3D">MOSAIC3D: Modular Scene Assembly for Real-Time 3D Segment Anything</a>
+<div class="paper-authors">Peng Wang, <strong>Yongcai Wang*</strong>, Wang Chen, Hualong Cao, et al. CVPR 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">CVPR</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="https://horizonrobotics.github.io/robot_lab/progress-think/" target="_blank">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="https://horizonrobotics.github.io/robot_lab/progress-think/">Progress-Think: Semantic Progress Reasoning for Vision-Language Navigation</a>
+<div class="paper-authors">Shuo Wang, Yucheng Wang, Guoxin Lian, <strong>Yongcai Wang*</strong>, et al. CVPR 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/sidiangongyuan/EIMC" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://arxiv.org/abs/2603.02532">EIMC: Efficient Instance-aware Multi-modal Collaborative Perception</a>
+<div class="paper-authors">Kang Yang, Peng Wang, Lantao Li, <strong>Yongcai Wang*</strong>, et al. ICRA 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ICRA</span>
+
+</div>
+<div class="paper-content">
+<span style="font-weight:600;color:var(--ink)">SupGS-SLAM: Gaussian Splatting SLAM with Efficient Keyframe Strategy and Supplementary Mapping</span>
+<div class="paper-authors">Shuai Liu, <strong>Yongcai Wang*</strong>, Wenping Chen, et al. ICRA 2026</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<div class="year-label">2025</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">AAAI</span>
+
+</div>
+<div class="paper-content">
+<a href="https://openreview.net/forum?id=wVCOgaKBn9">Mem4D: Decoupling Static and Dynamic Memory for Dynamic Scene Reconstruction</a>
+<div class="paper-authors">Xudong Cai, Shuo Wang, Peng Wang, <strong>Yongcai Wang*</strong>, et al. AAAI 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">AAAI</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="https://horizonrobotics.github.io/robot_lab/monodream/" target="_blank">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="https://openreview.net/forum?id=Fus8j5fewA">MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming</a>
+<div class="paper-authors">Shuo Wang, <strong>Yongcai Wang*</strong>, Wanting Li, et al. AAAI 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">NeurIPS</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/baixuewei430-dotcom/STAR" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://neurips.cc/virtual/2025/poster/116808">STAR: Spatial-Temporal Tracklet Matching for Multi-Object Tracking</a>
+<div class="paper-authors">Xuewei Bai, <strong>Yongcai Wang*</strong>, Deying Li, et al. NeurIPS 2025</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">NeurIPS</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/HorizonRobotics/RoboOrchardLab/tree/master/projects/aux_think" target="_blank">Code</a><a class="link-badge link-badge--project" href="https://horizonrobotics.github.io/robot_lab/aux-think/index.html" target="_blank">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="https://horizonrobotics.github.io/robot_lab/aux-think/index.html">Aux-Think: Exploring Reasoning Strategies for Data-Efficient Vision-Language Navigation</a>
+<div class="paper-authors">Shuo Wang, <strong>Yongcai Wang*</strong>, et al. NeurIPS 2025</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">ICCV</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/PenK1nG/LA-MOTR" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://openreview.net/forum?id=TPRpvvuvYM">LA-MOTR: End-to-End Multi-Object Tracking by Learnable Association</a>
+<div class="paper-authors">Peng Wang, <strong>Yongcai Wang*</strong>, Hualong Cao, et al. ICCV 2025</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">CVPR</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/auniquesun/Point-Cache" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Sun_Point-Cache_Test-time_Dynamic_and_Hierarchical_Cache_for_Robust_and_Generalizable_CVPR_2025_paper.html">Point-Cache: Test-time Dynamic and Hierarchical Cache for Robust and Generalizable Point Cloud Analysis</a>
+<div class="paper-authors">Hongyu Sun, Qiuhong Ke, <strong>Yongcai Wang*</strong>, et al. CVPR 2025</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">CVPR</span>
+
+</div>
+<div class="paper-content">
+<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Wang_MambaVO_Deep_Visual_Odometry_Based_on_Sequential_Matching_Refinement_and_CVPR_2025_paper.html">MambaVO: Deep Visual Odometry Based on Sequential Matching Refinement and Training Smoothing</a>
+<div class="paper-authors">Shuo Wang, Wanting Li, <strong>Yongcai Wang*</strong>, et al. CVPR 2025</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">WWW</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/gom168/CorenessMaximization" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="papers/Coreness Maximization, WWW2025.pdf">Coreness Maximization through Budget-Limited Edge Insertion</a>
+<div class="paper-authors">Xiaowei Lv, Xiaojia Xu, <strong>Yongcai Wang*</strong>, et al. WWW 2025</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/sidiangongyuan/ACCO" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://arxiv.org/abs/2503.13946">Is Discretization Fusion All You Need for Collaborative Perception?</a>
+<div class="paper-authors">Kang Yang, Tianci Bu, Lantao Li, <strong>Yongcai Wang*</strong>, et al. ICRA 2025</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<div class="year-label">2024</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">NeurIPS</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/auniquesun/Point-PRC" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="papers/neurips2024/Point_PRC.pdf">A Prompt Learning Based Regulation Framework for Generalizable Point Cloud Analysis</a>
+<div class="paper-authors">Hongyu Sun, Qiuhong Ke, <strong>Yongcai Wang*</strong>, et al. NeurIPS 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">SIGMOD</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/Elssky/IPPV" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="papers/SIGMOD2025.pdf">An Efficient and Exact Algorithm for Locally h-Clique Densest Subgraph Discovery</a>
+<div class="paper-authors">Xiaojia Xu, Haoyu Liu, Xiaowei Lv, <strong>Yongcai Wang*</strong>, et al. SIGMOD 2025</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">MM</span>
+<div class="paper-tags"><span class="text-note">Oral 3.97%</span><a class="link-badge link-badge--code" href="https://github.com/HuangZhe885/RoCo" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://arxiv.org/html/2408.00257v1">RoCo: Robust Cooperative Perception By Iterative Object Matching and Pose Adjustment</a>
+<div class="paper-authors">Zhe Huang, Shuo Wang, <strong>Yongcai Wang*</strong>, et al. ACM MM 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">MM</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/markinruc/GSLAMOT" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://github.com/markinruc/GSLAMOT">GSLAMOT: A Tracklet and Query Graph-based Simultaneous Locating, Mapping, and Multiple Object Tracking System</a>
+<div class="paper-authors">Shuo Wang, <strong>Yongcai Wang*</strong>, et al. ACM MM 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">MM</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/Master-cai/PRISM" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://www.arxiv.org/abs/2408.03598">PRISM: PRogressive dependency maxImization for Scale-invariant image Matching</a>
+<div class="paper-authors">Xudong Cai, <strong>Yongcai Wang*</strong>, et al. ACM MM 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">软件学报</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/relocalization_survey.pdf">Survey on Visual Relocalization in Prior Map</a>
+<div class="paper-authors">Xudong Cai, <strong>Yongcai Wang*</strong>, Xuewei Bai, Deying Li. Journal of Software, 2024 (in Chinese)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TVCG</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="DMS/DMS.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="DMS/DMS.pdf">DMS: Low-overlap Registration of 3D Point Clouds with Double-layer Multi-scale Star-graph</a>
+<div class="paper-authors">Hualong Cao, <strong>Yongcai Wang*</strong>, Deying Li. IEEE TVCG 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TVCG</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="vsformer/VSFormer.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="vsformer/VSFormer.pdf">VSFormer: Mining Correlations in Flexible View Set for Multi-view 3D Shape Understanding</a>
+<div class="paper-authors">Hongyu Sun, <strong>Yongcai Wang*</strong>, et al. IEEE TVCG 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="ppt/ppt.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="ppt/ppt.pdf">Parameter-efficient Prompt Learning for 3D Point Cloud Understanding</a>
+<div class="paper-authors">Hongyu Sun, <strong>Yongcai Wang*</strong>, et al. ICRA 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="DroneMOT/DroneMOT.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="DroneMOT/DroneMOT.html">DroneMOT: Drone-based Multi-Object Tracking Considering Detection Difficulties and Simultaneous Moving of Drones and Objects</a>
+<div class="paper-authors">Peng Wang, <strong>Yongcai Wang*</strong>, Deying Li. ICRA 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="VOLoc/VOLoc.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="VOLoc/VOLoc.pdf">VOLoc: Visual Place Recognition by Querying Compressed Lidar Map</a>
+<div class="paper-authors">Xudong Cai, <strong>Yongcai Wang*</strong>, Zhe Huang, et al. ICRA 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TOSN</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/InferLoc.pdf">InferLoc: Hypothesis-Based Joint Edge Inference and Localization in Sparse Sensor Networks</a>
+<div class="paper-authors">Xuewei Bai, <strong>Yongcai Wang*</strong>, Haodi Pin, et al. ACM TOSN 20(1) (2024)</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<div class="year-label">2023</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">MM</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="colslam/ColSLAM.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="colslam/ColSLAM.pdf">ColSLAM: A Versatile Collaborative SLAM System for Mobile Phones Using Point-Line Features and Map Caching</a>
+<div class="paper-authors">Wanting Li, <strong>Yongcai Wang*</strong>, Yongyu Guo, Shuo Wang, et al. ACM Multimedia 2023</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TON</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="EMI/EMI.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="EMI/EMI.pdf">EMI: An Efficient Algorithm for Identifying Maximal Rigid Clusters in 3D Generic Graphs</a>
+<div class="paper-authors">Qinhan Wei, <strong>Yongcai Wang*</strong>, Deying Li. IEEE/ACM TON 32(1), 460-474, 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">ICDE</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="RIPPLE/RIPPLE.html">Project</a><a class="link-badge link-badge--code" href="https://github.com/Elssky/RIPPLE" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="RIPPLE/RIPPLE.pdf">Bottom-up k-Vertex Connected Component Enumeration by Multiple Extension</a>
+<div class="paper-authors">Haoyu Liu, <strong>Yongcai Wang*</strong>, Xiaojia Xu, Deying Li. ICDE 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TON</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Understanding.pdf">Understanding Hidden Knowledge in Generic Graphs</a>
+<div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Yu Zhang, Deying Li, Lihua Xie. IEEE/ACM TON 2024</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">JSAC</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="JSAC2023/JSAC2023Wang.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="JSAC2023/JSAC2023Wang.pdf">Communication Efficient, Distributed Relative State Estimation in UAV Networks</a>
+<div class="paper-authors">Shuo Wang, <strong>Yongcai Wang*</strong>, Xuewei Bai, Deying Li. IEEE JSAC 2023</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TON</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="localizability/localizability.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="localizability/Understanding.pdf">Understanding Node Localizability in Barycentric Linear Localization</a>
+<div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Deying Li, Wenping Chen. IEEE/ACM TON 2022</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="vipformer/vipformer.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="vipformer/vipformer.pdf">ViPFormer: Efficient Vision-and-Pointcloud Transformer for Unsupervised Pointcloud Understanding</a>
+<div class="paper-authors">Hongyu Sun, <strong>Yongcai Wang*</strong>, Xudong Cai, Xuewei Bai, Deying Li. ICRA 2023</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ADVEI</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/object_detection.pdf">An object detection algorithm combining semantic and geometric information of the 3D point cloud</a>
+<div class="paper-authors">Zhe Huang, <strong>Yongcai Wang*</strong>, Jie Wen, Peng Wang, Xudong Cai. Adv. Eng. Informatics 56 (2023)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TCS</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/mapmatching.pdf">A robust map matching method by considering memorized multiple matching candidates</a>
+<div class="paper-authors">Wanting Li, <strong>Yongcai Wang*</strong>, Deying Li, Xiaojia Xu. Theor. Comput. Sci. 941 (2023)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">Inf.Sci.</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/IM-k-grouping.pdf">Maximizing the influence with κ-grouping constraint</a>
+<div class="paper-authors">Guoyao Rao, Deying Li, <strong>Yongcai Wang</strong>, Wenping Chen, et al. Inf. Sci. 629 (2023)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">Inf.Sci.</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/online-conflict.pdf">Online conflict resolution: Algorithm design and analysis</a>
+<div class="paper-authors">Guoyao Rao, Deying Li, <strong>Yongcai Wang</strong>, Wenping Chen, et al. Inf. Sci. 651 (2023)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TCS</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="Defend/Defend.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="Defend/Defend.pdf">A fault diagnosis method to defend scapegoating attack in network tomography</a>
+<div class="paper-authors">Xiaojia Xu, <strong>Yongcai Wang*</strong>, Yu Zhang, Deying Li. Theor. Comput. Sci. 939 (2023)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TOSN</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="Gpart/Gpart.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="papers/TOSN_2023_GPART.pdf">GPART: Partitioning Maximal Redundant Rigid and Maximal Global Rigid Components in Generic Distance Graphs</a>
+<div class="paper-authors">Yu Zhang, Qinhan Wei, <strong>Yongcai Wang*</strong>, Haodi Ping, Deying Li. ACM TOSN 19(4) (2023)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TOSN</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Node_Localizability.pdf">On Node Localizability Identification in Barycentric Linear Localization</a>
+<div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Xingfa Shen, Deying Li, Wenping Chen. ACM TOSN 19(1) (2023)</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<div class="year-label">2022</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TMC</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="flippingfree/flippingfree.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="flippingfree/flippingfree.pdf">Flipping Free Conditions and Their Application in Sparse Network Localization</a>
+<div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Deying Li, Tianyuan Sun. IEEE TMC 21(3), 986-1003, 2022</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TCS</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Rao_TCS.pdf">Union acceptable profit maximization in social networks</a>
+<div class="paper-authors">Guoyao Rao, <strong>Yongcai Wang</strong>, Wenping Chen, Deying Li, Weili Wu. Theor. Comput. Sci. 917 (2022)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TCS</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/ZhangTCS22.pdf">Self-stabilizing spanner topology control solutions in wireless ad hoc networks</a>
+<div class="paper-authors">Xiujuan Zhang, <strong>Yongcai Wang</strong>, Deying Li, Wenping Chen, Xingjian Ding. Theor. Comput. Sci. 922 (2022)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ISMAR</span>
+
+</div>
+<div class="paper-content">
+<a href="VTONShoes.pdf">VTONShoes: Virtual Try-on of Shoes in Augmented Reality on a Mobile Device</a>
+<div class="paper-authors">Wenshuang Song, Yanhe Gong, <strong>Yongcai Wang*</strong>. ISMAR 2022</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TOSN</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/TOSN_2022_Shen.pdf">Transition Model-driven Unsupervised Localization Framework Based on Crowd-sensed Trajectory Data</a>
+<div class="paper-authors">Xingfa Shen, Chuang Li, Weijie Chen, <strong>Yongcai Wang</strong>, Quanbo Ge. ACM TOSN 18(2) (2022)</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<div class="year-label">2021 and Before</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TON</span>
+
+</div>
+<div class="paper-content">
+<a href="finegrained/Fine-Grained.pdf">Fine-grained Trajectory Optimization of Multiple UAVs for Efficient Data Gathering from WSNs</a>
+<div class="paper-authors">Chuanwen Luo, Deying Li, <strong>Yongcai Wang</strong>, Wenping Chen, Weili Wu. IEEE/ACM TON 29(1), 162-175, 2021</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TKDD</span>
+
+</div>
+<div class="paper-content">
+<a href="TKDD_2021_Yan.pdf">A Stochastic Algorithm Based on Reverse Sampling Technique to Fight Against the Cyberbullying</a>
+<div class="paper-authors">Ruidong Yan, Yi Li, Deying Li, <strong>Yongcai Wang</strong>, et al. ACM TKDD 15(4) (2021)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TCS</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Matching_influence_maximization.pdf">Matching influence maximization in social networks</a>
+<div class="paper-authors">Guoyao Rao, <strong>Yongcai Wang</strong>, Wenping Chen, Deying Li, Weili Wu. Theor. Comput. Sci. 857 (2021)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">软件学报</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Unet_survey.pdf">Survey of Medical Image Segmentation Technology Based on U-Net Structure Improvement</a>
+<div class="paper-authors">Xiaohang Yin, <strong>Yongcai Wang*</strong>, Deying Li. Journal of Software, 2020 (CCF A, in Chinese)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">自动化学报</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/graph_realization_survey.pdf">A Survey and Evaluation of Graph Realization Algorithms</a>
+<div class="paper-authors">Tianyuan Sun, <strong>Yongcai Wang*</strong>, Deying Li. ACTA AUTOMATICA SINICA 46(4), 2020 (CCF A, in Chinese)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">CN</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/CN-Ding-2020.pdf">Optimal charger placement for wireless power transfer</a>
+<div class="paper-authors">Xingjian Ding, <strong>Yongcai Wang</strong>, Guodong Sun, et al. Comput. Networks 170 (2020)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TCS</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/tcs-DING-2020.pdf">Efficient scheduling of a mobile charger in large-scale sensor networks</a>
+<div class="paper-authors">Xingjian Ding, Wenping Chen, <strong>Yongcai Wang</strong>, Deying Li, Yi Hong. Theor. Comput. Sci. 840 (2020)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">Ubicomp</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/unsupervised_localization.pdf">Unsupervised Localization by Learning Transition Model</a>
+<div class="paper-authors">Xuehan Ye, Shuo Huang, <strong>Yongcai Wang*</strong>, Wenping Chen, Deying Li. IMWUT 3(2) (2019)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TKDD</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/1-TKDD-yan-2019.pdf">Rumor Blocking through Online Link Deletion on Social Networks</a>
+<div class="paper-authors">Ruidong Yan, Yi Li, Weili Wu, Deying Li, <strong>Yongcai Wang</strong>. TKDD 13(2) (2019)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">JSAC</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/jsac.pdf">Formation Tracking in Sparse Airborne Networks</a>
+<div class="paper-authors"><strong>Yongcai Wang*</strong>, Tianyuan Sun, Guoyao Rao, Deying Li. IEEE JSAC 36(9), 2000-2014, 2018</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">TON</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/wcs.pdf">WCS: Weighted Component Stitching for Sparse Network Localization</a>
+<div class="paper-authors">Tianyuan Sun, <strong>Yongcai Wang*</strong>, Deying Li, Zhaoquan Gu, Jia Xu. IEEE/ACM TON 26(5), 2018</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">Ubicomp</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Ye-Ubicomp18.pdf">Accurate and Efficient Indoor Location by Dynamic Warping in Sequence Type Radio-map</a>
+<div class="paper-authors">Xuehan Ye, <strong>Yongcai Wang*</strong>, Yuhe Guo, Wei Hu, Deying Li. Ubicomp, Oct. 2018</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">AAAI</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/aaai-yc.pdf">Efficient Online Model Adaptation by Incremental Simplex Tableau</a>
+<div class="paper-authors">Zhixian Lei, Xuehan Ye, <strong>Yongcai Wang*</strong>, Deying Li, Jia Xu. AAAI 2017</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">JSAC</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/chorus.pdf">An Efficient Technique for Locating Multiple Narrow-band Ultrasound Targets in Chorus Mode</a>
+<div class="paper-authors"><strong>Yongcai Wang*</strong>, Lei Song, S.S. Iyengar. IEEE JSAC 33(11), 2343-2356, 2015</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">IJCAI</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/ijcai.pdf">On the Balance of Meter Deployment Cost and NILM Accuracy</a>
+<div class="paper-authors">Xiaohong Hao, Bangsheng Tang, <strong>Yongcai Wang*</strong>. IJCAI 2015</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfa">INFOCOM</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Compressive_sensing.pdf">Compressive Sensing over Strongly Connected Digraph and Its Application in Traffic Monitoring</a>
+<div class="paper-authors">Xiao Qi, <strong>Yongcai Wang*</strong>, Yuexuan Wang, Liwen Xu. INFOCOM 2014</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">WN</span>
+
+</div>
+<div class="paper-content">
+<span style="font-weight:600;color:var(--ink)">Distributed probabilistic routing for sensor network lifetime optimization</span>
+<div class="paper-authors"><strong>Yongcai Wang*</strong>, Haisheng Tan. Wireless Networks 22(3), 975-989 (2016)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">DASFAA</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/dasfaa.pdf">Joint User Attributes and Item Category in Factor Models for Rating Prediction</a>
+<div class="paper-authors">Jiang Wang, Yuqing Zhu, Deying Li, Wenping Chen, <strong>Yongcai Wang</strong>. DASFAA 2016</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">SECON</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/intenct.pdf">IntenCT: Efficient Multi-Target Counting and Tracking By Binary Proximity Sensors</a>
+<div class="paper-authors"><strong>Yongcai Wang*</strong>, Lei Song, Zhaoquan Gu, Deying Li. SECON 2016</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">MOBIHOC</span>
+
+</div>
+<div class="paper-content">
+<a href="mobihoc14.pdf">Multiple Target Counting and Tracking using Binary Proximity Sensors: Bounds, Coloring, and Filter</a>
+<div class="paper-authors">Lei Song, <strong>Yongcai Wang*</strong>. MOBIHOC 2014</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">SECON</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Secon14.pdf">Locating Multiple Ultrasound Targets in Chorus</a>
+<div class="paper-authors">Lei Song, <strong>Yongcai Wang*</strong>. SECON 2014</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TECS</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/TECS-wang.pdf">Monitoring Massive Appliances by a Minimal Number of Smart Meters</a>
+<div class="paper-authors"><strong>Yongcai Wang*</strong>, Xiaohong Hao, Lei Song, et al. ACM TECS 13(2s), 2014</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">EWSN</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/Li-EWSN-2015.pdf">On Target Counting by Sequential Snapshots of Binary Proximity Sensors</a>
+<div class="paper-authors">Tongyang Li, <strong>Yongcai Wang*</strong>, Lei Song, Haisheng Tan. EWSN 2015</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">WiOpt</span>
+
+</div>
+<div class="paper-content">
+<a href="papers/selfishrouting15.pdf">Selfish task-driven routing in hybrid networks</a>
+<div class="paper-authors">Yupeng Li, Haisheng Tan, <strong>Yongcai Wang</strong>, et al. WiOpt 2015</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section class="section" id="projects">
+<div class="section-header">
+<h2>科研项目</h2>
+<div class="section-line"></div>
+</div>
+<ul class="projects-list">
+<li class="project-item">
+<span class="project-period">2026<span>—2027</span></span>
+<div class="project-main">
+<h3 class="project-title">道路病害检测与三维量算技术开发项目</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2026.04 — 2027.06</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2025<span>—2026</span></span>
+<div class="project-main">
+<h3 class="project-title">基于复杂环境下的全域感知算法开发</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2025.11 — 2026.11</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2025</span>
+<div class="project-main">
+<h3 class="project-title">基于数据-模型驱动的任务规划模型及优化算法</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2025.08 — 2025.10</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2025</span>
+<div class="project-main">
+<h3 class="project-title">能源系统智能算法研发</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2025.04 — 2025.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2023<span>—2025</span></span>
+<div class="project-main">
+<h3 class="project-title">无人集群数字孪生系统鲁棒性测试服务</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2023.12 — 2025.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2022<span>—2023</span></span>
+<div class="project-main">
+<h3 class="project-title">动态复杂场景下移动机器人环境定位感知研究</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2022.11 — 2023.11</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2023</span>
+<div class="project-main">
+<h3 class="project-title">高精点云地图构建与视觉定位导航方法研究</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2023.01 — 2023.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2022<span>—2023</span></span>
+<div class="project-main">
+<h3 class="project-title">基于视觉的机场飞鸟检测系统</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2022.01 — 2023.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2020<span>—2023</span></span>
+<div class="project-main">
+<h3 class="project-title">基于模块拼接的群智 SLAM 关键问题研究</h3>
+<div class="project-meta"><span class="project-tag project-tag-nsfc">国家自然科学基金</span><span class="project-grant">61972404</span><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2020.01 — 2023.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2019<span>—2022</span></span>
+<div class="project-main">
+<h3 class="project-title">无人智能船的辅助驾驶决策系统</h3>
+<div class="project-meta"><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2019.09 — 2022.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2017<span>—2020</span></span>
+<div class="project-main">
+<h3 class="project-title">紧耦合多源同步定位与地图构建的融合优化关键问题研究</h3>
+<div class="project-meta"><span class="project-tag project-tag-nsfc">国家自然科学基金</span><span class="project-grant">62672524</span><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2017.01 — 2020.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2016</span>
+<div class="project-main">
+<h3 class="project-title">国家科技支撑计划课题</h3>
+<div class="project-meta"><span class="project-tag project-tag-national">国家科技支撑计划</span><span class="project-grant">2014BAK12B06</span><span class="meta-sep">·</span><span class="project-date">2016.01 — 2016.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2013<span>—2015</span></span>
+<div class="project-main">
+<h3 class="project-title">稀疏多元传感器网络跟踪用电设备状态的序列解码与部署优化关键问题研究</h3>
+<div class="project-meta"><span class="project-tag project-tag-youth">国家自然科学青年基金</span><span class="project-grant">61202360</span><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2013.01 — 2015.12</span></div>
+</div>
+</li>
+<li class="project-item">
+<span class="project-period">2013<span>—2014</span></span>
+<div class="project-main">
+<h3 class="project-title">基于序优化的大规模无线定位与自标定方法研究</h3>
+<div class="project-meta"><span class="project-tag project-tag-moe">教育部博士点基金</span><span class="project-grant">20120002120003</span><span class="project-role">项目负责人</span><span class="meta-sep">·</span><span class="project-date">2013.01 — 2014.12</span></div>
+</div>
+</li>
+</ul>
+</section>
+<!-- SERVICE -->
+<section class="section" id="service">
+<div class="section-header">
+<h2>学术服务</h2>
+<div class="section-line"></div>
+</div>
+<ul class="service-list">
+<li class="service-item">
+<span class="service-type">期刊编委</span>
+<div class="service-body">
+<ul class="service-journals">
+<li><em>Computer Science and Technology</em></li>
+<li><em>International Journal of Robotics and Automation Technology</em></li>
+</ul>
+</div>
+</li>
+<li class="service-item">
+<span class="service-type">程序委员</span>
+<div class="service-body">
+<p class="service-text">Conference on Information and Knowledge Management（<strong>CIKM 2025</strong>）</p>
+</div>
+</li>
+<li class="service-item">
+<span class="service-type">联合主席</span>
+<div class="service-body">
+<p class="service-text"><strong>AIAT 2024</strong> 技术程序委员会联合主席；<em>Proceedings of AIAT 2024</em> 副主编</p>
+</div>
+</li>
+<li class="service-item">
+<span class="service-type">论坛主席</span>
+<div class="service-body">
+<p class="service-text"><strong>VALSE 2023</strong>《机器人具身智能》论坛</p>
+</div>
+</li>
+<li class="service-item">
+<span class="service-type">宣传主席</span>
+<div class="service-body">
+<p class="service-text"><strong>ValueTools 2021</strong>，Publicity Chair</p>
+</div>
+</li>
+<li class="service-item">
+<span class="service-type">客座编辑</span>
+<div class="service-body">
+<p class="service-text"><em>Sensors</em>（CCF C），Guest Editor</p>
+</div>
+</li>
+<li class="service-item">
+<span class="service-type">会议服务</span>
+<div class="service-body">
+<p class="service-text"><strong>CASE</strong> 2016 &amp; 2017，Session Chair；<strong>CWSN</strong> 2011，Demo Session Chair；<strong>CWSN</strong> 2013、<strong>IThings</strong> 2013 程序委员会委员</p>
+</div>
+</li>
+<li class="service-item">
+<span class="service-type">审稿</span>
+<div class="service-body">
+<p class="service-text"><strong>CVPR</strong>、<strong>WWW</strong>、<strong>NeurIPS</strong>、<strong>ICML</strong>、<strong>MM</strong> 等 CCF A 类会议；<strong>TON</strong>、<strong>TMC</strong> 等 CCF A 类期刊审稿人</p>
+</div>
+</li>
+</ul>
+</section>
+<!-- SOCIETY -->
+<section class="section" id="society">
+<div class="section-header">
+<h2>学会任职</h2>
+<div class="section-line"></div>
+</div>
+<ul class="society-list">
+<li>中国计算机学会智能机器人专委会委员</li>
+<li>中国计算机学会物联网专委会执行委员</li>
+<li>中国控制学会会员 DEDS 专委会委员</li>
+<li>中国人工智能学会青年工作委员会委员</li>
+<li>CAAI 认知系统与信息处理专委会委员</li>
+<li>CAAI 智能信息网络专委会委员</li>
+<li>青科委—智能无人交通系统专委会委员</li>
+</ul>
+</section>
+<!-- AWARDS -->
+<section class="section" id="awards">
+<div class="section-header">
+<h2>获奖</h2>
+<div class="section-line"></div>
+</div>
+<div class="awards-grid">
+<div class="award-item"><span class="award-year">2025</span>中国人民大学优秀毕业生指导教师</div>
+<div class="award-item"><span class="award-year">2024</span>中国人民大学优秀毕业生指导教师</div>
+<div class="award-item"><span class="award-year">2023</span>中国人民大学信息学院优秀教职工党员</div>
+<div class="award-item"><span class="award-year">2022</span>中国人民大学信息学院科研先进个人</div>
+<div class="award-item"><span class="award-year">2022</span>中国航海学会科学技术进步二等奖</div>
+<div class="award-item"><span class="award-year">2021</span>中国航海学会技术发明<strong>一等奖</strong></div>
+<div class="award-item"><span class="award-year">2020</span>交通部中国交通运输重大科技创新成果（编号 2020LW043）</div>
+<div class="award-item"><span class="award-year">2020</span>全国人工智能教学实践案例大赛二等奖</div>
+<div class="award-item"><span class="award-year">2020</span>中国人民大学十佳班主任</div>
+<div class="award-item"><span class="award-year">2019</span>中国人民大学优秀硕士毕业生指导教师</div>
+<div class="award-item"><span class="award-year">2019</span>中国人民大学本科教学优秀奖</div>
+<div class="award-item"><span class="award-year">2019</span>ICNCC2019 最佳会议报告奖</div>
+<div class="award-item"><span class="award-year">2018</span>中国人民大学信息学院科研先进个人</div>
+<div class="award-item"><span class="award-year">2011</span>CWSN 最佳论文奖</div>
+<div class="award-item"><span class="award-year">2009</span>Ubicomm 国际普适计算与通信大会最佳论文奖</div>
+</div>
+</section>
+<!-- HOBBIES -->
+<section class="section" id="hobbies">
+<div class="section-header">
+<h2>闲暇爱好</h2>
+<div class="section-line"></div>
+</div>
+<div class="hobbies-row">
+<span class="hobby-tag">🏔️ 爬山</span>
+<span class="hobby-tag">🏸 羽毛球</span>
+<span class="hobby-tag">🏃 跑步</span>
+<span class="hobby-tag">🍳 做美食</span>
+</div>
+</section>
+</main>
+<script>
+  // Active nav highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+<script>
+(function () {
+  function labelWeight(text) {
+    var t = (text || '').trim();
+    var cjk = (t.match(/[\u4e00-\u9fff]/g) || []).length;
+    return t.length + Math.floor(cjk * 0.6);
+  }
+  document.querySelectorAll('.paper-labels .paper-venue-tag, .paper-labels .link-badge, .paper-labels .text-note').forEach(function (el) {
+    var w = labelWeight(el.textContent);
+    if (w >= 10) el.classList.add('label-xs');
+    else if (w >= 6) el.classList.add('label-compact');
+  });
+})();
+</script>
+</body>
+</html>
