@@ -63,7 +63,6 @@ STUDENT_DEGREES: Dict[str, str] = {
         "Shuai Liu",
         "Xiao Qi",
         "Yance Fang",
-        "Junzhe Hu",
     ]
 }
 STUDENT_DEGREES["Zhixian Lei"] = "Bachelor Student"
@@ -110,16 +109,16 @@ EXTRA_PAPERS: Dict[str, List[dict]] = {
             "title": "TrackPuzzle: Efficient registration of unlabeled PDR trajectories for learning indoor route graph",
             "link": "https://doi.org/10.1016/j.future.2023.07.019",
             "venue": "FGCS",
-            "tag_cls": "ccfx",
-            "auth_html": "Wanting Li, <strong>Yongcai Wang*</strong>, Yu Shao, Gaowei Hu, Deying Li. Future Gener. Comput. Syst. 149 (2023)",
+            "tag_cls": "ccfb",
+            "auth_html": "Wanting Li, <strong>Yongcai Wang*</strong>, Yu Shao, Gaowei Hu, Deying Li. Future Gener. Comput. Syst. 149, 171-183 (2023)",
             "year": 2023,
-            "tags_html": "",
+            "tags_html": '<span class="ccf-badge ccf-b">CCF B</span>',
         },
         {
             "title": "MCM: A Robust Map Matching Method by Tracking Multiple Road Candidates",
             "link": "https://doi.org/10.1007/978-3-031-16081-3_20",
             "venue": "AAIM",
-            "tag_cls": "ccfx",
+            "tag_cls": "",
             "auth_html": "Wanting Li, <strong>Yongcai Wang*</strong>, Deying Li, Xiaojia Xu. AAIM 2022",
             "year": 2022,
             "tags_html": "",
@@ -130,19 +129,19 @@ EXTRA_PAPERS: Dict[str, List[dict]] = {
             "title": "LSA: Understanding the Threat of Link-Based Scapegoating Attack in Network Tomography",
             "link": "https://ieeexplore.ieee.org/document/10109847",
             "venue": "TNSE",
-            "tag_cls": "ccfx",
-            "auth_html": "Xiaojia Xu, <strong>Yongcai Wang*</strong>, Lanling Xu, Deying Li. IEEE TNSE 10(6) (2023)",
+            "tag_cls": "ccfb",
+            "auth_html": "Xiaojia Xu, <strong>Yongcai Wang*</strong>, Lanling Xu, Deying Li. IEEE TNSE 10(6), 3670-3681 (2023)",
             "year": 2023,
-            "tags_html": "",
+            "tags_html": '<span class="ccf-badge ccf-b">CCF B</span>',
         },
         {
             "title": "Defense of Scapegoating Attack in Network Tomography",
             "link": "https://doi.org/10.1007/978-3-031-16081-3_15",
             "venue": "AAIM",
-            "tag_cls": "ccfx",
+            "tag_cls": "",
             "auth_html": "Xiaojia Xu, <strong>Yongcai Wang*</strong>, Yu Zhang, Deying Li. AAIM 2022",
             "year": 2022,
-            "tags_html": '<a class="link-badge link-badge--project" href="Defend/Defend.html">Project</a>',
+            "tags_html": "",
         },
     ],
     "Xuewei Bai": [
@@ -151,9 +150,9 @@ EXTRA_PAPERS: Dict[str, List[dict]] = {
             "link": "https://doi.org/10.1145/3746453",
             "venue": "TOSN",
             "tag_cls": "ccfb",
-            "auth_html": "Xuewei Bai, <strong>Yongcai Wang*</strong>, Peng Wang, Chunxu Li, Shuo Wang, Xudong Cai, Deying Li. ACM TOSN 21(5) (2025)",
+            "auth_html": "Xuewei Bai, <strong>Yongcai Wang*</strong>, Peng Wang, Chunxu Li, Shuo Wang, Xudong Cai, Deying Li. ACM TOSN (2025)",
             "year": 2025,
-            "tags_html": "",
+            "tags_html": '<span class="ccf-badge ccf-b">CCF B</span>',
         },
     ],
     "Zhe Huang": [
@@ -164,16 +163,16 @@ EXTRA_PAPERS: Dict[str, List[dict]] = {
             "tag_cls": "ccfb",
             "auth_html": "Zhe Huang, <strong>Yongcai Wang*</strong>, Deying Li, Yunjun Han, Lei Wang. Adv. Eng. Informatics 65 (2025)",
             "year": 2025,
-            "tags_html": '<a class="link-badge link-badge--code" href="https://github.com/HuangZhe885/Collaborative-Perception" target="_blank">Code</a>',
+            "tags_html": '<span class="ccf-badge ccf-b">CCF B</span><a class="link-badge" href="https://github.com/HuangZhe885/Collaborative-Perception" target="_blank">Code</a>',
         },
         {
             "title": "Boundary-Aware Set Abstraction for 3D Object Detection",
             "link": "https://doi.org/10.1109/IJCNN54540.2023.10191728",
             "venue": "IJCNN",
-            "tag_cls": "ccfx",
+            "tag_cls": "",
             "auth_html": "Zhe Huang, <strong>Yongcai Wang*</strong>, Xingui Tang, Hongyu Sun. IJCNN 2023",
             "year": 2023,
-            "tags_html": '<a class="link-badge link-badge--code" href="https://github.com/HuangZhe885/Boundary-Aware-SA" target="_blank">Code</a>',
+            "tags_html": '<a class="link-badge" href="https://github.com/HuangZhe885/Boundary-Aware-SA" target="_blank">Code</a>',
         },
     ],
     "Hualong Cao": [
@@ -184,19 +183,20 @@ EXTRA_PAPERS: Dict[str, List[dict]] = {
             "tag_cls": "ccfa",
             "auth_html": "Hualong Cao, <strong>Yongcai Wang*</strong>, Deying Li. IEEE TVCG 31(9), 6321-6336 (2025)",
             "year": 2025,
-            "tags_html": "",
+            "tags_html": '<span class="ccf-badge ccf-a">CCF A</span>',
         },
     ],
     "Yance Fang": [
         {
             "title": "QUEST: QUasi-clique Enhanced Structure-aware Transformation for Low-overlap Point Cloud Registration",
-            "link": "https://doi.org/10.1145/3731715.3733416",
+            "link": "https://github.com/Flanture/QUEST-QUasi-clique-Enhanced-Structure-aware-Transformation-for-Low-overlap-Point-Cloud-Registration",
             "venue": "ICMR",
             "tag_cls": "ccfb",
             "auth_html": "Yance Fang, Hualong Cao, <strong>Yongcai Wang*</strong>, Haoyu Liu, Deying Li. ICMR 2025",
             "year": 2025,
             "tags_html": (
-                '<a class="link-badge link-badge--code" href="https://github.com/Flanture/QUEST-QUasi-clique-Enhanced-Structure-aware-Transformation-for-Low-overlap-Point-Cloud-Registration" target="_blank">Code</a>'
+                '<span class="ccf-badge ccf-b">CCF B</span>'
+                '<a class="link-badge" href="https://github.com/Flanture/QUEST-QUasi-clique-Enhanced-Structure-aware-Transformation-for-Low-overlap-Point-Cloud-Registration" target="_blank">Code</a>'
             ),
         },
     ],
@@ -208,7 +208,7 @@ EXTRA_PAPERS: Dict[str, List[dict]] = {
             "tag_cls": "ccfb",
             "auth_html": "Xiaowei Lv, <strong>Yongcai Wang</strong>, Deying Li*. Theor. Comput. Sci. 1044, 115278, 1-13 (2025)",
             "year": 2025,
-            "tags_html": "",
+            "tags_html": '<span class="ccf-badge ccf-b">CCF B</span>',
         },
         {
             "title": "DecisionLLM: Large Language Models for Long Sequence Decision Exploration",
@@ -228,7 +228,7 @@ EXTRA_PAPERS: Dict[str, List[dict]] = {
             "tag_cls": "ccfb",
             "auth_html": "Xuehan Ye, <strong>Yongcai Wang*</strong>, Wei Hu, Lei Song, Zhaoquan Gu, Deying Li. SECON 2016",
             "year": 2016,
-            "tags_html": "",
+            "tags_html": '<span class="ccf-badge ccf-b">CCF B</span>',
         },
     ],
 }

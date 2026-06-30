@@ -3,7 +3,7 @@
 
 Site policy (do not revert):
 - Never add CCF A / CCF B text badges (<span class="ccf-badge">) in paper lists.
-- CCF level = paper-venue-tag color only (ccfa red, ccfb blue, ccfx dark green).
+- CCF level = paper-venue-tag color only (ccfa red, ccfb blue).
 - Keep paper-labels left column equal width (--paper-label-col) and link-badge--code/project/news colors.
 Run after any bulk paper HTML edits: python3 rebuild_papers.py
 """
@@ -18,13 +18,11 @@ PAPER_OPEN = '<div class="paper-item">'
 LEGEND_CN = """<p class="papers-ccf-legend">
 <span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfa papers-ccf-legend-swatch" aria-hidden="true">A</span>红色标签代表 CCF A</span>
 <span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfb papers-ccf-legend-swatch" aria-hidden="true">B</span>蓝色标签代表 CCF B</span>
-<span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfx papers-ccf-legend-swatch" aria-hidden="true">交叉</span>墨绿色标签代表非 CCF 交叉/应用领域期刊会议</span>
 </p>"""
 
 LEGEND_EN = """<p class="papers-ccf-legend">
 <span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfa papers-ccf-legend-swatch" aria-hidden="true">A</span>Red labels indicate CCF Class A</span>
 <span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfb papers-ccf-legend-swatch" aria-hidden="true">B</span>Blue labels indicate CCF Class B</span>
-<span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfx papers-ccf-legend-swatch" aria-hidden="true">交叉</span>Dark green labels indicate non-CCF cross-disciplinary / application venues</span>
 </p>"""
 
 

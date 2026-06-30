@@ -685,6 +685,41 @@
     background: var(--border);
   }
 
+  .year-group > .papers-more-btn {
+    display: block;
+    width: fit-content;
+  }
+
+  .papers-more-btn {
+    display: inline-block;
+    margin: 0 0 8px;
+    padding: 3px 10px;
+    border: 1px dashed var(--border);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--ink-faint);
+    font-size: var(--text-xs);
+    font-family: inherit;
+    line-height: 1.4;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: color 0.18s, border-color 0.18s;
+  }
+
+  .papers-more-btn:hover {
+    color: #2a5f4e;
+    border-color: #2a5f4e;
+  }
+
+  .papers-more-btn[aria-expanded="true"] {
+    color: #2a5f4e;
+    border-color: #2a5f4e;
+  }
+
+  .papers-cross-fold .paper-item:last-child {
+    border-bottom: none;
+  }
+
   .paper-item {
     padding: 14px 0;
     border-bottom: 1px solid var(--border);
@@ -825,6 +860,7 @@
 
   .paper-venue-tag.ccfa { background: var(--accent); }
   .paper-venue-tag.ccfb { background: #2980b9; }
+  .paper-venue-tag.ccfx { background: #2a5f4e; }
 
   .paper-content {
     display: contents;
@@ -1559,7 +1595,8 @@
 <div class="section-line"></div>
 </div>
 <ul class="news-list">
-<li><span class="news-date">2026.06.03</span><span><a href="#">TKDE</a>+1，Congratulations to Xiaojia Xu 🎉</span></li>
+<li><span class="news-date">2026.06.30</span><span><a href="https://eccv.ecva.net/">ECCV2026</a>+1, Congratulations to Kang Yang 🎉</span></li>
+<li><span class="news-date">2026.06.03</span><span><a href="https://www.computer.org/csdl/journal/tk/5555/01/11563866/2hli49WxQvS">TKDE</a>+1，Congratulations to Xiaojia Xu 🎉</span></li>
 <li><span class="news-date">2026.05.27</span><span><a href="#">CASE</a>+3，Congratulations to Jinyuan Zu, Hang Li, Xin Huang 🎉</span></li>
 <li><span class="news-date">2026.05.01</span><span><a href="https://arxiv.org/abs/2602.00222">ICML</a>+1，Congratulations to Guoxin Lian 🎉</span></li>
 <li><span class="news-date">2026.03.22</span><span><a href="https://ieeexplore.ieee.org/document/11456202/media#media">TVCG</a>+1, Congratulations to Xudong Cai 🎉</span></li>
@@ -1670,6 +1707,7 @@
 <p class="papers-ccf-legend">
 <span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfa papers-ccf-legend-swatch" aria-hidden="true">A</span>红色标签代表 CCF A</span>
 <span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfb papers-ccf-legend-swatch" aria-hidden="true">B</span>蓝色标签代表 CCF B</span>
+<span class="papers-ccf-legend-item"><span class="paper-venue-tag ccfx papers-ccf-legend-swatch" aria-hidden="true">交叉</span>墨绿色标签代表非 CCF 交叉/应用领域期刊会议</span>
 </p>
 <div class="year-group">
 <div class="year-label">2026</div>
@@ -1679,7 +1717,7 @@
 
 </div>
 <div class="paper-content">
-<a href="#">Discovering Antagonistic Near-balanced Dense Subgraphs in Signed Networks</a>
+<a href="https://www.computer.org/csdl/journal/tk/5555/01/11563866/2hli49WxQvS">Discovering Antagonistic Near-balanced Dense Subgraphs in Signed Networks</a>
 <div class="paper-authors">Xiaojia Xu, Haoyu Liu, Xiaowei Lv, <strong>Yongcai Wang</strong>, Deying Li, TKDE 2026</div>
 </div>
 </div>
@@ -1725,6 +1763,16 @@
 </div>
 <div class="paper-item">
 <div class="paper-labels">
+<span class="paper-venue-tag ccfb">ECCV</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/sidiangongyuan/UECP" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://arxiv.org/abs/2606.23046">UECP: Uncertainty-Enhanced Collaborative Perception</a>
+<div class="paper-authors">Kang Yang, Tianci Bu, Peng Wang, Deying Li, Wen Jie, <strong>Yongcai Wang*</strong>, ECCV 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
 <div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/sidiangongyuan/EIMC" target="_blank">Code</a></div>
 </div>
@@ -1736,11 +1784,51 @@
 <div class="paper-item">
 <div class="paper-labels">
 <span class="paper-venue-tag ccfb">ICRA</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/rucliushuai/SupGS-SLAM" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://events.infovaya.com/uploads/documents/6e/b1/220154-5109.pdf">SupGS-SLAM: Gaussian Splatting SLAM with Efficient Keyframe Strategy and Supplementary Mapping</a>
+<div class="paper-authors">Shuai Liu, <strong>Yongcai Wang*</strong>, Wenping Chen, et al. ICRA 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">CASE</span>
 
 </div>
 <div class="paper-content">
-<span style="font-weight:600;color:var(--ink)">SupGS-SLAM: Gaussian Splatting SLAM with Efficient Keyframe Strategy and Supplementary Mapping</span>
-<div class="paper-authors">Shuai Liu, <strong>Yongcai Wang*</strong>, Wenping Chen, et al. ICRA 2026</div>
+<a href="#">3D Multi-UAV Pursuit-Evasion Via Type-Aware Graph Attention Networks</a>
+<div class="paper-authors">Hang Li, Dongao Zhao, <strong>Yongcai Wang</strong>, Zhikun Tao, Yunjun Han, Naiqi Wu, CASE 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">CASE</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/yuanxpy/CCKS" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://arxiv.org/abs/2606.12281">CCKS: Consensus-based Communication and Knowledge Sharing</a>
+<div class="paper-authors">Jinyuan Zu, Xiaowei Lv, <strong>Yongcai Wang*</strong>, Deying Li, Yunjun Han, Wenping Chen, Fengyi Zhang, Naiqi Wu, CASE 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">CASE</span>
+
+</div>
+<div class="paper-content">
+<a href="https://arxiv.org/abs/2606.16330">Phase-Aware Guidance Injection for Recurrent MAPPO in Assembly-Line Disruption Recovery</a>
+<div class="paper-authors">Xin Huang, <strong>Yongcai Wang</strong>, Fengyi Zhang, <strong>Yunjun Han*</strong>, Naiqi Wu, CASE 2026</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">EnB</span>
+
+</div>
+<div class="paper-content">
+<a href="https://doi.org/10.1016/j.enbuild.2026.117849">DCMSAC: Device-level Collaborative Multi-agent Soft Actor-critic HVAC Control for Comfort and Energy Efficiency</a>
+<div class="paper-authors">Junzhe Hu, <strong>Yongcai Wang</strong>, Lifeng Qiao, Ruixuan Liu, Haoran Feng, Energy and Buildings 2026</div>
 </div>
 </div>
 </div>
@@ -1834,6 +1922,36 @@
 <div class="paper-content">
 <a href="https://arxiv.org/abs/2503.13946">Is Discretization Fusion All You Need for Collaborative Perception?</a>
 <div class="paper-authors">Kang Yang, Tianci Bu, Lantao Li, <strong>Yongcai Wang*</strong>, et al. ICRA 2025</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ADVEI</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/HuangZhe885/Collaborative-Perception" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S1474034625002447">Collaborative 3D object detection by smart vehicles considering semantic information and agent heterogeneity</a>
+<div class="paper-authors">Zhe Huang, <strong>Yongcai Wang*</strong>, Deying Li, Yunjun Han, Lei Wang. Adv. Eng. Informatics 65 (2025)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">TOSN</span>
+
+</div>
+<div class="paper-content">
+<a href="https://doi.org/10.1145/3746453">A Geometric and Hypothesis-Based Method for Low-Overlap, Sparse, and Featureless Point Set Matching</a>
+<div class="paper-authors">Xuewei Bai, <strong>Yongcai Wang*</strong>, Peng Wang, Chunxu Li, Shuo Wang, Xudong Cai, Deying Li. ACM TOSN 21(5) (2025)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfb">ICMR</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/Flanture/QUEST-QUasi-clique-Enhanced-Structure-aware-Transformation-for-Low-overlap-Point-Cloud-Registration" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://doi.org/10.1145/3731715.3733416">QUEST: QUasi-clique Enhanced Structure-aware Transformation for Low-overlap Point Cloud Registration</a>
+<div class="paper-authors">Yance Fang, Hualong Cao, <strong>Yongcai Wang*</strong>, Haoyu Liu, Deying Li. ICMR 2025</div>
 </div>
 </div>
 </div>
@@ -1957,6 +2075,16 @@
 <div class="paper-content">
 <a href="papers/InferLoc.pdf">InferLoc: Hypothesis-Based Joint Edge Inference and Localization in Sparse Sensor Networks</a>
 <div class="paper-authors">Xuewei Bai, <strong>Yongcai Wang*</strong>, Haodi Pin, et al. ACM TOSN 20(1) (2024)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">CASE</span>
+
+</div>
+<div class="paper-content">
+<a href="https://doi.org/10.1109/CASE59546.2024.10711318">CoDRMA: Collaborative Depth Refinement via Dual-Mask and Dual-Attention for Bird's Eye View Collaborative 3D Object Detection</a>
+<div class="paper-authors">Kang Yang, <strong>Yongcai Wang*</strong>, Yunjun Han, Qing-Shan Jia. CASE 2024</div>
 </div>
 </div>
 </div>
@@ -2102,6 +2230,36 @@
 <div class="paper-authors">Haodi Ping, <strong>Yongcai Wang*</strong>, Xingfa Shen, Deying Li, Wenping Chen. ACM TOSN 19(1) (2023)</div>
 </div>
 </div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">IJCNN</span>
+<div class="paper-tags"><a class="link-badge link-badge--code" href="https://github.com/HuangZhe885/Boundary-Aware-SA" target="_blank">Code</a></div>
+</div>
+<div class="paper-content">
+<a href="https://doi.org/10.1109/IJCNN54540.2023.10191728">Boundary-Aware Set Abstraction for 3D Object Detection</a>
+<div class="paper-authors">Zhe Huang, <strong>Yongcai Wang*</strong>, Xingui Tang, Hongyu Sun. IJCNN 2023</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">FGCS</span>
+
+</div>
+<div class="paper-content">
+<a href="https://doi.org/10.1016/j.future.2023.07.019">TrackPuzzle: Efficient registration of unlabeled PDR trajectories for learning indoor route graph</a>
+<div class="paper-authors">Wanting Li, <strong>Yongcai Wang*</strong>, Yu Shao, Gaowei Hu, Deying Li. Future Gener. Comput. Syst. 149 (2023)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">TNSE</span>
+
+</div>
+<div class="paper-content">
+<a href="https://ieeexplore.ieee.org/document/10109847">LSA: Understanding the Threat of Link-Based Scapegoating Attack in Network Tomography</a>
+<div class="paper-authors">Xiaojia Xu, <strong>Yongcai Wang*</strong>, Lanling Xu, Deying Li. IEEE TNSE 10(6) (2023)</div>
+</div>
+</div>
 </div>
 <div class="year-group">
 <div class="year-label">2022</div>
@@ -2153,6 +2311,26 @@
 <div class="paper-content">
 <a href="papers/TOSN_2022_Shen.pdf">Transition Model-driven Unsupervised Localization Framework Based on Crowd-sensed Trajectory Data</a>
 <div class="paper-authors">Xingfa Shen, Chuang Li, Weijie Chen, <strong>Yongcai Wang</strong>, Quanbo Ge. ACM TOSN 18(2) (2022)</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">AAIM</span>
+
+</div>
+<div class="paper-content">
+<a href="https://doi.org/10.1007/978-3-031-16081-3_20">MCM: A Robust Map Matching Method by Tracking Multiple Road Candidates</a>
+<div class="paper-authors">Wanting Li, <strong>Yongcai Wang*</strong>, Deying Li, Xiaojia Xu. AAIM 2022</div>
+</div>
+</div>
+<div class="paper-item">
+<div class="paper-labels">
+<span class="paper-venue-tag ccfx">AAIM</span>
+<div class="paper-tags"><a class="link-badge link-badge--project" href="Defend/Defend.html">Project</a></div>
+</div>
+<div class="paper-content">
+<a href="https://doi.org/10.1007/978-3-031-16081-3_15">Defense of Scapegoating Attack in Network Tomography</a>
+<div class="paper-authors">Xiaojia Xu, <strong>Yongcai Wang*</strong>, Yu Zhang, Deying Li. AAIM 2022</div>
 </div>
 </div>
 </div>
@@ -2637,6 +2815,50 @@
   }, { rootMargin: '-20% 0px -70% 0px' });
 
   sections.forEach(s => observer.observe(s));
+</script>
+<script>
+(function () {
+  var isEn = (document.documentElement.lang || '').toLowerCase().startsWith('en');
+  function btnLabel(expanded) {
+    if (expanded) return isEn ? 'Less<<<' : '收起<<<';
+    return isEn ? 'More>>>' : '更多>>>';
+  }
+  function btnAriaLabel(expanded, n) {
+    if (expanded) return isEn ? 'Hide cross-disciplinary papers' : '收起交叉领域论文';
+    return isEn
+      ? 'Show ' + n + ' cross-disciplinary papers'
+      : '展开 ' + n + ' 篇交叉领域论文';
+  }
+  document.querySelectorAll('#papers .year-group').forEach(function (group) {
+    var crossItems = Array.from(group.querySelectorAll(':scope > .paper-item')).filter(function (item) {
+      return item.querySelector('.paper-venue-tag.ccfx');
+    });
+    if (!crossItems.length) return;
+
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'papers-more-btn';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', btnAriaLabel(false, crossItems.length));
+    btn.textContent = btnLabel(false);
+
+    var fold = document.createElement('div');
+    fold.className = 'papers-cross-fold';
+    fold.hidden = true;
+
+    group.insertBefore(btn, crossItems[0]);
+    crossItems.forEach(function (item) { fold.appendChild(item); });
+    btn.insertAdjacentElement('afterend', fold);
+
+    btn.addEventListener('click', function () {
+      var open = fold.hidden;
+      fold.hidden = !open;
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', btnAriaLabel(open, crossItems.length));
+      btn.textContent = btnLabel(open);
+    });
+  });
+})();
 </script>
 <script>
 (function () {

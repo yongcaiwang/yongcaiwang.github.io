@@ -17,8 +17,9 @@ alwaysApply: false
 
 - `ccfa`：红色 = CCF A
 - `ccfb`：蓝色 = CCF B
+- `ccfx`：墨绿色 = 非 CCF 交叉/应用领域期刊会议
 
-论文区顶部可保留 `papers-ccf-legend` 图例。
+论文区顶部可保留 `papers-ccf-legend` 图例。含 `ccfx` 的条目默认折叠，由同年份 CCF B 后的「更多>>>」小按钮展开。
 
 ## 固定 HTML 结构
 
