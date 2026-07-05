@@ -280,6 +280,35 @@
   }
   .sidebar-footer a:hover { color: var(--sidebar-accent); }
 
+  .visitor-stats {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--sidebar-border);
+    line-height: 1.7;
+  }
+
+  .visitor-stats [id^="busuanzi_value"] {
+    color: var(--sidebar-text);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .visitor-sep { margin: 0 0.35em; opacity: 0.5; }
+
+  .visitor-stats-mobile {
+    display: none;
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .visitor-stats-mobile { display: block; }
+  }
+
   /* ── MAIN CONTENT ───────────────────────── */
   #main {
     margin-left: 260px;
@@ -1487,6 +1516,9 @@
 <a href="https://dblp.org/pid/04/2124.html" target="_blank">DBLP 论文目录 ↗</a><br/>
 <a href="https://scholar.google.com/citations?user=ZOHWbl8AAAAJ&amp;hl=zh-CN" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a><br/>
 <a href="index_en.html">English Version ↗</a><br/><br/>
+<div class="visitor-stats">
+<span id="busuanzi_container_site_pv">总浏览 <span id="busuanzi_value_site_pv">—</span></span><span class="visitor-sep">·</span><span id="busuanzi_container_site_uv">访客 <span id="busuanzi_value_site_uv">—</span></span>
+</div>
 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024071883号</a>
 </div>
 </aside>
@@ -2823,6 +2855,7 @@
 <span class="hobby-tag">🍳 做美食</span>
 </div>
 </section>
+<p class="visitor-stats-mobile" id="visitor-stats-mobile" aria-label="访问统计"></p>
 </main>
 <script>
   // Active nav highlight on scroll
@@ -2897,6 +2930,26 @@
     if (w >= 10) el.classList.add('label-xs');
     else if (w >= 6) el.classList.add('label-compact');
   });
+})();
+</script>
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+(function () {
+  var pv = document.getElementById('busuanzi_value_site_pv');
+  var uv = document.getElementById('busuanzi_value_site_uv');
+  var mobile = document.getElementById('visitor-stats-mobile');
+  if (!pv || !uv || !mobile) return;
+  function sync() {
+    var p = pv.textContent.trim();
+    var u = uv.textContent.trim();
+    if (!p || p === '—' || !u || u === '—') return;
+    mobile.textContent = '总浏览 ' + p + ' · 访客 ' + u;
+  }
+  [pv, uv].forEach(function (el) {
+    new MutationObserver(sync).observe(el, { childList: true, characterData: true, subtree: true });
+  });
+  setTimeout(sync, 800);
+  setTimeout(sync, 2500);
 })();
 </script>
 </body>
