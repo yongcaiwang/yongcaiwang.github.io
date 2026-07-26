@@ -190,9 +190,13 @@
   #main {
     margin-left: 260px;
     flex: 1;
-    max-width: 900px;
-    padding: 48px 56px;
+    width: min(920px, calc(100% - 260px));
+    max-width: 920px;
+    padding: 44px 52px 64px;
   }
+
+  .mobile-topbar { display: none; }
+  .nav-overlay { display: none; }
 
   /* ── SECTIONS ───────────────────────────── */
   .section {
@@ -1332,12 +1336,13 @@
   /* ── RESPONSIVE ─────────────────────────── */
   @media (max-width: 900px) {
     #sidebar {
-      width: 220px;
-      min-width: 220px;
+      width: 240px;
+      min-width: 240px;
     }
     #main {
-      margin-left: 220px;
-      padding: 32px 28px;
+      margin-left: 240px;
+      width: min(100%, calc(100% - 240px));
+      padding: 32px 28px 48px;
     }
     .teaching-grid, .awards-grid {
       grid-template-columns: 1fr;
@@ -1352,9 +1357,72 @@
     }
   }
 
-  @media (max-width: 640px) {
-    #sidebar { display: none; }
-    #main { margin-left: 0; padding: 20px; }
+  @media (max-width: 760px) {
+    .mobile-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      height: 56px;
+      padding: 0 14px 0 12px;
+      background: linear-gradient(175deg, var(--sidebar-bg-soft) 0%, var(--sidebar-bg) 100%);
+      color: #fff;
+      border-bottom: 1px solid var(--sidebar-border);
+      box-shadow: 0 4px 18px rgba(26,26,46,0.18);
+    }
+    .mobile-topbar-brand {
+      display: flex; align-items: center; gap: 10px; min-width: 0;
+      text-decoration: none; color: inherit;
+    }
+    .mobile-topbar-avatar {
+      width: 34px; height: 34px; border-radius: 50%; overflow: hidden;
+      border: 1.5px solid rgba(212,132,122,0.7); flex-shrink: 0;
+    }
+    .mobile-topbar-avatar img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center 22%;
+    }
+    .mobile-topbar-text { min-width: 0; }
+    .mobile-topbar-name {
+      font-family: 'Noto Serif SC', serif; font-size: 0.98rem; font-weight: 700;
+      line-height: 1.2; white-space: nowrap;
+    }
+    .mobile-topbar-sub {
+      font-size: 0.68rem; color: var(--sidebar-muted); white-space: nowrap;
+      overflow: hidden; text-overflow: ellipsis;
+    }
+    .mobile-menu-btn {
+      width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 10px; background: rgba(255,255,255,0.06); color: #fff;
+      display: inline-flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 5px; cursor: pointer; flex-shrink: 0;
+    }
+    .mobile-menu-btn span {
+      display: block; width: 16px; height: 1.5px; background: #fff; border-radius: 1px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    body.nav-open .mobile-menu-btn span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    body.nav-open .mobile-menu-btn span:nth-child(2) { opacity: 0; }
+    body.nav-open .mobile-menu-btn span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    .nav-overlay {
+      display: block; position: fixed; inset: 0; z-index: 250;
+      background: rgba(20, 18, 28, 0.45); opacity: 0; pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    body.nav-open .nav-overlay { opacity: 1; pointer-events: auto; }
+    #sidebar {
+      display: flex; position: fixed; top: 0; left: 0; bottom: 0;
+      width: min(300px, 86vw); min-width: 0; z-index: 300;
+      transform: translateX(-105%); transition: transform 0.28s ease;
+      box-shadow: 8px 0 32px rgba(0,0,0,0.28);
+    }
+    body.nav-open #sidebar { transform: translateX(0); }
+    #main {
+      margin-left: 0; width: 100%; max-width: none; padding: 76px 18px 36px;
+    }
+    .section { scroll-margin-top: 72px; }
   }
 
   /* ── STUDENTS PAGE ─────────────────────── */
@@ -1550,6 +1618,20 @@
 </style>
 </head>
 <body>
+<!-- ═══════ MOBILE TOPBAR ═══════ -->
+<header class="mobile-topbar" id="mobile-topbar">
+  <a class="mobile-topbar-brand" href="index.html">
+    <span class="mobile-topbar-avatar"><img alt="" src="ycw_large.jpg" width="34" height="34" decoding="async"/></span>
+    <span class="mobile-topbar-text">
+      <span class="mobile-topbar-name">王永才</span>
+      <span class="mobile-topbar-sub">指导学生</span>
+    </span>
+  </a>
+  <button class="mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<div class="nav-overlay" id="nav-overlay" hidden></div>
 <aside id="sidebar">
 <div class="sidebar-profile">
 <div class="sidebar-avatar"><img alt="王永才" src="ycw_large.jpg"/></div>
@@ -2326,6 +2408,35 @@
     var w = labelWeight(el.textContent);
     if (w >= 10) el.classList.add('label-xs');
     else if (w >= 6) el.classList.add('label-compact');
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var btn = document.getElementById('mobile-menu-btn');
+  var overlay = document.getElementById('nav-overlay');
+  var sidebar = document.getElementById('sidebar');
+  if (!btn || !overlay || !sidebar) return;
+  function setOpen(open) {
+    document.body.classList.toggle('nav-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? '关闭导航菜单' : '打开导航菜单');
+    overlay.hidden = !open;
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  btn.addEventListener('click', function () {
+    setOpen(!document.body.classList.contains('nav-open'));
+  });
+  overlay.addEventListener('click', function () { setOpen(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') setOpen(false);
+  });
+  sidebar.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () { setOpen(false); });
+  });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 760) setOpen(false);
   });
 })();
 </script>
