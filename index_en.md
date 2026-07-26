@@ -5,7 +5,7 @@
 |  <img src="k6g5nr-20240618072749426.png" align="left" />    |  [中文版](index.html)  |
 | ---- | :--- |
 
-**Wang Yongcai** is a Professor and Doctoral Supervisor at the School of Computer Science, Renmin University of China. He also serves as Deputy Chair of the Department of Computer Science and Director of the Research & Discipline Construction Working Committee of the School of Information.
+**Wang Yongcai** is a Professor and Doctoral Supervisor at the School of Computer Science, Renmin University of China. He also serves as Deputy Chair of the Department of Computer Science, Director of the Research & Discipline Construction Working Committee of the School of Information, and Director of the Hebei Provincial Key Laboratory of Real-virtual Integrated Autonomous Systems (RIAS).
 
 He received his bachelor’s and doctoral degrees both from the Department of Automation, Tsinghua University. **His primary research interests include agent systems, machine vision, Spatial AI, collaborative perception and multi-agent reinforcement learning. He has authored over 120 papers in top-tier domestic and international journals and conferences, among which more than 70 are published in CCF Rank A and B venues.** His research achievements have been applied to intelligent vehicles, intelligent ships, visual object detection and localization and other practical fields.
 
@@ -32,6 +32,8 @@ Email: [ycw@ruc.edu.cn](ycw@ruc.edu.cn)
     >   ⏱2024. 10. 28. [视觉里程计从图优化到深度学习优化的发展](report/VIO_from_graph_to_deep_learning.pdf), 中国自动化学会DEDS专委会报告
     >
     
+-   ⏱2026.07.20. The Hebei Provincial Key Laboratory of Real-virtual Integrated Autonomous Systems (RIAS), led by Prof. Yongcai Wang, has been approved for establishment🎉.
+
 -   ⏱2026.05.01. [ICML](https://arxiv.org/abs/2602.00222)+1，Congratulations to Guoxin Lian🎉.
 
 -   ⏱2026.03.22. [TVCG](https://ieeexplore.ieee.org/document/11456202/media#media)+1, Congratulations to Xudong Cai🎉. 
@@ -311,6 +313,7 @@ Email: [ycw@ruc.edu.cn](ycw@ruc.edu.cn)
 
 ## Academic Service
 
+- Director, Hebei Provincial Key Laboratory of Real-virtual Integrated Autonomous Systems (RIAS)
 - Member, Intelligent Robotics Committee of the China Computer Federation (CCF) - [Link](https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCIR/)
 - Member, DEDS Committee of the China Control and Decision Society (CCDCS) - [Link](http://tcct.amss.ac.cn/)
 - Member, Youth Committee of the Chinese Association for Artificial Intelligence (CAAI) - [Link](https://www.caai.cn/)
@@ -329,6 +332,7 @@ Email: [ycw@ruc.edu.cn](ycw@ruc.edu.cn)
 
 ## Awards
 
+- 2025: Second Prize, China General Chamber of Commerce Service Industry Science & Technology Innovation Award
 - 2024: Outstanding Master's Graduate Supervisor, Renmin University of China
 - 2023: Outstanding Party Member of the Faculty of Information, Renmin University of China
 - 2022: Advanced Individual in Scientific Research, Faculty of Information, Renmin University of China

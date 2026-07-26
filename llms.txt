@@ -19,6 +19,10 @@
 - Google Scholar profile: https://scholar.google.com/citations?user=ZOHWbl8AAAAJ
 - Email: ycw@ruc.edu.cn
 
+## Lab
+
+Director of the Hebei Provincial Key Laboratory of Real-virtual Integrated Autonomous Systems (RIAS), approved 2026-07-20. Hosted by the RUC Xiong'an Institute for Future Intelligent Manufacturing. Research focuses on real-virtual mapping (3DGS), swarm collaborative perception, multi-agent decision and optimization, anti-UAV cloud-brain platforms, and cross-domain deployment.
+
 ## Homepage sections
 
 The main site includes: biography, education and work history, research directions, prospective student recruitment, news, recent talks, teaching, representative publications (70+ CCF A/B papers listed), supervised students, research projects, academic service, awards, and hobbies.
