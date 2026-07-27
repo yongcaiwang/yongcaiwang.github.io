@@ -21,7 +21,7 @@
 
 ## Lab
 
-Director of the Hebei Provincial Key Laboratory of Real-virtual Integrated Autonomous Systems (RIAS), approved 2026-07-20. Hosted by the RUC Xiong'an Institute for Future Intelligent Manufacturing. Research focuses on real-virtual mapping (3DGS), swarm collaborative perception, multi-agent decision and optimization, anti-UAV cloud-brain platforms, and cross-domain deployment.
+Director of the Hebei Provincial Key Laboratory of Real-virtual Integrated Autonomous Systems (RIAS), approved 2026-07-20. Hosted by the RUC Xiong'an Institute for Future Intelligent Manufacturing. Research focuses on real-virtual mapping (3DGS), swarm collaborative perception, multi-agent decision and optimization, real-virtual multi-agent cloud-brain platforms and testbeds, and cross-domain deployment. Lab site: https://lab-rias.github.io/ · News: https://lab-rias.github.io/news/
 
 ## Homepage sections
 
