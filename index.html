@@ -313,9 +313,10 @@
   #main {
     margin-left: 260px;
     flex: 1;
-    width: min(920px, calc(100% - 260px));
-    max-width: 920px;
-    padding: 44px 52px 64px;
+    width: calc(100% - 260px);
+    max-width: none;
+    min-width: 0;
+    padding: 44px clamp(28px, 4vw, 72px) 64px;
   }
 
   /* ── MOBILE TOPBAR ──────────────────────── */
@@ -361,7 +362,7 @@
     border: 1px solid #efd0c8;
     color: var(--ink);
     border-radius: 16px;
-    padding: 40px 44px;
+    padding: 40px clamp(24px, 3.5vw, 48px);
     margin-bottom: 56px;
     position: relative;
     overflow: hidden;
@@ -415,7 +416,7 @@
     font-size: var(--text-sm);
     color: var(--ink-light);
     line-height: 1.65;
-    max-width: 36em;
+    max-width: none;
   }
 
   .profile-top {
@@ -543,7 +544,8 @@
   }
 
   .profile-bio-wrap {
-    max-width: 780px;
+    max-width: none;
+    width: 100%;
     position: relative;
     z-index: 1;
   }
@@ -1639,8 +1641,10 @@
     }
     #main {
       margin-left: 240px;
-      width: min(100%, calc(100% - 240px));
-      padding: 32px 28px 48px;
+      width: calc(100% - 240px);
+      max-width: none;
+      min-width: 0;
+      padding: 32px clamp(20px, 3vw, 40px) 48px;
     }
     .teaching-grid, .awards-grid {
       grid-template-columns: 1fr;
